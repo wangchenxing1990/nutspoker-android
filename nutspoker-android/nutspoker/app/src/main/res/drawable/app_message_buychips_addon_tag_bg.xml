@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 设置几何图形四个角的弧度 -->
+    <corners
+        android:bottomLeftRadius="@dimen/app_message_buy_chips_tag_radius"
+        android:bottomRightRadius="@dimen/app_message_buy_chips_tag_radius"
+        android:radius="@dimen/app_message_buy_chips_tag_radius"
+        android:topLeftRadius="@dimen/app_message_buy_chips_tag_radius"
+        android:topRightRadius="@dimen/app_message_buy_chips_tag_radius" />
+
+    <solid android:color="@color/app_message_buychips_addon_color" />
+</shape>

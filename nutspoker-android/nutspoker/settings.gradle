@@ -1,0 +1,7 @@
+include ':app'
+include ':uikit'
+include ':umeng_social_sdk'
+include ':libcocos2dx'
+include ':debug'
+include ':flexible-adapter'
+//project(':libcocos2dx').projectDir = new File(settingsDir, '../cocos2d/cocos/platform/android/libcocos2dx')

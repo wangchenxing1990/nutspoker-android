@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <!-- 设置几何图形四个角的弧度 -->
+            <corners android:radius="@dimen/btn_common_small_radius" />
+            <!-- 设置填充颜色 -->
+            <solid android:color="@color/btn_circle_send_press_color" />
+        </shape>
+    </item>
+    <item android:state_pressed="false">
+        <shape>
+            <!-- 设置几何图形四个角的弧度 -->
+            <corners android:radius="@dimen/btn_common_small_radius" />
+            <!-- 设置填充颜色 -->
+            <solid android:color="@color/btn_circle_send_normal_color" />
+        </shape>
+    </item>
+</selector>

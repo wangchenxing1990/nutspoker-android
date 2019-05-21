@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/simpleShareView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl_record_details_info"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:paddingLeft="15dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_record_details_single"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_game_name"
+                        style="@style/tv_record_details_all_info_style"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/tv_game_date"
+                        style="@style/tv_record_details_all_info_style"
+                        android:layout_marginLeft="10dp"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/tv_game_members"
+                        style="@style/tv_record_details_all_info_style"
+                        android:layout_marginLeft="10dp"
+                        android:drawableLeft="@mipmap/message_system"
+                        tools:text="aaaaaaaaa" />
+
+                    <TextView
+                        android:id="@+id/tv_game_blinds"
+                        style="@style/tv_record_details_all_info_style"
+                        android:layout_marginLeft="10dp"
+                        android:drawableLeft="@mipmap/message_system"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/tv_game_duration"
+                        style="@style/tv_record_details_all_info_style"
+                        android:layout_marginLeft="10dp"
+                        android:drawableLeft="@mipmap/message_system"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_record_details_multiple"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_game_multiple_game_count"
+                        style="@style/tv_record_details_all_info_style"
+                        android:layout_height="28dp"
+                        android:background="@drawable/record_details_total_bg"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/tv_game_multiple_name"
+                        style="@style/tv_record_details_all_info_style"
+                        android:layout_marginLeft="20dp"
+                        android:maxWidth="300dp"
+                        android:singleLine="true"
+                        android:text="" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btn_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="23dp"
+                    android:background="@drawable/btn_record_details_info"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/back"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/btn_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="23dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/btn_record_details_info"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/share"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_record_details_column"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/record_details_info_column_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl_column_all_first"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@color/record_detail_column_bg">
+
+                <LinearLayout
+                    android:id="@+id/ll_column_first"
+                    android:layout_width="@dimen/pop_calculate_width"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@mipmap/btn_record_calculate_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="invisible">
+
+                    <TextView
+                        android:id="@+id/tv_column_first"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="@string/calculate"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="8dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@mipmap/record_calculate_arrow" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="13">
+
+                <LinearLayout
+                    android:id="@+id/ll_column_normal_center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/record_detail_column_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_column_all_buy_title"
+                        style="@style/tv_record_details_all_info_column_style"
+                        android:layout_weight="1"
+                        android:text="@string/chips_buy"
+                        android:textColor="@color/common_blue" />
+
+                    <TextView
+                        android:id="@+id/tv_column_gain_title"
+                        style="@style/tv_record_details_all_info_column_style"
+                        android:layout_weight="1"
+                        android:text="@string/chips_gain"
+                        android:textColor="@color/common_blue" />
+
+                    <TextView
+                        android:id="@+id/tv_column_insurance_title"
+                        style="@style/tv_record_details_all_info_column_style"
+                        android:layout_weight="1"
+                        android:text="@string/chips_insurance"
+                        android:textColor="@color/record_item_earnings_gain_color" />
+
+                    <TextView
+                        android:id="@+id/tv_column_insurance_gain_title"
+                        style="@style/tv_record_details_all_info_column_style"
+                        android:layout_weight="1"
+                        android:text="@string/chips_gain_insurance_gain"
+                        android:textColor="@color/record_item_earnings_gain_color" />
+                </LinearLayout>
+
+                <com.htgames.nutspoker.view.ScrollListenerHorizontalScrollView
+                    android:id="@+id/columnHorizontalScrollView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fillViewport="true"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:id="@+id/ll_scroll_column"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/record_detail_column_bg"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+                </com.htgames.nutspoker.view.ScrollListenerHorizontalScrollView>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_column_all_gain_title"
+                style="@style/tv_record_details_all_info_column_style"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@color/record_detail_column_bg"
+                android:text="@string/chips_gain_all"
+                android:textColor="@color/game_record_details_earnings_gain_color" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_details_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@mipmap/message_system"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:id="@+id/ll_details_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:background="@mipmap/message_system" />
+
+                <View
+                    android:id="@+id/view_center_bg"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:background="@mipmap/message_system" />
+
+                <View
+                    android:id="@+id/view_right_bg"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@color/record_details_info_right_bg" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_record_total"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/common_column_bg"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/tv_record_details_all_info_bottom_style"
+                    android:layout_weight="3"
+                    android:text="@string/all" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="13"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_record_all_buy"
+                        style="@style/tv_record_details_all_info_bottom_style"
+                        android:layout_weight="1"
+                        android:text="0" />
+
+                    <TextView
+                        style="@style/tv_record_details_all_info_bottom_style"
+                        android:layout_weight="1"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/tv_record_all_insurance"
+                        style="@style/tv_record_details_all_info_bottom_style"
+                        android:layout_weight="1"
+                        android:text="0" />
+
+                    <TextView
+                        android:id="@+id/tv_record_all_insurance_gain"
+                        style="@style/tv_record_details_all_info_bottom_style"
+                        android:layout_weight="1"
+                        android:text="0" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/tv_record_details_all_info_bottom_style"
+                    android:layout_weight="2"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/ll_record_total"
+                android:scrollbars="none">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.htgames.nutspoker.view.widget.CustomListView
+                        android:id="@+id/lv_record"
+                        style="@style/listview_common_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@android:color/transparent"
+                        android:dividerHeight="5dp"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_record_scroll"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/ll_scroll_userinfo"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+
+                        <com.htgames.nutspoker.view.ScrollListenerHorizontalScrollView
+                            android:id="@+id/gainHorizontalScrollView"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="13"
+                            android:fillViewport="true"
+                            android:scrollbars="none">
+
+                            <LinearLayout
+                                android:id="@+id/ll_scroll_gain"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                            </LinearLayout>
+                        </com.htgames.nutspoker.view.ScrollListenerHorizontalScrollView>
+
+                        <LinearLayout
+                            android:id="@+id/ll_scroll_all_gian"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

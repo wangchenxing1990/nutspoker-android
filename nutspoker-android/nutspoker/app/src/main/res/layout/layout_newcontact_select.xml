@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_select_club"
+        style="@style/rl_common_column_style">
+
+        <TextView
+            style="@style/tv_common_column_title_style"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_addfriends_by_phone_constact"
+            android:text="@string/select_recent_contact_club" />
+
+        <ImageView style="@style/iv_common_column_arrow_style" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_select_group"
+        style="@style/rl_common_column_style"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            style="@style/tv_common_column_title_style"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_addfriends_by_phone_constact"
+            android:text="@string/select_recent_contact_group" />
+
+        <ImageView style="@style/iv_common_column_arrow_style" />
+    </RelativeLayout>
+
+</LinearLayout>

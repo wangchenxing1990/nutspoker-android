@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/auth_code_edit_text_container"
+    android:layout_width="0dp"
+    android:layout_height="@dimen/auth_code_single_code_width">
+    <com.htgames.nutspoker.view.gridpasswordview.imebugfixer.ImeDelBugFixedEditText
+        android:layout_width="@dimen/auth_code_single_code_width"
+        android:layout_height="@dimen/auth_code_single_code_width"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textSize="@dimen/dp_size_15"
+        android:textColor="@color/login_grey_color"
+        android:inputType="numberPassword"
+        android:background="@null"
+        android:cursorVisible="false"
+        android:id="@+id/auth_code_input_view"/>
+    <View
+        android:layout_width="@dimen/auth_code_single_code_width"
+        android:layout_height="1dp"
+        android:background="@color/btn_action_gray_press_color"
+        android:layout_marginLeft="@dimen/dp_size_8"
+        android:layout_marginRight="@dimen/dp_size_8"
+        android:layout_marginTop="-5dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

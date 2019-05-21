@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:text="@string/club_area_label_hotcity"
+        android:textColor="@android:color/white" />
+
+    <com.htgames.nutspoker.view.widget.CustomGridView
+        android:id="@+id/gv_hotcity"
+        style="@style/listview_common_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:text="@string/club_area_label_province"
+        android:textColor="@android:color/white" />
+
+    <com.htgames.nutspoker.view.widget.CustomListView
+        android:id="@+id/lv_province"
+        style="@style/listview_common_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

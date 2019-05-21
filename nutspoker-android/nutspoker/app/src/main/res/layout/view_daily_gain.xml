@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_the_data_view"
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    style="@style/tv_record_data_title_style"
+                    android:text="@string/record_details_user_insurance_chips"
+                    />
+                <!--保险数据-->
+                <TextView
+                    android:id="@+id/tv_record_statistics_insurance"
+                    style="@style/tv_record_data_title_style"
+                    android:text="xxxx"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                >
+                <TextView
+                    style="@style/tv_record_data_title_style"
+                    android:text="@string/record_details_user_win_chips"
+                    />
+                <TextView
+                    android:id="@+id/tv_daily_gain_show"
+                    style="@style/tv_record_data_title_style"
+                    android:text="0000"
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_daily_gain_date"
+                style="@style/tv_record_data_title_style"
+                android:layout_alignParentRight="true"
+                android:text="xxxxxx"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View
+            style="@style/line_black_seperate"
+            />
+
+        <com.htgames.nutspoker.view.ScrollListenerHorizontalScrollView
+            android:id="@+id/mDailyHorizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:layout_centerHorizontal="true">
+
+            <LinearLayout
+                android:id="@+id/ll_daily_gain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+        </com.htgames.nutspoker.view.ScrollListenerHorizontalScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignBottom="@id/ll_the_data_view"
+        android:layout_marginBottom="20dp"
+        >
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="8dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/icon_common_arrow_normal" />
+        <View
+            style="@style/line_black_seperate"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

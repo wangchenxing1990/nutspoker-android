@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/view_common_head" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/paipu_record_and_collect_pulltorefresh_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/action_bar_height">
+        <ListView
+            android:id="@+id/lv_list"
+            style="@style/listview_common_style"
+            android:dividerHeight="0dp"
+            android:scrollbars="none" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <com.htgames.nutspoker.view.ResultDataView
+        android:id="@+id/mResultDataView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/action_bar_height"/>
+
+    <View
+        android:id="@+id/view_shadow"
+        style="@style/view_shadow_style" />
+</merge>

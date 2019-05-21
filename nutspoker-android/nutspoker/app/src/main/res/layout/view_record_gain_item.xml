@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/tv_record_item_gain"
+        style="@style/tv_record_details_all_info_member_style"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_record_item_insurance"
+        style="@style/tv_record_details_all_info_member_style"
+        android:layout_width="wrap_content"
+        android:drawableLeft="@mipmap/icon_chatroom_sliverdesk_insurance"
+        android:drawablePadding="5dp"
+        android:textSize="9sp" />
+
+</LinearLayout>

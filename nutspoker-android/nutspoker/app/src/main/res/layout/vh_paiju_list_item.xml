@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_game_desk"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/paiju_list_item"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/bg_club_game_mtt"
+    android:foreground="@drawable/item_foreground_radius"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+    <ImageView
+        android:id="@+id/iv_fore_normal_or_mtt"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@mipmap/room_mtt_bg"/>
+    <ImageView
+        android:id="@+id/paiju_list_item_not_normal_type_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="27dp"
+        android:textColor="@color/white"
+        android:src="@mipmap/room_mtt_icon"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/rl_paiju_item_top">
+        <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+            android:id="@+id/paiju_item_logo_iv"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            tools:background="@mipmap/default_male_head"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:id="@+id/tv_discovery_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            tools:text="牌局名字"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:layout_toRightOf="@id/paiju_item_logo_iv"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/tv_pineapple_deal_order"
+            style="@style/team_paiju_top_four"
+            android:visibility="gone"
+            android:layout_toRightOf="@+id/tv_discovery_name"
+            android:layout_marginRight="5dp"
+            tools:text="@string/pineapple_order_type_sync"
+            tools:visibility="visible"
+            android:textSize="9dp"/>
+        <TextView
+            android:id="@+id/club_game_list_hunter_iv"
+            style="@style/team_paiju_top_four"
+            android:layout_toRightOf="@+id/tv_pineapple_deal_order"
+            android:layout_marginRight="5dp"
+            android:text="@string/game_match_hunter"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+        <TextView
+            android:id="@+id/tv_pineapple_mode"
+            android:visibility="gone"
+            style="@style/team_paiju_top_four"
+            tools:text="@string/pineapple_mode_normal"
+            android:layout_toRightOf="@+id/club_game_list_hunter_iv"
+            android:layout_marginRight="5dp"
+            tools:visibility="visible"/>
+        <TextView
+            android:id="@+id/iv_gamedesk_insurance"
+            style="@style/team_paiju_top_four"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/tv_discovery_name"
+            android:text="@string/game_create_config_insurance"/>
+        <TextView
+            android:id="@+id/tv_gamedesk_ante"
+            style="@style/team_paiju_top_four"
+            android:layout_toRightOf="@+id/iv_gamedesk_insurance"
+            tools:text="Ante: 2" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider_paiju_list_first"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:alpha="0.2"
+        android:background="@color/black"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_club_game_bottom">
+        <TextView
+            android:id="@+id/horde_paiju_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dp"
+            android:layout_marginRight="10dp"
+            android:textSize="9dp"
+            android:textColor="@color/icon_horde_game"
+            android:text="@string/text_horde_game"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+        <ImageView
+            android:id="@+id/iv_omaha_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/room_texas_icon"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_paiju_item_middle"
+        android:layout_width="match_parent"
+        android:paddingRight="20dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="37dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/tv_discovery_member_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3">
+
+            <TextView
+                android:id="@+id/tv_discovery_member"
+                style="@style/paiju_list_item_small_text"
+                android:alpha="0.6"
+                android:layout_gravity="right|center_vertical"
+                android:drawableLeft="@mipmap/icon_club_paiju_member"
+                tools:text=" 0/9"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/tv_pineapple_ante_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_pineapple_ante_num"
+                style="@style/paiju_list_item_small_text"
+                android:alpha="0.6"
+                android:layout_gravity="center"
+                android:drawableLeft="@mipmap/pineapple_ante"
+                tools:text=" 0/9"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/tv_discovery_match_chips_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/tv_discovery_match_chips"
+                style="@style/paiju_list_item_small_text"
+                android:alpha="0.6"
+                android:layout_gravity="center"
+                android:drawableLeft="@mipmap/icon_club_paiju_chip"
+                tools:text=" 10000"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/tv_discovery_match_checkin_fee_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/tv_discovery_match_checkin_fee"
+                style="@style/paiju_list_item_small_text"
+                android:alpha="0.6"
+                android:layout_gravity="center"
+                android:drawableLeft="@mipmap/icon_club_paiju_checkin_fee"
+                tools:text=" 200"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/tv_discovery_match_duration_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3">
+
+            <TextView
+                android:id="@+id/tv_discovery_match_duration"
+                style="@style/paiju_list_item_small_text"
+                android:alpha="0.6"
+                android:layout_gravity="left|center_vertical"
+                android:drawableLeft="@mipmap/icon_club_paiju_time"
+                tools:text=" 2小时"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_paiju_item_bottom_extra"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        android:alpha="0.6"
+        android:layout_gravity="bottom|center_horizontal"
+        android:gravity="center"
+        tools:text="比赛时间：03月31日13:25"/>
+
+    <TextView
+        android:id="@+id/tv_game_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:paddingRight="15dp"
+        android:textSize="15dp"
+        android:text="@string/game_status_ready"/>
+</FrameLayout>

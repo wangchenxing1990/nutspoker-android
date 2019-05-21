@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_paipu_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/share_bg_color"
+        android:orientation="vertical"
+        android:paddingBottom="30dp"
+        android:paddingTop="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_share_wechat"
+                style="@style/share_social_style"
+                android:drawableTop="@drawable/btn_share_wechat"
+                android:text="@string/share_wechat"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/btn_share_moments"
+                style="@style/share_social_style"
+                android:drawableTop="@drawable/btn_share_moments"
+                android:text="@string/share_moments"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_paipu_send"
+                style="@style/share_social_style"
+                android:drawableTop="@drawable/btn_paipu_send"
+                android:text="@string/handcard_more_send" />
+
+            <TextView
+                android:id="@+id/tv_paipu_share"
+                style="@style/share_social_style"
+                android:drawableTop="@drawable/btn_paipu_share"
+                android:text="@string/handcard_more_share" />
+
+            <TextView
+                android:id="@+id/tv_paipu_collect"
+                style="@style/share_social_style"
+                android:drawableTop="@drawable/btn_paipu_uncollected"
+                android:text="@string/collect" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_paipu_cancel"
+        style="@style/share_cancel_style"
+        android:layout_below="@id/ll_paipu_more" />
+
+    <com.htgames.nutspoker.view.hands.HandCardView
+        android:id="@+id/mHandCardView"
+        android:layout_width="76dp"
+        android:layout_height="49dp"
+        android:layout_centerVertical="true"
+        android:visibility="invisible" />
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_common_head" />
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal">
+
+        <com.htgames.nutspoker.view.CircularProgressBar
+            android:layout_width="200dp"
+            android:layout_height="200dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/club_integral_balance"
+                android:textColor="@color/gray_auxiliary_text_color"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/gray_auxiliary_text_color"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_club_integral_particulars"
+        style="@style/rl_other_column_style">
+
+        <TextView
+            style="@style/tv_common_column_title_style"
+            android:text="@string/club_integral_particulars" />
+
+        <ImageView style="@style/iv_common_column_arrow_style" />
+    </RelativeLayout>
+
+    <View style="@style/common_column_divider_style" />
+
+    <RelativeLayout
+        android:id="@+id/rl_club_integral_member"
+        style="@style/rl_other_column_style">
+
+        <TextView
+            style="@style/tv_common_column_title_style"
+            android:text="@string/club_integral_member" />
+
+        <ImageView style="@style/iv_common_column_arrow_style" />
+    </RelativeLayout>
+
+    <View style="@style/common_column_divider_style" />
+
+    <RelativeLayout
+        android:id="@+id/rl_club_integral_distribution"
+        style="@style/rl_other_column_style">
+
+        <TextView
+            style="@style/tv_common_column_title_style"
+            android:text="@string/club_integral_distribution" />
+
+        <ImageView style="@style/iv_common_column_arrow_style" />
+    </RelativeLayout>
+
+    <View style="@style/common_column_divider_style" />
+
+    <RelativeLayout
+        android:id="@+id/rl_club_record_list"
+        style="@style/rl_other_column_style">
+
+        <TextView
+            style="@style/tv_common_column_title_style"
+            android:text="@string/record_paiju" />
+
+        <ImageView style="@style/iv_common_column_arrow_style" />
+    </RelativeLayout>
+</LinearLayout>

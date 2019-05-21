@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_region"
+        style="@style/edt_common_style"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:background="@android:color/transparent"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/icon_register_arrow"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="@color/cphone_regoin_text_color"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edt_common_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout style="@style/ll_login_country_code_style">
+
+            <TextView
+                android:id="@+id/tv_phone_country_code"
+                style="@style/tv_login_country_code_style"
+                android:text="@string/password" />
+
+            <!--<EditText-->
+            <!--android:id="@+id/edt_phone_country"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:cursorVisible="true"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:inputType="number"-->
+            <!--android:maxLength="4"-->
+            <!--android:text="86"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textColorHint="@color/edt_common_hint_color"-->
+            <!--android:textCursorDrawable="@null"-->
+            <!--android:textSize="16sp" />-->
+        </LinearLayout>
+
+        <View style="@style/login_edit_divider" />
+
+        <com.htgames.nutspoker.view.widget.ClearableEditTextWithIcon
+            android:id="@+id/edt_phone"
+            style="@style/edt_login_style"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:background="@android:color/transparent"
+            android:inputType="number"
+            android:maxLength="11"
+            android:textColorHint="@color/authcode_edit_hint_text_color" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sure_horde_container"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:orientation="vertical"
+    android:paddingLeft="35dp"
+    android:paddingRight="35dp">
+
+    <TextView
+        android:id="@+id/sure_horde_consume_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:text="消耗："
+        android:textColor="@color/shop_text_no_select_color"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:id="@+id/sure_horde_icon_consume"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/sure_horde_consume_des"
+        android:src="@mipmap/icon_me_diamond" />
+
+    <TextView
+        android:id="@+id/sure_horde_consume_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/sure_horde_icon_consume"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:text="20"
+        android:textColor="#16BFFF"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/sure_horde_remain_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/sure_horde_icon_remain"
+        android:gravity="center_vertical"
+        android:text="钻石余额："
+        android:textColor="@color/shop_text_no_select_color"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:id="@+id/sure_horde_icon_remain"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/sure_horde_remain_num"
+        android:src="@mipmap/icon_me_diamond" />
+
+    <TextView
+        android:id="@+id/sure_horde_remain_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:text="1000"
+        android:textColor="@color/shop_text_no_select_color"
+        android:textSize="15dp" />
+</RelativeLayout>

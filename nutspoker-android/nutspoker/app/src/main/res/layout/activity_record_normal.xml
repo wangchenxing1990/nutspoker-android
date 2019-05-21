@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_record_normal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="com.htgames.nutspoker.ui.activity.Record.RecordNormalActivity">
+
+    <include layout="@layout/view_common_head" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radioGroup_select"
+                style="@style/radioGroup_statistics_style"
+                android:layout_margin="10dp">
+
+                <RadioButton
+                    android:id="@+id/radioBtn_day"
+                    style="@style/radioButton_statistics_style"
+                    android:background="@drawable/radio_btn_record_left"
+                    android:checked="true"
+                    android:text="@string/day"
+                    android:textColor="@color/radio_btn_text_record" />
+
+                <RadioButton
+                    android:id="@+id/radioBtn_month"
+                    style="@style/radioButton_statistics_style"
+                    android:background="@drawable/radio_btn_record_right"
+                    android:text="@string/month"
+                    android:textColor="@color/radio_btn_text_record" />
+            </RadioGroup>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <com.htgames.nutspoker.view.statistics.DailyGainView
+                    android:id="@+id/day_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.htgames.nutspoker.view.statistics.DailyGainView
+                    android:id="@+id/month_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rl_record_statistics"
+                    style="@style/rl_record_column_style"
+                    android:layout_marginRight="8dp">
+
+                    <RelativeLayout style="@style/rl_record_column_content_style">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_record_statistics_icon"
+                            style="@style/rl_icon_record_column_style">
+
+                            <ImageView
+                                style="@style/icon_record_column_style"
+                                android:src="@mipmap/message_system" />
+
+                            <ImageView
+                                android:id="@+id/iv_record_statistics_lock"
+                                style="@style/iv_record_column_lock_style" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/rl_record_statistics_icon"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_record_statistics"
+                                style="@style/tv_record_column_title_style"
+                                android:text="@string/record_statistics" />
+
+                            <TextView
+                                android:id="@+id/tv_record_statistics_lock"
+                                style="@style/tv_record_column_content_style"
+                                android:layout_marginTop="5dp"
+                                android:text="@string/vip_lock_hint"
+                                android:textColor="@color/head_title_color"
+                                android:visibility="visible" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_record_data_analysis"
+                    style="@style/rl_record_column_style"
+                    android:layout_marginLeft="8dp">
+
+                    <RelativeLayout style="@style/rl_record_column_content_style">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_record_data_analysis_icon"
+                            style="@style/rl_icon_record_column_style">
+
+                            <ImageView
+                                android:id="@+id/imageView"
+                                style="@style/icon_record_column_style"
+                                android:src="@mipmap/message_system" />
+
+                            <ImageView
+                                android:id="@+id/iv_record_data_analysis_lock"
+                                style="@style/iv_record_column_lock_style"
+                                android:layout_alignLeft="@+id/imageView"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignStart="@+id/imageView" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/rl_record_data_analysis_icon"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_record_data_analysis"
+                                style="@style/tv_record_column_title_style"
+                                android:text="@string/record_data_analysis" />
+
+                            <TextView
+                                android:id="@+id/tv_record_data_analysis_lock"
+                                style="@style/tv_record_column_content_style"
+                                android:layout_marginTop="5dp"
+                                android:text="@string/vip_lock_hint"
+                                android:textColor="@color/head_title_color" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_data_find_bg_light"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvMatchlTitle"
+                    style="@style/text_record_title"
+                    android:text="@string/insuranse_data" />
+
+                <TextView
+                    style="@style/tv_bg_insurance_title"
+                    android:text="@string/my_join_game" />
+
+                <LinearLayout
+                    style="@style/card_record_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/tv_insurance_name"
+                                android:text="@string/record_details_user_win_chips" />
+
+                            <TextView
+                                android:id="@+id/tv_insurance_money"
+                                style="@style/tv_insurance_value"
+                                android:text="0" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/tv_insurance_name"
+                                android:text="@string/insurance_open_times" />
+
+                            <TextView
+                                android:id="@+id/tv_insurance_times"
+                                style="@style/tv_insurance_value" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/tv_insurance_name"
+                                android:text="@string/bug_money" />
+
+                            <TextView
+                                android:id="@+id/tv_total_buy"
+                                style="@style/tv_insurance_value" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/tv_insurance_name"
+                                android:text="@string/out_money" />
+
+                            <TextView
+                                android:id="@+id/tv_total_pay"
+                                style="@style/tv_insurance_value" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/tv_insurance_name"
+                                android:text="@string/bug_money_times" />
+
+                            <TextView
+                                android:id="@+id/tv_total_buy_times"
+                                style="@style/tv_insurance_value" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/tv_insurance_name"
+                                android:text="@string/lucky_card_times" />
+
+                            <TextView
+                                android:id="@+id/tv_total_lucky"
+                                style="@style/tv_insurance_value" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/tv_bg_insurance_title"
+                    android:text="@string/my_create_game" />
+
+                <LinearLayout
+                    style="@style/card_record_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/tv_insurance_name"
+                                android:text="@string/record_details_user_win_chips" />
+
+                            <TextView
+                                android:id="@+id/tv_insurance_my_money"
+                                style="@style/tv_insurance_value" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/tv_insurance_name"
+                                android:text="@string/game_my_create" />
+
+                            <TextView
+                                android:id="@+id/tv_insurance_create_times"
+                                style="@style/tv_insurance_value" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/tv_insurance_name"
+                                android:text="@string/total_buy" />
+
+                            <TextView
+                                android:id="@+id/tv_total_my_buy"
+                                style="@style/tv_insurance_value" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/tv_insurance_name"
+                                android:text="@string/total_pay" />
+
+                            <TextView
+                                android:id="@+id/tv_total_my_pay"
+                                style="@style/tv_insurance_value" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/list_item_bg_ripple">
+    <item>
+        <selector>
+            <item android:state_pressed="true" >
+                <shape>
+                    <corners android:radius="3dp"/>
+                    <solid android:color="@color/game_quick_create_btn_press"/>
+                </shape>
+            </item>
+
+            <item android:state_pressed="false">
+                <shape>
+                    <corners android:radius="3dp"/>
+                    <solid android:color="@color/game_quick_create_btn_normal"/>
+                </shape>
+            </item>
+        </selector>
+    </item>
+</ripple>

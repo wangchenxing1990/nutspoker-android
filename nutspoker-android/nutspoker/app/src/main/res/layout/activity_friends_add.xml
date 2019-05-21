@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_friends_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <include
+            android:id="@+id/layout_head"
+            layout="@layout/view_common_head" />
+
+        <RelativeLayout
+            android:id="@+id/rl_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="20dp">
+
+            <com.htgames.nutspoker.view.widget.ClearableEditTextWithIcon
+                android:id="@+id/edit_search_friend"
+                style="@style/edt_common_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:focusable="false"
+                android:hint="@string/add_newfriends_search_hint"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/icon_search"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View style="@style/common_column_divider_style" />
+
+        <RelativeLayout
+            android:id="@+id/rl_addfriends_by_phone_constact"
+            style="@style/rl_common_column_style">
+
+            <ImageView
+                android:id="@+id/iv_addfriends_by_phone_constact"
+                style="@style/icon_common_column_style"
+                android:src="@mipmap/icon_addfriend_phone" />
+
+            <TextView
+                style="@style/tv_common_column_title_style"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/iv_addfriends_by_phone_constact"
+                android:text="@string/add_newfriends_by_phone_contact" />
+
+            <ImageView style="@style/iv_common_column_arrow_style" />
+        </RelativeLayout>
+
+        <View style="@style/common_column_divider_style" />
+
+        <RelativeLayout
+            android:id="@+id/rl_addfriends_by_social_constact"
+            style="@style/rl_common_column_style">
+
+            <ImageView
+                android:id="@+id/iv_addfriends_by_social_constact"
+                style="@style/icon_common_column_style"
+                android:src="@mipmap/icon_addfriend_friend" />
+
+            <TextView
+                style="@style/tv_common_column_title_style"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/iv_addfriends_by_social_constact"
+                android:text="@string/add_newfriends_by_social_contact" />
+
+            <ImageView style="@style/iv_common_column_arrow_style" />
+        </RelativeLayout>
+
+        <View style="@style/common_column_divider_style" />
+
+        <RelativeLayout
+            android:id="@+id/rl_addfriends_by_qrcode"
+            style="@style/rl_common_column_style"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_addfriends_by_qrcode"
+                style="@style/icon_common_column_style"
+                android:src="@mipmap/message_system" />
+
+            <TextView
+                style="@style/tv_common_column_title_style"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/iv_addfriends_by_qrcode"
+                android:text="@string/add_newfriends_by_qrcode" />
+
+            <ImageView style="@style/iv_common_column_arrow_style" />
+        </RelativeLayout>
+
+        <View style="@style/common_column_divider_style" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_shadow"
+        style="@style/view_shadow_style" />
+</RelativeLayout>

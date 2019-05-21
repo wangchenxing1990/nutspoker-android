@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+            android:id="@+id/iv_circle_userhead"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/default_male_head" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:paddingRight="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_circle_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text=""
+                    android:textColor="@color/circle_name_text_color"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/ck_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:button="@drawable/btn_match_checkin"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="4dp"
+                    android:text="@string/like"
+                    android:textColor="@color/circle_content_text_color"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_circle_content"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="发表分享内容的文字，字数不做限制，xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"-->
+            <!--android:textColor="@color/circle_content_text_color"-->
+            <!--android:textSize="12sp" />-->
+
+            <com.htgames.chesscircle.circle.view.ExpandableTextView
+                android:id="@+id/expand_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                expandableTextView:animDuration="200"
+                expandableTextView:maxCollapsedLines="4">
+
+                <TextView
+                    android:id="@id/expandable_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/circle_content_text_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/expand_collapse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/circle_content_all"
+                    android:textColor="@color/circle_name_text_color"
+                    android:textSize="14sp" />
+            </com.htgames.chesscircle.circle.view.ExpandableTextView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <ViewStub
+                    android:id="@+id/viewstub_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.htgames.chesscircle.circle.view.CirclePaijuView
+                    android:id="@+id/mCirclePaijuView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="4dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="4dp">
+
+                <TextView
+                    android:id="@+id/tv_circle_createtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text=""
+                    android:textColor="@color/circle_content_text_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/btn_circle_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/tv_circle_createtime"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/delete"
+                    android:textColor="@color/circle_name_text_color"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/btn_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawableLeft="@mipmap/message_system"
+                    android:drawablePadding="2dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/comment"
+                    android:textColor="@color/circle_content_text_color"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_comment_like_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_club_popup_more_new"
+                android:gravity="center_vertical"
+                android:minHeight="10dip"
+                android:orientation="vertical"
+                android:paddingBottom="8dip"
+                android:paddingLeft="12dip"
+                android:paddingRight="12dip"
+                android:paddingTop="12dip">
+
+                <com.htgames.chesscircle.circle.view.LikeListView
+                    android:id="@+id/mLikeListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:lineSpacingMultiplier="1.1"
+                    android:textColor="@color/circle_name_text_color"
+                    android:textSize="14sp" />
+
+                <View
+                    android:id="@+id/view_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="5dip"
+                    android:background="@color/circle_line_color" />
+
+                <com.htgames.chesscircle.view.widget.CustomListView
+                    android:id="@+id/mCommentListView"
+                    style="@style/listview_common_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0dip"
+                    android:fastScrollEnabled="false"
+                    android:footerDividersEnabled="false"
+                    android:headerDividersEnabled="false" />
+
+                <!--android:listSelector="@drawable/circle_comment_selector_bg"-->
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/circle_divider_color" />
+</LinearLayout>

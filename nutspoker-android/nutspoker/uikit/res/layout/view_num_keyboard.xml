@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/num_keyboard_column_divider_size"
+        android:background="@color/num_keyboard_divider_color" />
+<!--***********************************************************第1行*************************************************************-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/num_keyboard_column_height">
+
+        <TextView
+            android:id="@+id/hall_join_key_1"
+            style="@style/num_keyboard_num_text"
+            android:text="1" />
+
+        <View
+            android:layout_width="@dimen/num_keyboard_column_divider_size"
+            android:layout_height="match_parent"
+            android:background="@color/num_keyboard_divider_color" />
+
+        <TextView
+            android:id="@+id/hall_join_key_2"
+            style="@style/num_keyboard_num_text"
+            android:text="2" />
+
+        <View
+            android:layout_width="@dimen/num_keyboard_column_divider_size"
+            android:layout_height="match_parent"
+            android:background="@color/num_keyboard_divider_color" />
+
+        <TextView
+            android:id="@+id/hall_join_key_3"
+            style="@style/num_keyboard_num_text"
+            android:text="3" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/num_keyboard_column_divider_size"
+        android:background="@color/num_keyboard_divider_color" />
+    <!--***********************************************************第2行*************************************************************-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/num_keyboard_column_height">
+
+        <TextView
+            android:id="@+id/hall_join_key_4"
+            style="@style/num_keyboard_num_text"
+            android:text="4" />
+
+        <View
+            android:layout_width="@dimen/num_keyboard_column_divider_size"
+            android:layout_height="match_parent"
+            android:background="@color/num_keyboard_divider_color" />
+
+        <TextView
+            android:id="@+id/hall_join_key_5"
+            style="@style/num_keyboard_num_text"
+            android:text="5" />
+
+        <View
+            android:layout_width="@dimen/num_keyboard_column_divider_size"
+            android:layout_height="match_parent"
+            android:background="@color/num_keyboard_divider_color" />
+
+        <TextView
+            android:id="@+id/hall_join_key_6"
+            style="@style/num_keyboard_num_text"
+            android:text="6" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/num_keyboard_column_divider_size"
+        android:background="@color/num_keyboard_divider_color" />
+    <!--***********************************************************第3行*************************************************************-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/num_keyboard_column_height">
+
+        <TextView
+            android:id="@+id/hall_join_key_7"
+            style="@style/num_keyboard_num_text"
+            android:text="7" />
+
+        <View
+            android:layout_width="@dimen/num_keyboard_column_divider_size"
+            android:layout_height="match_parent"
+            android:background="@color/num_keyboard_divider_color" />
+
+        <TextView
+            android:id="@+id/hall_join_key_8"
+            style="@style/num_keyboard_num_text"
+            android:text="8" />
+
+        <View
+            android:layout_width="@dimen/num_keyboard_column_divider_size"
+            android:layout_height="match_parent"
+            android:background="@color/num_keyboard_divider_color" />
+
+        <TextView
+            android:id="@+id/hall_join_key_9"
+            style="@style/num_keyboard_num_text"
+            android:text="9" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/num_keyboard_column_divider_size"
+        android:background="@color/num_keyboard_divider_color" />
+    <!--***********************************************************第4行*************************************************************-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/num_keyboard_column_height">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white" />
+
+
+        <View
+            android:layout_width="@dimen/num_keyboard_column_divider_size"
+            android:layout_height="match_parent"
+            android:background="@color/num_keyboard_divider_color" />
+
+        <TextView
+            android:id="@+id/hall_join_key_0"
+            style="@style/num_keyboard_num_text"
+            android:text="0" />
+
+        <View
+            android:layout_width="@dimen/num_keyboard_column_divider_size"
+            android:layout_height="match_parent"
+            android:background="@color/num_keyboard_divider_color" />
+
+
+        <LinearLayout
+            android:id="@+id/hall_join_key_del"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/common_column_bg"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="22dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/num_keyboard_text_color"
+                android:src="@mipmap/icon_num_keyboard_delete"
+                android:textSize="@dimen/num_keyboard_column_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htgames.nutspoker.view.ClubListView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:foreground="@drawable/item_foreground_radius">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_club_game_bottom"/>
+    <View
+        android:id="@+id/top_divider"
+        android:layout_width="match_parent"
+        android:layout_marginTop="33dp"
+        android:background="#000000"
+        android:alpha="0.2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="0.5dp"/>
+
+    <!-- *************************************顶部33dp******************************************* -->
+    <TextView
+        android:id="@+id/tv_club_info_name"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:paddingLeft="15dp"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/icon_chatroom_mute"
+        tools:text="测试1"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textSize="16dp" />
+    <TextView
+        android:id="@+id/tv_club_info_member_count"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:gravity="center"
+        android:drawablePadding="3dp"
+        android:drawableLeft="@mipmap/icon_club_member"
+        tools:text="12/1200"
+        android:layout_gravity="right"
+        android:paddingRight="15dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="12dp" />
+
+    <!-- *************************************头像和牌局数目******************************************* -->
+    <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+        android:id="@+id/iv_club_head"
+        android:layout_width="@dimen/club_list_avatar_mask_width"
+        android:layout_height="@dimen/club_list_avatar_size_height"
+        android:layout_gravity="left|bottom"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:src="@mipmap/default_club_head" />
+    <ImageView
+        android:layout_width="@dimen/club_list_avatar_mask_width"
+        android:layout_height="@dimen/club_list_avatar_mask_height"
+        android:id="@+id/iv_club_head_mask"
+        android:layout_gravity="left|bottom"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:src="@mipmap/icon_club_mark" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="暂无牌局"
+        android:drawablePadding="5dp"
+        android:paddingLeft="80dp"
+        android:layout_gravity="center"
+        android:drawableLeft="@mipmap/tags_caln_list_game"
+        android:id="@+id/club_list_has_paiju_tv"
+        android:textColor="@color/white"
+        android:textSize="16dp"/>
+
+    <!-- *************************************bottom信息30dp******************************************* -->
+    <ImageView
+        android:layout_width="12dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/club_list_bottom_arrow"
+        android:src="@mipmap/btn_back_normal"
+        android:rotation="180"
+        android:layout_gravity="right|bottom"/>
+    <ImageView
+        android:layout_width="9dp"
+        android:layout_height="9dp"
+        android:layout_marginBottom="10.5dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/club_list_bottom_msg_num_iv"
+        android:src="@mipmap/icon_new_notify"
+        android:layout_gravity="right|bottom"/>
+    <TextView
+        android:layout_width="@dimen/unread_club_info_bg_height"
+        android:layout_height="@dimen/unread_club_info_bg_height"
+        android:id="@+id/club_list_bottom_msg_num_tv"
+        android:includeFontPadding="false"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginRight="31dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/unread_badge_bg"
+        android:textSize="10dp"
+        android:text="..."
+        android:layout_gravity="right|bottom"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:layout_gravity="bottom"
+        android:id="@+id/club_list_bottom_newest_msg_tv"
+        android:textSize="11dp"
+        tools:text="时间不早了，我想我该走了时间不早了，我想我该走了时间不早了，我想我该走了时间不早了，我想我该走了"
+        android:paddingRight="54dp"
+        android:paddingLeft="95dp"
+        android:lines="1"
+        android:ellipsize="end"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"/>
+
+</com.htgames.nutspoker.view.ClubListView>

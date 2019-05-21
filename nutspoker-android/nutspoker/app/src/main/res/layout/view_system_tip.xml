@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/login_solid_color"
+    android:foreground="@drawable/fg_horde"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <ImageView
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_gravity="left|center_vertical"
+        android:src="@mipmap/icon_waring" />
+
+    <TextView
+        android:id="@+id/tv_system_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="@string/system_tip_no_internet"
+        android:textColor="@color/shop_text_no_select_color"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_gravity="right|center_vertical"
+        android:src="@mipmap/icon_common_arrow_normal" />
+
+</FrameLayout>

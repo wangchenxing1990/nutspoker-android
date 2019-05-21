@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="29dp"
+    android:id="@+id/tv_channel_section_container"
+    android:background="@color/register_page_bg_color"
+    android:alpha="0.9"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tv_channel_section"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.7"
+        android:drawablePadding="5dp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/userinfo_signature_text_color"
+        android:textSize="14dp"
+              android:gravity="center_vertical|left"
+        tools:text="房主"/>
+
+    <TextView android:id="@+id/tv_channel_section_middle"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.9"
+        android:textColor="@color/userinfo_signature_text_color"
+        android:textSize="14dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:gravity="center"
+        tools:text="买入"/>
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tv_channel_section_right"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.9"
+        android:paddingRight="10dp"
+        android:textColor="@color/userinfo_signature_text_color"
+        android:textSize="14dp"
+        android:gravity="center_vertical|right"
+        tools:text="清除"/>
+</LinearLayout>
+
+

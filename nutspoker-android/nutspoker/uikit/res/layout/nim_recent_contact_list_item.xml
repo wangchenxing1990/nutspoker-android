@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="1dip"
+    android:background="@drawable/common_column_bg"
+    android:minHeight="60dip">
+
+    <FrameLayout
+        android:id="@+id/portrait_panel"
+        android:layout_width="76dip"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true">
+
+        <RelativeLayout
+            android:id="@+id/rl_club_head"
+            android:layout_width="@dimen/club_avatar_width"
+            android:layout_height="@dimen/avatar_size_default"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <View
+                android:id="@+id/rl_club_head_bg"
+                android:layout_width="@dimen/avatar_size_default"
+                android:layout_height="@dimen/avatar_size_default"
+                android:layout_centerInParent="true"
+                android:background="@drawable/default_club_head_bg">
+            </View>
+            <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+                android:id="@+id/iv_club_head"
+                android:layout_width="@dimen/club_avatar_size_default"
+                android:layout_height="@dimen/club_avatar_size_default"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/default_club_head" />
+
+            <ImageView
+                android:layout_width="@dimen/club_avatar_width"
+                android:layout_height="15dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="4dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_club_mark" />
+        </RelativeLayout>
+
+        <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+            android:id="@+id/img_head"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center" />
+
+        <com.netease.nim.uikit.chesscircle.view.GroupHeadView
+            android:id="@+id/mGroupHeadView"
+            android:layout_width="@dimen/avatar_size_default"
+            android:layout_height="@dimen/avatar_size_default"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/unread_number_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/unread_badge_bg_height"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/unread_badge_bg"
+            android:gravity="center"
+            android:maxLength="3"
+            android:minWidth="@dimen/unread_badge_bg_height"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            android:visibility="invisible"
+            tools:text="11" />
+
+        <ImageView
+            android:id="@+id/iv_recent_new_notify"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/icon_new_notify"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/new_message_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/nim_main_tab_new_message_notify"
+            android:contentDescription="@string/empty"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_icon_game_quick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/icon_quick"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:orientation="vertical"
+        android:paddingBottom="13dip"
+        android:paddingRight="13dip"
+        android:paddingTop="10dp">
+        <LinearLayout
+            android:id="@+id/ll_recent_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:textColor="@color/text_select_color"
+                android:textSize="16sp"
+                tools:text="俱乐部消息" />
+            <TextView
+                android:id="@+id/tv_date_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:textColor="@color/shop_text_no_select_color"
+                android:textSize="@dimen/text_small_size_ten_sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_recent_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/iv_game_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                tools:src="@drawable/nim_icon_reddot"
+                tools:visibility="visible"
+                android:visibility="gone" />
+            <TextView
+                android:id="@+id/tv_game_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle_game_count_bg"
+                android:drawableLeft="@drawable/icon_game_count"
+                android:drawablePadding="2dp"
+                android:layout_toLeftOf="@id/iv_game_status"
+                android:gravity="center"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:layout_centerVertical="true"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:visibility="gone"
+                tools:text="dddddd"
+                tools:visibility="visible" />
+            <ImageView
+                android:id="@+id/iv_mute"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_chatroom_mute"
+                android:layout_toLeftOf="@id/tv_game_count"
+                tools:visibility="visible"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/img_msg_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                tools:src="@drawable/nim_icon_reddot"
+                android:layout_marginRight="6dp"
+                android:contentDescription="@string/empty"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:layout_toRightOf="@+id/img_msg_status"
+                android:autoLink="none"
+                android:ellipsize="end"
+                android:lines="1"
+                android:scrollHorizontally="true"
+                android:textColor="@color/shop_text_no_select_color"
+                android:textSize="13sp"
+                tools:text="dddddd" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

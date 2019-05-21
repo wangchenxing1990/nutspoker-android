@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+              xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_country_abc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:paddingBottom="3dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="3dp"
+        android:text=""
+        tools:text="segjerg"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        tools:visibility="visible"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/common_column_bg"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tv_country_name"
+            style="@style/tv_common_column_title_style" />
+
+        <TextView
+            android:id="@+id/tv_country_code"
+            style="@style/tv_common_column_title_style"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+</LinearLayout>
+

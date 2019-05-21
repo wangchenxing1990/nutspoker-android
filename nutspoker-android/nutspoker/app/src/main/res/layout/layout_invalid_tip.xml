@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_invalid_tip"
+    android:layout_width="match_parent"
+    android:layout_height="40dip"
+    android:background="@color/invalid_tip_bg"
+    android:layout_marginBottom="1dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:visibility="visible"
+    android:visibility="gone">
+
+    <TextView
+        android:id="@+id/tv_invalid_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/team_invalid_tip"
+        android:textColor="@color/invalid_tip_text_color"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/btn_invalid_action"
+        style="@style/btn_item_action_style"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_friend_agree"
+        android:text="@string/friend_action_agree" />
+</RelativeLayout>

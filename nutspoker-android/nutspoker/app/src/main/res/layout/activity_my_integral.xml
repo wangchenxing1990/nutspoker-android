@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_integral"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.htgames.nutspoker.ui.activity.Club.Integral.MyIntegralActivity">
+
+    <include layout="@layout/view_common_head" />
+
+    <TextView
+        style="@style/tv_ligth_white"
+        android:layout_marginTop="40dp"
+        android:text="当前积分"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_integral"
+        style="@style/tv_ligth_white"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:text="9600"
+        android:textSize="48sp"
+        android:textColor="@color/light_blue"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_integral_detail"
+        style="@style/rl_common_column_style"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            style="@style/tv_common_column_title_style"
+            android:text="@string/integral_detail" />
+
+        <ImageView
+            style="@style/iv_userinfo_column_arrow_style" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_integral_contribution"
+        style="@style/rl_common_column_style"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            style="@style/tv_common_column_title_style"
+            android:text="@string/integral_contribution" />
+
+        <ImageView
+            style="@style/iv_userinfo_column_arrow_style" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_integral_gameinfo"
+        style="@style/rl_common_column_style"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            style="@style/tv_common_column_title_style"
+            android:text="@string/integral_gameinfo" />
+
+        <ImageView
+            style="@style/iv_userinfo_column_arrow_style" />
+
+    </RelativeLayout>
+
+</LinearLayout>

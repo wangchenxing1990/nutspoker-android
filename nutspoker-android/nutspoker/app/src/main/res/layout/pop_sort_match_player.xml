@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/match_room_top_bg"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/match_sort_one_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/match_sort_column_height"
+        android:background="@color/match_list_column_search_bg_color"
+        android:foreground="@drawable/fg_horde"
+        android:layout_gravity="top|center_horizontal">
+        <View
+            android:id="@+id/ll_pop_club_divider1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center|top"
+            android:background="@color/probar_voice_timer_normal_color" />
+        <TextView
+            android:id="@+id/tv_match_sort_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:lines="1"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:drawablePadding="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="按名次排序"
+            android:textColor="@android:color/white" />
+        <ImageView
+            android:id="@+id/iv_sort_one_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/list_check"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center_vertical|right"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/match_sort_two_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/match_sort_column_height"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:background="@color/match_list_column_search_bg_color"
+        android:foreground="@drawable/fg_horde"
+        android:layout_gravity="center_horizontal">
+        <View
+            android:id="@+id/ll_pop_club_divider2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center|top"
+            android:background="@color/probar_voice_timer_normal_color" />
+        <TextView
+            android:id="@+id/tv_match_sort_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="按猎头数排序"
+            android:textColor="@android:color/white" />
+        <ImageView
+            android:id="@+id/iv_sort_two_selected"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/list_check"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center_vertical|right"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/match_sort_three_container"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_height="@dimen/match_sort_column_height"
+        android:background="@color/match_list_column_search_bg_color"
+        android:foreground="@drawable/fg_horde"
+        android:layout_gravity="center_horizontal">
+        <View
+            android:id="@+id/ll_pop_club_divider3"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center|top"
+            android:background="@color/probar_voice_timer_normal_color" />
+        <TextView
+            android:id="@+id/tv_match_sort_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="按身价排序"
+            android:textColor="@android:color/white" />
+        <ImageView
+            android:id="@+id/iv_sort_three_selected"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/list_check"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center_vertical|right"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/match_sort_four_container"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_height="@dimen/match_sort_column_height"
+        android:background="@color/match_list_column_search_bg_color"
+        android:foreground="@drawable/fg_horde"
+        android:layout_gravity="center_horizontal">
+        <View
+            android:id="@+id/ll_pop_club_divider4"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center|top"
+            android:background="@color/probar_voice_timer_normal_color" />
+        <TextView
+            android:id="@+id/tv_match_sort_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="按赏金排序"
+            android:textColor="@android:color/white" />
+        <ImageView
+            android:id="@+id/iv_sort_four_selected"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/list_check"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center_vertical|right"/>
+    </FrameLayout>
+
+</LinearLayout>

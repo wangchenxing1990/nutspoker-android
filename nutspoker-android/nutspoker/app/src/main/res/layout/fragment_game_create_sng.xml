@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/edt_game_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/edt_common_hint_color"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@null"
+        android:textSize="16dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edt_create_game_bg"
+        android:gravity="center"
+        android:hint="@string/game_create_name_hint"
+        android:imeOptions="actionDone"
+        android:maxLength="20"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/shop_text_no_select_color" />
+    <include layout="@layout/layout_game_create_match_config" />
+
+    <!-- ************************************************************************************************ advanced config ************************************************************************************************ -->
+    <LinearLayout
+        android:id="@+id/advanced_setting_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/game_create_start_module_margin"
+        android:background="@drawable/edt_create_game_bg"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/register_page_bg_color" />
+        <TextView
+            android:id="@+id/tv_game_normal_table_count"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/create_game_single_inner_column_height"
+            android:gravity="center_vertical"
+            android:text="参赛人数"
+            android:textColor="@color/shop_text_no_select_color" />
+        <com.htgames.nutspoker.view.NodeSeekBar
+            android:id="@+id/mDeskNumSeekBarNew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="-5dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/register_page_bg_color" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true">
+            <TextView
+                android:id="@+id/ck_game_control_into_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/create_game_single_inner_column_height"
+                android:gravity="center_vertical"
+                android:text="@string/game_create_normal_control_into"
+                android:textColor="@color/shop_text_no_select_color" />
+            <com.htgames.nutspoker.view.switchbutton.SwitchButton
+                android:id="@+id/ck_game_control_into"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:paddingRight="10dp"
+                app:kswAnimationDuration="300"
+                app:kswBackDrawable="@drawable/ios_back_drawable"
+                app:kswBackMeasureRatio="1.8"
+                app:kswThumbDrawable="@mipmap/slide_toggle" />
+        </FrameLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/register_page_bg_color" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true">
+            <TextView
+                android:id="@+id/sng_game_ip_switch_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/create_game_single_inner_column_height"
+                android:gravity="center_vertical"
+                android:text="IP限制"
+                android:textColor="@color/shop_text_no_select_color" />
+            <com.htgames.nutspoker.view.switchbutton.SwitchButton
+                android:id="@+id/sng_game_ip_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:paddingRight="10dp"
+                app:kswAnimationDuration="300"
+                app:kswBackDrawable="@drawable/ios_back_drawable"
+                app:kswBackMeasureRatio="1.8"
+                app:kswThumbDrawable="@mipmap/slide_toggle" />
+        </FrameLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/register_page_bg_color" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true">
+            <TextView
+                android:id="@+id/sng_game_gps_switch_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/create_game_single_inner_column_height"
+                android:gravity="center_vertical"
+                android:text="GPS限制"
+                android:textColor="@color/shop_text_no_select_color" />
+            <com.htgames.nutspoker.view.switchbutton.SwitchButton
+                android:id="@+id/sng_game_gps_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:paddingRight="10dp"
+                app:kswAnimationDuration="300"
+                app:kswBackDrawable="@drawable/ios_back_drawable"
+                app:kswBackMeasureRatio="1.8"
+                app:kswThumbDrawable="@mipmap/slide_toggle" />
+        </FrameLayout>
+    </LinearLayout>
+    <!-- ************************************************************************************************ advanced config ************************************************************************************************ -->
+
+    <ViewStub
+        android:id="@+id/view_stub_select_horde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/game_create_start_module_margin"
+        android:layout="@layout/layout_game_create_horde_config" />
+
+    <ViewStub
+        android:id="@+id/view_stub"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout="@layout/layout_sure_horde" />
+
+    <Button
+        android:id="@+id/btn_game_start"
+        android:background="@drawable/bg_login_btn"
+        android:layout_marginLeft="@dimen/game_create_start_btn_margin_left"
+        android:layout_marginRight="@dimen/game_create_start_btn_margin_left"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_common_height"
+        android:textColor="@color/btn_common_text_color"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="bottom"
+        android:text="@string/game_create_start_match" />
+</LinearLayout>

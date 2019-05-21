@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/match_room_common_column_height"
+    android:background="@drawable/common_column_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="4dp"
+    android:paddingTop="4dp">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/match_room_common_column_height"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_gametable_name"
+            style="@style/tv_match_list_common_style"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_centerInParent="true"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@mipmap/icon_room_tablelist"
+            tools:text="game_name" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_gametable_member_count"
+        tools:text="2"
+        style="@style/tv_match_list_common_style"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tv_gametable_blinds"
+        tools:text="200/400"
+        style="@style/tv_match_list_common_style"
+        android:layout_weight="1" />
+
+</LinearLayout>

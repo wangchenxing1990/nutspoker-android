@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edt_game_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edt_create_game_bg"
+            android:cursorVisible="true"
+            android:gravity="center"
+            android:hint="@string/game_create_name_hint"
+            android:imeOptions="actionDone"
+            android:maxLength="20"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/shop_text_no_select_color"
+            android:textColorHint="@color/edt_common_hint_color"
+            android:textCursorDrawable="@null"
+            android:textSize="16dp"/>
+
+        <LinearLayout
+            android:id="@+id/pineapple_mode_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/btn_pineapple_mode_normal"
+                style="@style/pineapple_mode_text"
+                android:layout_marginRight="12dp"
+                android:text="@string/pineapple_mode_normal"/>
+
+            <TextView
+                android:id="@+id/btn_pineapple_mode_blood"
+                style="@style/pineapple_mode_text"
+                android:layout_marginRight="12dp"
+                android:text="@string/pineapple_mode_blood"/>
+
+            <TextView
+                android:id="@+id/btn_pineapple_mode_blood_in_out"
+                style="@style/pineapple_mode_text"
+                android:layout_marginRight="12dp"
+                android:text="@string/pineapple_mode_blood_in_out"/>
+
+            <TextView
+                android:id="@+id/btn_pineapple_mode_yoriko"
+                style="@style/pineapple_mode_text"
+                android:text="@string/pineapple_mode_yoriko"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ll_game_create_common_column_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            tools:visibility="gone"
+            android:background="@drawable/edt_create_game_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/tv_game_create_common_column_style"
+                    android:layout_height="wrap_content"
+                    android:text="底注"/>
+
+                <TextView
+                    android:id="@+id/tv_pineapple_ante_num"
+                    style="@style/tv_game_create_common_column_style"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:paddingLeft="20dp"
+                    android:text="2"
+                    android:textColor="@color/login_solid_color"/>
+            </LinearLayout>
+
+            <com.htgames.nutspoker.view.NodeSeekBar
+                android:id="@+id/seek_bar_pineapple_ante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="10dp"
+                app:shouldDrawDot="false"
+                app:showTip="false"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/register_page_bg_color"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <TextView
+                    style="@style/tv_game_create_common_column_style"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_create_chip"/>
+
+                <TextView
+                    android:id="@+id/tv_pineapple_chip_num"
+                    style="@style/tv_game_create_common_content_style"
+                    android:drawablePadding="5dp"
+                    android:paddingLeft="20dp"
+                    android:text="200"
+                    android:textColor="@color/login_solid_color"/>
+            </LinearLayout>
+
+            <com.htgames.nutspoker.view.NodeSeekBar
+                android:id="@+id/seek_bar_pineapple_chips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="10dp"
+                app:shouldDrawDot="false"
+                app:showTip="false"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/register_page_bg_color"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <TextView
+                    style="@style/tv_game_create_common_column_style"
+                    android:layout_height="wrap_content"
+                    android:text="最低入局分"/>
+
+                <TextView
+                    android:id="@+id/tv_pineapple_play_limit_chip"
+                    style="@style/tv_game_create_common_content_style"
+                    android:drawablePadding="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="5dp"
+                    android:text="200"
+                    android:textColor="@color/login_solid_color"/>
+
+                <ImageView
+                    android:id="@+id/iv_explain_pineapple_play_limit_chip"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@mipmap/icon_waring"/>
+            </LinearLayout>
+
+            <com.htgames.nutspoker.view.NodeSeekBar
+                android:id="@+id/seek_bar_pineapple_play_limit_chip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:shouldDrawDot="false"
+                app:showTip="false"/>
+        </LinearLayout>
+
+        <!-- ************************************************************************************************ advanced config ************************************************************************************************ -->
+        <LinearLayout
+            android:id="@+id/advanced_setting_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/game_create_start_module_margin"
+            android:background="@drawable/edt_create_game_bg"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <FrameLayout
+                android:id="@+id/game_create_advanced_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/advanced_switch_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/create_game_single_outer_column_height"
+                    android:gravity="center_vertical"
+                    android:text="@string/game_create_config_advanced"
+                    android:textColor="@color/shop_text_no_select_color"/>
+
+                <ImageView
+                    android:id="@+id/game_create_advanced_switch_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:paddingRight="10dp"
+                    android:src="@mipmap/arrow_advance_down"/>
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_advanced_config_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/register_page_bg_color"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/create_game_single_inner_column_height"
+                    android:gravity="center_vertical"
+                    android:text="游戏人数"
+                    android:textColor="@color/shop_text_no_select_color"/>
+
+                <com.htgames.nutspoker.view.NodeSeekBar
+                    android:id="@+id/mDeskNumSeekBarNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="-15dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/register_page_bg_color"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/create_game_single_inner_column_height"
+                    android:gravity="center_vertical"
+                    android:text="发牌顺序"
+                    android:textColor="@color/shop_text_no_select_color"/>
+
+                <com.htgames.nutspoker.view.NodeSeekBar
+                    android:id="@+id/pineapple_seek_bar_deal_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="-15dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/register_page_bg_color"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/create_game_single_inner_column_height"
+                    android:gravity="center_vertical"
+                    android:text="摆牌时间"
+                    android:textColor="@color/shop_text_no_select_color"/>
+
+                <com.htgames.nutspoker.view.NodeSeekBar
+                    android:id="@+id/pineapple_set_poker_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="-15dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/register_page_bg_color"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true">
+
+                    <TextView
+                        android:id="@+id/ck_game_control_into_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/create_game_single_inner_column_height"
+                        android:gravity="center_vertical"
+                        android:text="@string/game_create_normal_control_into"
+                        android:textColor="@color/shop_text_no_select_color"/>
+
+                    <com.htgames.nutspoker.view.switchbutton.SwitchButton
+                        android:id="@+id/switch_game_control_into"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:paddingRight="10dp"
+                        app:kswAnimationDuration="300"
+                        app:kswBackDrawable="@drawable/ios_back_drawable"
+                        app:kswBackMeasureRatio="1.8"
+                        app:kswThumbDrawable="@mipmap/slide_toggle"/>
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/register_page_bg_color"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true">
+
+                    <TextView
+                        android:id="@+id/normal_game_ip_des"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/create_game_single_inner_column_height"
+                        android:gravity="center_vertical"
+                        android:text="IP限制"
+                        android:textColor="@color/shop_text_no_select_color"/>
+
+                    <com.htgames.nutspoker.view.switchbutton.SwitchButton
+                        android:id="@+id/normal_game_ip_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:paddingRight="10dp"
+                        app:kswAnimationDuration="300"
+                        app:kswBackDrawable="@drawable/ios_back_drawable"
+                        app:kswBackMeasureRatio="1.8"
+                        app:kswThumbDrawable="@mipmap/slide_toggle"/>
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/register_page_bg_color"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true">
+
+                    <TextView
+                        android:id="@+id/normal_game_gps_des"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/create_game_single_inner_column_height"
+                        android:gravity="center_vertical"
+                        android:text="GPS限制"
+                        android:textColor="@color/shop_text_no_select_color"/>
+
+                    <com.htgames.nutspoker.view.switchbutton.SwitchButton
+                        android:id="@+id/normal_game_gps_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:paddingRight="10dp"
+                        app:kswAnimationDuration="300"
+                        app:kswBackDrawable="@drawable/ios_back_drawable"
+                        app:kswBackMeasureRatio="1.8"
+                        app:kswThumbDrawable="@mipmap/slide_toggle"/>
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/register_page_bg_color"
+                    android:visibility="gone"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/normal_game_straddle_des"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/create_game_single_inner_column_height"
+                        android:gravity="center_vertical"
+                        android:text="强制straddle"
+                        android:textColor="@color/shop_text_no_select_color"/>
+
+                    <com.htgames.nutspoker.view.switchbutton.SwitchButton
+                        android:id="@+id/normal_game_straddle_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:paddingRight="10dp"
+                        app:kswAnimationDuration="300"
+                        app:kswBackDrawable="@drawable/ios_back_drawable"
+                        app:kswBackMeasureRatio="1.8"
+                        app:kswThumbDrawable="@mipmap/slide_toggle"/>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- ************************************************************************************************ advanced config ************************************************************************************************ -->
+        <ViewStub
+            android:id="@+id/view_stub_select_horde"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/game_create_start_module_margin"
+            android:layout="@layout/layout_game_create_horde_config" />
+
+        <com.htgames.nutspoker.view.NodeSeekBar
+            android:id="@+id/seek_bar_pineapple_duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp" />
+
+        <ViewStub
+            android:id="@+id/view_stub"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout="@layout/layout_sure_horde" />
+        <Button
+            android:id="@+id/btn_game_start"
+            android:background="@drawable/bg_login_btn"
+            android:layout_marginLeft="@dimen/game_create_start_btn_margin_left"
+            android:layout_marginRight="@dimen/game_create_start_btn_margin_left"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_common_height"
+            android:textColor="@color/btn_common_text_color"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="10dp"
+            android:text="@string/game_desk_start" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/nim_message_input_edittext_box_pressed" android:state_pressed="true" />
+
+    <item android:state_pressed="false">
+        <shape>
+            <!-- 设置几何图形四个角的弧度 -->
+            <corners android:radius="@dimen/nim_message_input_edittext_radius" />
+            <!-- 设置填充颜色 -->
+            <solid android:color="@color/nim_message_input_edittext_box_normal_color" />
+            <!-- 设置几何形状绘制边框 红色边框 -->
+            <stroke android:width="0.5dp" android:color="@color/nim_message_input_edittext_box_stroke_color" />
+        </shape>
+    </item>
+</selector>

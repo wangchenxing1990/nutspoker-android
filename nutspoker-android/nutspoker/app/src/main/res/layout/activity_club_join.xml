@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_common_head" />
+    <View android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:layout_marginTop="@dimen/action_bar_height"
+        android:background="#C9CCCF"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/action_bar_height"
+        android:orientation="vertical">
+        <com.htgames.nutspoker.view.widget.ClearableEditTextWithIcon
+            android:id="@+id/edit_search_club"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:background="@drawable/edt_common_bg"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/edt_common_hint_color"
+            android:gravity="center_vertical|left"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@null"
+            android:drawablePadding="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="65dp"
+            android:layout_marginTop="10dp"
+            android:focusable="true"
+            android:hint="@string/club_join_search_hint"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:visibility="gone"
+            android:text="@string/club_area_label_province"
+            android:textColor="@android:color/white" />
+
+        <com.htgames.nutspoker.view.widget.CustomListView
+            android:id="@+id/lv_region"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/transparent"
+            android:fadingEdge="none"
+            android:dividerHeight="@dimen/list_divider_height"
+            android:divider="@color/main_list_divider"
+            android:listSelector="@android:color/transparent"
+            android:layout_gravity="center_horizontal"
+            android:focusable="true"
+            android:visibility="gone"
+            android:focusableInTouchMode="true" />
+    </LinearLayout>
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="@dimen/action_bar_height"
+        android:text="@string/cancel"
+        android:id="@+id/join_club_cancel_tv"
+        android:gravity="center_vertical|right"
+        android:layout_gravity="right"
+        android:textColor="@color/login_solid_color"
+        android:paddingRight="15dp"
+        android:textSize="17dp"
+        android:layout_marginTop="@dimen/action_bar_height"/>
+</merge>

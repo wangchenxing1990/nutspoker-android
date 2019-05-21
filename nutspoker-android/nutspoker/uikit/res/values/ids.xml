@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item type="id" name="expandable_text"/>
+    <item type="id" name="expand_collapse"/>
+    <item type="id" name="item_position"/>
+    <item type="id" name="item_data"/>
+    <item type="id" name="refresh_header_view_text_view"/>
+    <item type="id" name="android_status_bar"/>
+    <item type="id" name="item_contact_swipe_root"/>
+</resources>

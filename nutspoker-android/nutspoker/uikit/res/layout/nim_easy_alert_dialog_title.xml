@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/btn_common_height"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/dialog_custom_top"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/easy_dialog_title_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:contentDescription="@string/empty"
+            android:scaleType="center"
+            tools:visibility="visible"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/easy_dialog_title_text_view"
+            android:textSize="17dp"
+            android:textColor="@color/text_select_color"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textStyle="bold"
+            android:includeFontPadding="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/easy_dialog_title_button"
+            tools:text="对话框题目"
+            android:ellipsize="end"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_gravity="bottom"
+        android:background="@color/register_page_bg_color" />
+
+</FrameLayout>

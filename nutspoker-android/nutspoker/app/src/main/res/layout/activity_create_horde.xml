@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+    <include layout="@layout/view_common_head" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/icon_horde_null"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/text_horde_create_name"
+        android:textColor="@android:color/black"
+        android:textSize="16dp" />
+    <com.htgames.nutspoker.view.widget.ClearableEditTextWithIcon
+        android:id="@+id/edt_horde_create_name"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:textColorHint="@color/edt_common_hint_color"
+        android:gravity="left|center_vertical"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@null"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textSize="16dp"
+        android:layout_height="@dimen/btn_common_height"
+        android:layout_marginTop="10dp"
+        android:hint="@string/club_create_name_hint"
+        android:maxLength="20"
+        android:singleLine="true" />
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_common_height"
+        android:background="@drawable/bg_login_btn"
+        android:textColor="@color/white"
+        android:textSize="@dimen/btn_common_text_size"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/create_club" />
+</LinearLayout>

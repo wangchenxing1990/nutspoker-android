@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/grid_record_game_select_height"
+    android:maxHeight="@dimen/grid_record_game_select_height"
+    android:minHeight="@dimen/grid_record_game_select_height">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="32dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/game_record_select_item_bg" />
+
+            <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+                android:id="@+id/iv_game_creator_head"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:contentDescription="@string/empty"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_game_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="8sp" />
+    </LinearLayout>
+</RelativeLayout>

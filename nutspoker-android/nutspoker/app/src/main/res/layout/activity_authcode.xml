@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/register_page_bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_common_head"
+        android:id="@+id/authcode_head_container"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/login_grey_color"
+        android:layout_below="@id/authcode_head_container"
+        android:id="@+id/already_send_authcode_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_size_50"
+        android:text="@string/authcode_already_send"/>
+    <com.htgames.nutspoker.view.AuthcodeView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:passwordType="numberPassword"
+        android:layout_margin="20dp"
+        android:id="@+id/auth_code_container"
+        android:layout_below="@id/already_send_authcode_tv"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn_authcode_next_step_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_common_height"
+        android:layout_below="@id/auth_code_container"
+        android:layout_marginLeft="@dimen/np_login_margin"
+        android:layout_marginRight="@dimen/np_login_margin"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_login_btn"
+        android:text="@string/next"
+        android:textColor="#FFFFFF"
+        android:textSize="17dp" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_below="@id/btn_authcode_next_step_btn"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/dp_size_15"
+        android:layout_marginLeft="20dp"
+        android:text="@string/authcode_time_countdown"
+        android:textColor="@color/login_solid_color"
+        android:id="@+id/authcode_countdowntime_again_send"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_below="@id/btn_authcode_next_step_btn"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp_size_15"
+        android:layout_marginRight="20dp"
+        android:text="@string/authcode_voice_1"
+        android:textColor="@color/login_solid_color"
+        android:id="@+id/authcode_notget_voice_tv"/>
+</RelativeLayout>

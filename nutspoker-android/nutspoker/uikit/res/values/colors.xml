@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <color name="bg_club_my_start">#E1C481</color>
+    <color name="bg_club_my_end">#9D7B3C</color>
+    <color name="bg_club_other_start">#4CB5CE</color>
+    <color name="bg_club_other_end">#2F6071</color>
+
+    <color name="colorPrimary">@color/head_bg</color>
+    <color name="colorPrimaryDark">@color/head_bg</color>
+    <color name="colorAccent">@android:color/white</color>
+    <color name="sr_window_background">#FFFEFEFE</color>
+
+    <color name="white_main_text_color">#dcdcdc</color>
+    <color name="gray_auxiliary_text_color">#747373</color>
+    <color name="yellow_auxiliary_text_color">#ba8c3f</color>
+    <color name="blue_auxiliary_text_color">#7f92aa</color>
+
+    <color name="home_tab_text_color_normal">#929191</color>
+    <color name="home_tab_text_color_press">#fedf9e</color>
+
+    <color name="head_bg">#2E4556</color>
+    <color name="tab_text_color_normal">#96999c</color>
+    <color name="tab_text_color_press">#39bdcc</color>
+
+    <color name="authcode_countdown_color">#FF3300</color>
+
+    <color name="btn_operate_green_bg_normal">#009944</color>
+    <color name="btn_operate_green_bg_press">#008a3d</color>
+    <color name="btn_operate_red_bg_normal">#ac4500</color>
+    <color name="btn_operate_red_bg_press">#9b3e00</color>
+
+    <!-- contact -->
+    <color name="color_red_f04c62">#f04c62</color>
+
+    <!-- -->
+    <color name="btn_common_bg_normal_color">#b99b5b</color>
+    <color name="btn_common_bg_press_color">#a78c52</color>
+    <color name="btn_common_bg_disable_color">#636262</color>
+    <color name="btn_common_text_normal_color">@android:color/white</color>
+    <color name="btn_common_text_disable_color">#929292</color>
+    <color name="edt_common_color">#8c000000</color>
+    <color name="edt_common_hint_color">#8c8c8c</color>
+    <color name="register_terms_red_color">#f95151</color>
+    <color name="home_tab_bg_color">#F8F8F8</color>
+
+    <color name="list_me_item_bg_press">#232933</color>
+
+
+    <color name="qiuck_game_gray_text_color">#798ea3</color>
+    <color name="qiuck_game_text_color">@android:color/white</color>
+    <color name="edit_userinfo_album_bg">#33000000</color>
+
+    <color name="btn_friend_add_normal_color">#f8b551</color>
+    <color name="btn_friend_add_press_color">#c79042</color>
+    <color name="btn_friend_invite_normal_color">#556fb5</color>
+    <color name="btn_friend_invite_press_color">#435990</color>
+    <color name="btn_friend_agree_normal_color">#009944</color>
+    <color name="btn_friend_agree_press_color">#008a3d</color>
+    <color name="btn_action_reject_normal_color">#fe0003</color>
+    <color name="btn_action_reject_press_color">#e50000</color>
+
+    <color name="dialog_prompt_bg_color">#727d7d7d</color>
+    <color name="dialog_prompt_text_color">#ba8c3f</color>
+
+    <color name="tv_common_column_title_color">@android:color/white</color>
+
+    <color name="dialog_common_bg_color">#aaaaaa</color>
+    <color name="dialog_common_text_color">#404040</color>
+    <color name="dialog_common_button_press_color">#7a7a7a</color>
+    <color name="dialog_common_button_normal_color">#d2d2d2</color>
+
+    <color name="game_cursor_color">#1a4f77</color>
+
+    <color name="seekbar_progress_normal_color">#B0B3B5</color>
+    <color name="seekbar_progress_current_color">#39BDCC</color>
+
+    <color name="create_game_edt_bg_color">#4c000000</color>
+    <color name="create_game_btn_bg_color">#56000000</color>
+
+    <color name="quick_game_ante_text_color">#ffa201</color>
+    <color name="quick_game_member_bg_color">#192027</color>
+
+    <color name="wealth_bg_color">#2b3441</color>
+    <color name="wealth_item_bg_color">#7F000000</color>
+
+    <color name="me_column_text_color">#dcdcdc</color>
+    <color name="me_column_text_gray_color">#747373</color>
+
+    <color name="userinfo_signature_text_color">#686767</color>
+
+    <color name="contact_pop_column_press_bg">#191b1e</color>
+    <color name="contact_pop_divider_bg">#96131315</color>
+
+    <color name="message_game_text_color">#3a3a3a</color>
+    <color name="message_game_divider_color">#33000000</color>
+    <color name="charroom_game_finish_text_color">#99ffffff</color>   <!--  60%透明度的白色  -->
+
+    <color name="game_shop_tab_normal_color">#000000</color>
+    <color name="game_shop_tab_press_color">#1b1b1b</color>
+
+    <color name="game_shop_tab_text_normal_color">#4d4124</color>
+    <color name="game_shop_tab_text_press_color">#b79e5e</color>
+
+    <!--<color nameId="list_region_item_bg_normal">#2f3846</color>-->
+    <!--<color nameId="list_region_item_bg_press">#232933</color>-->
+
+    <color name="recentgame_list_bg_normal">@color/list_item_bg_normal</color>
+    <color name="recentgame_list_bg_press">@color/list_item_bg_press</color>
+    <color name="recentgame_list_title_text_color">@android:color/white</color>
+    <color name="recentgame_list_text_color">#585956</color>
+
+    <color name="club_edit_bg_normal_color">#c6ffffff</color>
+    <color name="club_edit_bg_press_color">#a4a6a7</color>
+    <color name="club_edit_text_color">#232933</color>
+    <color name="club_search_more_bg_color">#82a0a0a0</color>
+
+    <color name="me_column_divider_bg">#59000000</color>
+
+    <color name="record_column_title_color">#b4b6b5</color>
+    <color name="record_column_content_color">#585858</color>
+    <!--<color nameId="record_item_divider_color">#9f6d22</color>-->
+    <color name="record_item_divider_color">@color/head_title_color</color>
+    <color name="record_item_earnings_gain_color">#e07d12</color>
+    <color name="record_item_earnings_lose_color">#0fb1b7</color>
+
+    <color name="shop_vip_item_black_bg_color">#3f000000</color>
+    <color name="shop_vip_item_white_bg_color">#3fffffff</color>
+    <color name="shop_vip_divider_color">#59ffffff</color>
+    <color name="shop_vip_black_text_color">#e0a22a</color>
+
+    <color name="chatroom_gamedesk_tip_text_color">#585e65</color>
+
+    <color name="btn_share_text_color">#444444</color>
+    <color name="btn_share_bg_color_normal">#dcdcdc</color>
+    <color name="btn_share_bg_color_press">#b0b0b0</color>
+    <color name="club_create_text_color">#a9abac</color>
+
+    <color name="authcode_gray_text_color">#858586</color>
+    <color name="authcode_edit_hint_text_color">#858586</color>
+
+    <!--<color nameId="recent_invite_text_color">#ab6e6f</color>-->
+
+    <color name="statistics_table_title_color">#6c7076</color>
+    <color name="statistics_paiju_text_color">#dedddd</color>
+    <color name="statistics_winrate_text_color">#c5c6c6</color>
+    <color name="statistics_winrate_title_text_color">#6c7076</color>
+
+    <color name="statistics_chart_analysis_orange_color">#d9a569</color>
+    <color name="statistics_chart_analysis_green_color">#accf65</color>
+    <color name="statistics_chart_analysis_blue_color">#49bec9</color>
+    <color name="statistics_chart_analysis_orange_shape_color">#aad9a569</color>
+    <color name="statistics_chart_analysis_green_shape_color">#aaaccf65</color>
+    <color name="statistics_chart_analysis_blue_shape_color">#aa49bec9</color>
+    <color name="statistics_chart_analysis_line_shape_color">#22ffffff</color>
+
+    <color name="recent_game_arrow_bg">#66000000</color>
+    <color name="recent_game_null_text_color">#939396</color>
+
+    <color name="system_tip_bg_color">#f19249</color>
+    <color name="system_tip_text_color">#160201</color>
+
+    <color name="record_gray_light_color">#d8d7d7</color>
+    <color name="record_gray_color">#828282</color>
+    <color name="record_yellow_color">#fed76b</color>
+    <color name="record_orange_color">#fe8414</color>
+    <!--<color nameId="record_circular_color">#ea68a2</color>-->
+    <color name="daily_gain_item_selected_text_color">#c5c5c6</color>
+    <color name="daily_gain_item_normal_text_color">#3d566f</color>
+    <color name="daily_gain_item_invalid_text_color">#404040</color>
+    <color name="daily_gain_item_date_text_color">#6b7275</color>
+    <color name="daily_gain_item_line_color">#131e20</color>
+    <color name="daily_gain_item_win_color">#b79f5e</color>
+    <color name="daily_gain_item_lose_color">#3d566f</color>
+
+    <color name="data_analysis_good_color">#8ec51f</color>
+    <color name="data_analysis_improve_color">#b79f5e</color>
+    <color name="data_analysis_poor_color">#3d566f</color>
+
+    <color name="data_analysis_column_title_color">#6b6f73</color>
+
+    <color name="data_analysis_column_divider_color">#99000000</color>
+    <color name="data_analysis_column_name_color">#dbe2ed</color>
+    <color name="data_analysis_column_content_head_color">#7f7f7f</color>
+    <color name="data_analysis_column_content_body_color">#3b403f</color>
+    <color name="data_analysis_column_unfold_bg_color">#59000000</color>
+
+    <color name="data_analysis_column_stroke_color">#192025</color>
+
+    <color name="data_analysis_circular_bg_color">#7b7b7b</color>
+    <color name="data_analysis_circular_progress_color">#b18a4f</color>
+
+    <color name="circle_name_text_color">#7e8ea3</color>
+    <color name="circle_content_text_color">#a5a5a5</color>
+    <color name="circle_divider_color">#364756</color>
+
+    <color name="btn_circle_send_normal_color">#959595</color>
+    <color name="btn_circle_send_press_color">#535353</color>
+
+    <color name="circle_name_selector_color">#cccccc</color>
+    <color name="circle_line_color">#dadada</color>
+
+    <color name="invalid_tip_bg">#ffffff</color>
+    <color name="invalid_tip_text_color">#767676</color>
+
+    <color name="share_bg_color">#585858</color>
+    <color name="share_text_color">#dcdcdc</color>
+    <color name="share_cancel_bg_normal_color">#333334</color>
+    <color name="share_cancel_bg_press_color">#29292a</color>
+
+    <color name="diamond_dialog_bg_color">#535353</color>
+    <color name="diamond_dialog_top_bg_color">#7d7d7d</color>
+
+    <color name="sharetosession_dialog_bg_color">#435365</color>
+    <color name="sharetosession_dialog_btn_normal_color">@color/sharetosession_dialog_bg_color
+    </color>
+    <color name="sharetosession_dialog_btn_press_color">#34404d</color>
+    <color name="sharetosession_dialog_content_bg_color">#262c33</color>
+    <color name="sharetosession_dialog_btn_text_color">#cecec9</color>
+    <color name="sharetosession_dialog_hint_color">#a0a0a0</color>
+    <color name="sharetosession_dialog_divider_color">#4c000000</color>
+
+    <color name="paipu_record_info_bg">#19000000</color>
+    <color name="paipu_record_info_text_color">#686868</color>
+
+    <color name="member_grid_text_color">#8f8e8c</color>
+
+    <color name="chatroom_msg_custom_type_bg_color">#3314181e</color>
+
+    <color name="paipu_cardtype_normal">#ba292b</color>
+    <color name="paipu_cardtype_discard">#b8b9b8</color>
+
+    <color name="paiju_view_name_text_color">#b8b8b8</color>
+    <color name="paiju_view_content_text_color">#585858</color>
+
+    <color name="game_table_share_hint_text_color">#d0d0d0</color>
+    <color name="game_table_content_text_color">#bababa</color>
+    <color name="game_table_content_bg_color">#7f000000</color>
+    <color name="game_table_insurance_text_color">#ffa201</color>
+    <color name="game_table_ante_text_color">#8a682d</color>
+    <color name="game_table_advanced_bg_color">#282828</color>
+
+    <color name="share_code_text_color">#dcdcdc</color>
+
+    <color name="game_create_ante_bg_color">#6a3906</color>
+    <color name="game_create_ante_text_normal_color">#c5b39d</color>
+    <color name="game_create_ante_thumb_color">#ba8c3f</color>
+    <!--<color nameId="game_create_ante_mode_bg_color">#4c000000</color>-->
+    <color name="game_create_text_color">#7f92aa</color>
+
+    <color name="game_record_details_column_title_bg_color">#33000000</color>
+    <color name="game_record_details_text_color">@android:color/white</color>
+    <color name="game_record_details_text_gray_color">#abacad</color>
+    <color name="game_record_details_earnings_gain_color">#ba292b</color>
+    <color name="game_record_details_earnings_lose_color">#0fb1b7</color>
+    <color name="btn_game_record_details_read_press_color">#0dffffff</color>
+    <!--<color nameId="record_item_time_divider_color">#f9b550</color>-->
+    <color name="record_item_time_divider_color">@color/head_title_color</color>
+    <color name="record_pager_item_time_bg_color">#4d0101</color>
+    <color name="record_pager_item_time_bg_dark_color">#3b0100</color>
+
+    <color name="club_create_count_limit">#abacbd</color>
+
+    <color name="download_progress_view_bg_color">#414346</color>
+    <color name="downloa_progress_normal">#c1c1c1</color>
+    <color name="downloa_progress_current_ing">#01ffda</color>
+
+    <color name="quick_game_table_text_color">#66ffffff</color>
+    <color name="record_me_text_color">#b9b202</color>
+
+    <!--<color nameId="charroom_game_finish_text_color">#99ffffff</color>-->
+
+    <color name="club_member_limit_content_bg_color">#99000000</color>
+
+    <color name="app_message_notice_divider_color">#19ffffff</color>
+    <color name="app_message_control_divider_color">#4b000000</color>
+    <color name="app_message_winchips_bg_color">#293543</color>
+    <color name="app_message_time_bg_color">#0a0d10</color>
+
+    <color name="btn_action_gray_normal_color">#5a5e63</color>
+    <color name="btn_action_gray_press_color">#616267</color>
+
+    <color name="common_blue">#3C8FC1</color>
+    <color name="record_details_info_right_bg">#4c3d90af</color>
+    <color name="record_details_head_bg">#70000000</color>
+
+    <color name="cphone_regoin_text_color">#99ffffff</color>
+    <color name="cphone_regoin_divider">#19ffffff</color>
+
+    <color name="ante_text_color">#568f21</color>
+    <color name="record_detail_info_item_bg">#21000000</color>
+    <color name="record_detail_column_bg">#33000000</color>
+
+    <color name="match_top_info_bg_color">#33000000</color>
+
+    <color name="mtt_tablayout_bg">#2b3742</color>
+    <color name="mtt_tablayout_item_bg">#658B9E</color>
+    <!--<color nameId="mtt_bottom_bg">#202a33</color>-->
+    <color name="mtt_tablayout_text_color">#161c22</color>
+    <color name="mtt_text_common_color">#658B9E</color>
+    <color name="mtt_wait_center_color">#83ffffff</color>
+
+    <color name="game_match_create_starttime_bg_color">#bb8b3f</color>
+    <color name="share_code_config_bg_color">#0fffffff</color>
+    <color name="share_code_common_text_color">#d2ffffff</color>
+    <color name="share_code_other_text_color">#fca139</color>
+
+    <color name="app_message_buychips_into_color">#82a5c8</color>
+    <color name="app_message_buychips_divider_color">#4b000000</color>
+    <color name="app_message_buychips_rebuy_color">#249ab0</color>
+    <color name="app_message_buychips_rebuy_color_new">#FF7B59</color>
+    <color name="app_message_buychips_addon_color">#cb8325</color>
+
+    <color name="match_list_column_bg_color">#4d000000</color>
+    <color name="match_list_column_search_bg_color">#3A6A7B</color>
+
+    <color name="match_list_divider_color">#33000000</color>
+
+    <color name="blinds_structure_bg_color">#15ffffff</color>
+    <color name="match_final_text_color">#96c8e1</color>
+
+    <color name="match_rank_common_stroke_color">#15ffffff</color>
+
+    <color name="match_out_text_color">#99ffffff</color>
+
+    <color name="recentgame_checkin_text_color">#fe6224</color>
+
+    <color name="probar_voice_timer_current_color">#437488</color>
+    <color name="probar_voice_timer_normal_color">#33ffffff</color>
+    <color name="probar_voice_timer_normal_color_bg">#203037</color>
+    <color name="match_advance_function_bg">#4b000000</color>
+    <color name="match_advance_function_help_bg">#33ffffff</color>
+
+    <color name="text_bg_color">#ff232930</color>
+    <color name="light_blue">#ff5786a0</color>
+    <color name="text_orange">#FF7B59</color>
+    <color name="text_mgr">#5786a0</color>
+    <color name="color_white">#ffffffff</color>
+
+    <color name="light_black">#ff2a343e</color>
+
+    <color name="black_circle">#1a000000</color>
+    <color name="data_find_light_bg">#33536884</color>
+    <color name="data_find_dark_bg">#33000000</color>
+
+    <color name="light_black_15">#26000000</color>
+    <color name="light_black_5">#0D000000</color>
+
+    <color name="btn_record_fill_color_p">#ff1b2129</color>
+    <color name="btn_record_fill_color">#ff2e3945</color>
+    <color name="btn_record_stroke_color">#ff44576A</color>
+
+    <color name="data_find_tv_insurance_value">#ff558eac</color>
+    <color name="grey_blue">#ff5D7794</color>
+
+    <color name="light_black_separate">#4c000000</color>
+
+    <color name="bg_pay_color_n">#ff22292e</color>
+    <color name="light_white">#99ffffff</color>
+
+    <color name="shop_text_select_color_coin">#FBBF40</color>
+    <color name="shop_text_select_color_diamond">#16BFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_half_transparent">#99FFFFFF</color>
+    <color name="light">#FFEEEEEE</color>
+    <color name="black">#000000</color>
+    <color name="grey">#333333</color>
+    <color name="global_bg">#9000</color>
+    <color name="color_green_01d9ae">#01D9AE</color>
+    <color name="color_gray_d9d9d9">#d9d9d9</color>
+    <color name="color_activity_blue_bg">#f7389fff</color>
+    <color name="split_line_grey_color_d9d9d9">#D9D9D9</color>
+    <color name="green_4DC0A4">#4DC0A4</color>
+    <color name="gray7">#c5c4c4</color>
+    <color name="GreyWhite">#F7F7F7</color>
+    <color name="im_list_select_hover">#dbdbdb</color>
+    <color name="color_aaaaaa_content_text">#ffaaaaaa</color>
+    <color name="title_color_01d9ae">#01D9AE</color>
+    <color name="color_b3b3b3">#b3b3b3</color>
+    <color name="color_red_ccfa3c55">#ccfa3c55</color>
+    <color name="color_black_b3000000">#b3000000</color>
+    <color name="color_grey_eaeaea">#eaeaea</color>
+    <color name="color_black_333333">#333333</color>
+    <color name="color_grey_999999">#999999</color>
+    <color name="color_grey_555555">#555555</color>
+    <color name="color_green_disable">#a2efe0</color>
+    <color name="color_green_00d3a9">#ff00D3A9</color>
+    <color name="color_blue_0888ff">#0888ff</color>
+    <color name="action_bar_black_title_1f1f1f">#1f1f1f</color>
+    <color name="action_bar_black_title_color">#252525</color>
+
+    <color name="color_black_333333_90_transparent">#e5333333</color>
+    <color name="color_black_000000_88_transparent">#e0000000</color>
+
+    <!-- main bg color -->
+    <color name="main_bg_color">#FFFFFF</color>
+
+    <!-- session -->
+    <color name="color_message_default_bg">#eeeeee</color>
+    <color name="input_panel_text_color_757572">#757572</color>
+    <color name="color_gray_cbd0d8">#cbd0d8</color>
+
+    <!-- image picker -->
+    <color name="color_split_line_d9d9d9">#d9d9d9</color>
+    <color name="color_split_line_cccccc">#cccccc</color>
+
+    <!-- contact -->
+    <color name="contact_list_hover">#d9d9d9</color>
+    <color name="contact_letter_idx_bg">#33000000</color>
+    <color name="contacts_letters_color">#80807c</color>
+    <color name="color_background">#ECF1F5</color>
+    <color name="press_mask">#33000000</color>
+    <color name="color_grey_ababab">#ababab</color>
+    <color name="color_yellow_796413">#796413</color>
+    <color name="color_yellow_b39729">#b39729</color>
+
+    <!-- setting -->
+    <color name="color_black_ff333333">#ff333333</color>
+    <color name="color_black_ff666666">#ff666666</color>
+    <color name="color_black_ff999999">#ff999999</color>
+    <color name="color_gray_bfc2c5">#bfc2c5</color>
+
+    <!--德州圈-->
+    <color name="me_column_pressed_color">#4B4B4B</color>
+    <color name="main_list_divider">@android:color/transparent</color>
+    <color name="list_item_bg_ripple">#80000000</color>
+    <color name="list_item_bg_press">#33000000</color>
+    <color name="list_item_bg_normal">#4c000000</color>
+    <color name="list_item_top_bg_normal">#99000000</color>
+    <color name="recent_contact_message_text_color">#7f92aa</color>
+    <color name="game_count_bg_color">#e5b79e5e</color>
+    <color name="dialog_custom_bg_color">#535353</color>
+    <color name="dialog_progress_bg_color">#80000000</color>
+    <color name="dialog_custom_title_bg_color">#adaeb0</color>
+    <color name="head_title_color">#b79e5e</color>
+    //
+    <color name="dialog_text_color">@android:color/white</color>
+    <color name="message_new_prompt_bg_color">#282828</color>
+    <color name="message_new_prompt_text_color">#ffa201</color>
+    <color name="nim_message_input_edittext_box_normal_color">@android:color/white</color>
+    <color name="nim_message_input_edittext_box_pressed_color">#e6e9ec</color>
+    <color name="nim_message_input_edittext_box_stroke_color">#dddddd</color>
+    <color name="login_grey_color">#919191</color>
+    <color name="login_press">#27838E</color>
+    <color name="login_solid_color">#39BDCC</color>
+    <color name="btn_login_bg_disable_color">#b4b4b4</color>
+    <color name="club_me">#BCA06C</color>
+    <color name="club_me_press">#836f4b</color>
+    <color name="club_others">#4590AA</color>
+    <color name="club_others_press">#306476</color>
+    <color name="register_page_bg_color">#F0F1F2</color>
+    <color name="paiju_num_tv_color_others">#BCA06C</color>
+    <color name="paiju_num_tv_color_my">#39BDCC</color>
+    <color name="red_normal">#DD5043</color>
+    <color name="red_press">#B32D20</color>
+    <color name="shop_text_no_select_color">#96999C</color>
+    <color name="text_select_color">#3F4041</color>
+    <!-- 首页背景相关颜色 -->
+    <color name="game_quick_create_bg_normal">#47AABD</color>
+    <color name="game_quick_create_bg_press">#388897</color>
+    <color name="game_quick_create_btn_normal">#39BDCC</color>
+    <color name="game_quick_create_btn_press">#27838E</color>
+
+    <color name="game_quick_join_bg_normal">#EBAA76</color>
+    <color name="game_quick_join_bg_press">#bc885e</color>
+    <color name="game_quick_join_btn_normal">#39BDCC</color>
+    <color name="game_quick_join_btn_press">#27838E</color>
+    <!-- common-libs -->
+    <color name="psts_background_tab_pressed">#1AFFFFFF</color>
+    <color name="psts_background_tab_pressed_ripple">#AAFFFFFF</color>
+    <color name="wheelview_divider_color">#33000000</color>
+    <color name="record_list_earn_yes">#FF5353</color>
+    <color name="record_list_earn_no">#25C44E</color>
+    <!-- common-libs -->
+    <color name="match_checkin_press">#CC743C</color>
+    <color name="match_checkin_normal">#ff924c</color>
+    <color name="match_checkin_disable">#b0b3b7</color>
+    <color name="match_room_top_bg">#49859A</color>
+    <color name="match_room_top_bg_deep">#3A6A7B</color>
+    <!-- 邀请码view -->
+    <color name="game_code_normal">#20000000</color>
+    <color name="game_code_press">#40000000</color>
+    <!-- 移除报名玩家 房主和管理员的背景颜色 -->
+    <color name="user_type_creator">#FF7B59</color>
+    <color name="user_type_manager">#1D9CC7</color>
+    <color name="nutspoker_primary_color">#FFFFC107</color>
+    <color name="nutspoker_spark_secondary_color">#FFFF5722</color>
+    <color name="spark_image_tint">#00000000</color>
+    <!--mtt-->
+    <color name="bg_mtt_start">#D06892</color>
+    <color name="bg_mtt_end">#A253A8</color>
+    <!--pineapple-->
+    <color name="bg_pineapple_start">#59988f</color>
+    <color name="bg_pineapple_end">#3c705f</color>
+    <color name="bg_pineapple_mtt">#3d8284</color>
+    <color name="bg_pineapple_mtt_deep">#2a5a5c</color>
+    <!--普通-->
+    <color name="bg_normal_start">#34a8a3</color>
+    <color name="bg_normal_end">#356d84</color>
+    <color name="bg_normal">#578498</color><!--87,132,152-->
+    <!--sng-->
+    <color name="bg_sng_start">#5ab2a1</color>
+    <color name="bg_sng_end">#2b8736</color>
+    <color name="bg_club_game_bottom">#20000000</color>
+    <color name="bg_club_bessel">#10000000</color>
+    <color name="bg_sng">#66a16a</color><!--102,161,106-->
+    <!--战绩大厅viewpager背景颜色-->
+    <color name="record_bg_normal_start">#46A9B0</color>
+    <color name="record_bg_normal_end">#356D84</color>
+    <color name="record_bg_sng_start">#53B19E</color>
+    <color name="record_bg_sng_end">#399356</color>
+    <color name="record_bg_mtt_start">#C18BAC</color><!--193,139,172-->
+    <color name="record_bg_mtt_end">#904F74</color>
+    <color name="record_bg_pineapple_start">#77B0AE</color>
+    <color name="record_bg_pineapple_end">#377878</color>
+    <!--大菠萝76,141,139-->
+    <color name="bg_pineapple">#4C8D8B</color>
+    <color name="diamond_match_rank_color">#FF924C</color><!--钻石赛排名颜色-->
+    <!--  俱乐部和部落的牌局列表的背景颜色   -->
+    <color name="paiju_list_bg_normal">#315D6c</color>
+    <color name="paiju_list_bg_sng">#3c7d51</color>
+    <color name="paiju_list_bg_mtt">#894777</color>
+    <color name="paiju_list_bg_pineapple_normal">#326865</color>
+    <color name="paiju_list_bg_pineapple_mtt">#326865</color>
+    <color name="club_paiju_list_insurance">#FFBF60</color>
+    <color name="icon_horde_game">#66FFFFFF</color>
+    <!--牌局列表的四种游戏状态颜色-->
+    <color name="game_status_ready">#f5a623</color>
+    <color name="checkin_ing">#f5a623</color>
+    <color name="game_goon_ing">#87cd41</color>
+    <color name="game_me_ing">#ff7239</color>
+</resources>

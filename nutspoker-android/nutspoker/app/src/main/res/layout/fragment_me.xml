@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/register_page_bg_color"
+    android:orientation="vertical">
+
+    <com.htgames.nutspoker.view.UserInfoView
+        android:id="@+id/mUserInfoView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.htgames.nutspoker.ui.recycler.MeRecyclerView
+        android:id="@+id/me_below_info_items_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mUserInfoView"></com.htgames.nutspoker.ui.recycler.MeRecyclerView>
+
+    <FrameLayout
+        android:id="@+id/me_edit_userinfo_iv"
+        android:layout_width="@dimen/dp_size_50"
+        android:layout_height="@dimen/dp_size_50"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="top|right">
+
+        <ImageView
+            android:layout_width="@dimen/dp_size_25"
+            android:layout_height="@dimen/dp_size_25"
+            android:layout_gravity="right|top"
+            android:layout_marginRight="@dimen/dp_size_15"
+            android:layout_marginTop="@dimen/dp_size_10"
+            android:src="@mipmap/head_right_img" />
+    </FrameLayout>
+</RelativeLayout>

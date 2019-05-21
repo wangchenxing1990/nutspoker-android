@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             xmlns:tools="http://schemas.android.com/tools">
+    <include layout="@layout/view_common_head"/>
+
+    <RelativeLayout style="@style/rl_other_column_style"
+                    android:id="@+id/horde_upper_limit_container"
+                    android:layout_height="50dp"
+                    android:layout_width="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/rl_head">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+            <TextView
+                style="@style/tv_common_column_title_style"
+                android:text="上分控制" />
+            <TextView
+                style="@style/tv_common_column_tip"
+                android:text="控制俱乐部的总带入分"/>
+        </LinearLayout>
+        <com.htgames.nutspoker.view.switchbutton.SwitchButton
+            android:id="@+id/switch_horde_upper_limit"
+            style="@style/SwitchButtonStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:checked="false" />
+    </RelativeLayout>
+
+    <com.htgames.nutspoker.view.TouchableRecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/horde_upper_limit_container"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+</android.support.constraint.ConstraintLayout>

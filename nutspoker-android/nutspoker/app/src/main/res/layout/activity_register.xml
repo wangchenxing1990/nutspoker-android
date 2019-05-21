@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/register_page_bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_common_head" />
+
+    <RelativeLayout
+        android:id="@+id/register_phone_num_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_size_50"
+        android:layout_marginLeft="@dimen/np_login_margin"
+        android:layout_marginRight="@dimen/np_login_margin">
+
+        <TextView
+            android:id="@+id/register_phone_code_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="+86"
+            android:textColor="@color/login_grey_color"
+            android:textSize="14dp" />
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="19dp"
+            android:layout_centerVertical="true"
+            android:background="@color/login_grey_color"
+            android:layout_marginRight="5dp"
+            android:id="@+id/register_short_divider_one"
+            android:layout_toRightOf="@id/register_phone_code_tv"/>
+
+        <com.htgames.nutspoker.view.widget.ClearableEditTextWithIcon
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_username_et"
+            android:inputType="number"
+            android:textCursorDrawable="@null"
+            android:textSize="14dp"
+            android:background="@null"
+            android:textColorHint="@color/login_grey_color"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/register_short_divider_one"
+            android:gravity="center_vertical"
+            android:hint="@string/login_phone_hint" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/register_phone_num_container"
+        android:layout_marginLeft="@dimen/np_login_margin"
+        android:layout_marginRight="@dimen/np_login_margin"
+        android:id="@+id/register_divider_long_one"
+        android:background="@color/cphone_regoin_divider" />
+
+    <Button
+        android:id="@+id/btn_register_next_step_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_size_45"
+        android:layout_below="@id/register_divider_long_one"
+        android:layout_marginLeft="@dimen/np_login_margin"
+        android:layout_marginRight="@dimen/np_login_margin"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_login_btn"
+        android:text="@string/next"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/btn_common_text_size" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/tv_register_protocol"
+            android:textSize="11dp"
+            android:text="注册即表示同意《扑克部落服务协议和隐私政策》"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom|center_horizontal"/>
+    </FrameLayout>
+</LinearLayout>

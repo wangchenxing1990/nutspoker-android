@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include layout="@layout/view_common_head"/>
+    <ScrollView
+        android:id="@+id/sl_grant_credit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/action_bar_height">
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+                android:id="@+id/iv_member_info_head"
+                android:layout_width="@dimen/club_avatar_size_in_info"
+                android:layout_height="@dimen/club_avatar_size_in_info"
+                android:layout_marginTop="20dp"
+                android:src="@mipmap/default_male_head"/>
+
+            <TextView
+                android:id="@+id/tv_member_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:textColor="@color/text_select_color"
+                tools:text="德州俱乐部"
+                app:layout_constraintTop_toBottomOf="@+id/team_img_mask"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_current_credit_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:textSize="23dp"
+                android:textColor="@color/login_solid_color"
+                tools:text="当前分: 666888"/>
+
+            <LinearLayout
+                android:id="@+id/edit_container"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tv_team_score"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/shop_text_no_select_color"
+                    android:text="@string/add_credit"/>
+                <com.htgames.nutspoker.view.widget.ClearableEditTextWithIcon
+                    android:id="@+id/et_grant_credit_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/text_select_color"
+                    android:textColorHint="@color/shop_text_no_select_color"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textSize="25dp"
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@null"
+                    android:background="@null"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_grant_credit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_mtt_control_height"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bg_login_btn"
+                android:gravity="center"
+                android:text="@string/confirm_add"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_container"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_clear_credit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/login_solid_color"
+                android:paddingTop="20dp"
+                android:text="@string/clear_credit"/>
+        </LinearLayout>
+    </ScrollView>
+</merge>

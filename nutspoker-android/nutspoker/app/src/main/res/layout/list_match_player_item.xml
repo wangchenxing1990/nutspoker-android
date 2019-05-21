@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_match_player_item"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@drawable/common_column_bg"
+    android:gravity="center_vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_record_sng_rank_tag"-->
+    <!--android:layout_width="24dp"-->
+    <!--android:layout_height="28dp"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:background="@drawable/match_rank_common_bg"-->
+    <!--android:gravity="center"-->
+    <!--android:textColor="@color/gray_auxiliary_text_color"-->
+    <!--android:textSize="10sp"-->
+    <!--android:visibility="gone" />-->
+
+    <com.htgames.nutspoker.view.record.RankViewV
+        android:id="@+id/mRankView"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:minWidth="30dp"
+        android:visibility="gone"
+        app:rankWidth="24dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_match_player_info"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_toRightOf="@id/mRankView"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_marginRight="2dp">
+                <TextView
+                    android:id="@+id/tv_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:drawablePadding="4dip"
+                    android:gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    tools:text="暴走的苹果"
+                    android:textColor="@color/text_select_color"
+                    android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/mtt_player_contacts_item_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="1dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    tools:text="ID: 443455"
+                    android:textColor="@color/shop_text_no_select_color"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_rebuy_cnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginRight="2dp"
+                tools:text="2"
+                android:background="@drawable/app_message_buychips_rebuy_tag_bg" />
+
+            <TextView
+                android:id="@+id/tv_addon_cnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                tools:text="1"
+                android:background="@drawable/app_message_buychips_addon_tag_bg" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_table_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            tools:text="2"
+            android:visibility="gone"
+            android:textColor="@color/shop_text_no_select_color"
+            android:textSize="12dp" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_chips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                tools:text="2000"
+                android:textColor="@color/text_select_color"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/tv_opt_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_chips"
+                android:textColor="@color/shop_text_no_select_color"
+                android:textSize="12dp"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@mipmap/approve_icon"
+                tools:text="德州联盟"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignLeft="@id/ll_match_player_info"
+        android:layout_alignParentBottom="true"
+        android:background="@color/register_page_bg_color" />
+    <LinearLayout
+        android:id="@+id/mtt_hunter_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:minWidth="100dp"
+        android:paddingLeft="40dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/match_palyer_hunter_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:textColor="@color/shop_text_no_select_color"
+            android:textSize="12sp"
+            android:drawablePadding="5dp"
+            tools:drawableLeft="@mipmap/icon_hunter_grey"
+            android:text="2"/>
+        <TextView
+            android:id="@+id/match_palyer_hunter_worth_reward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:textColor="@color/shop_text_no_select_color"
+            android:textSize="12sp"
+            android:drawablePadding="5dp"
+            tools:drawableLeft="@mipmap/kopoker_icon_worth"
+            android:text="0/0"/>
+    </LinearLayout>
+</RelativeLayout>

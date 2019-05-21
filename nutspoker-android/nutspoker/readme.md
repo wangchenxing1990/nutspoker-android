@@ -1,0 +1,2 @@
+//yummy.txt 第六行是云信的测试appkey：69ae7e3ecfcede9a1cd6f85441d38f69，第十行是云信的正式appkey：dcbea9034b01acd6682d924b1b299294
+//yummy.txt内容是EncrUtil.encrypt加密生成的字符串，在ApiConfig.java中txt内容是EncrUtil.decrypt解密来初始化云信

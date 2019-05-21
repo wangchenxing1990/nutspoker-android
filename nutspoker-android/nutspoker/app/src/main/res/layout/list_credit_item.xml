@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    xmlns:tools="http://schemas.android.com/tools"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="55dp"
+                                    android:foreground="@drawable/fg_horde"
+                                    android:orientation="vertical"
+                                    app:cardBackgroundColor="@android:color/white"
+                                    app:contentPaddingLeft="10dp"
+                                    app:contentPaddingRight="15dp"
+                                    app:cardCornerRadius="4dp"
+                                    app:cardPreventCornerOverlap="false"
+                                    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+        <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+            android:id="@+id/iv_head"
+            android:src="@mipmap/default_male_head"
+            android:layout_width="32dp"
+            android:layout_height="32dp"/>
+        <TextView
+            android:id="@+id/tv_member_name"
+            android:paddingLeft="10dp"
+            tools:text="周智慧"
+            android:textColor="@color/text_select_color"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="15dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_credit_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@mipmap/icon_common_arrow_normal"
+        android:drawablePadding="5dp"
+        android:textColor="@color/login_solid_color"
+        tools:text="信用分：1"
+        android:textSize="15dp"
+        android:layout_gravity="right|center_vertical"/>
+</android.support.v7.widget.CardView>

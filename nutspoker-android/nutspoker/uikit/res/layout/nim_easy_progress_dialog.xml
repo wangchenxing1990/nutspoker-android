@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_progress_bg"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:minHeight="80dp"
+        android:minWidth="120dp"
+        android:padding="20dp">
+
+        <ProgressBar
+            android:id="@+id/easy_progress_bar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDrawable="@drawable/progress_large"
+            android:indeterminateDuration="500"
+            android:visibility="visible"
+            android:indeterminateOnly="true" />
+
+        <com.netease.nim.uikit.common.ui.dialog.ProgressWheel
+            android:id="@+id/progress_wheel"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:layout_below="@+id/easy_progress_bar"
+            android:layout_centerHorizontal="true"
+            wheel:matProg_barColor="@android:color/white"
+            wheel:matProg_progressIndeterminate="true" />
+
+        <TextView
+            android:id="@+id/easy_progress_dialog_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progress_wheel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            tools:visibility="visible"
+            tools:text="ddfsd"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</FrameLayout>

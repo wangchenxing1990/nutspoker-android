@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/register_page_bg_color">
+
+    <FrameLayout
+        android:id="@+id/up_fl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_begin_chat"
+                style="@style/info_operate_style"
+                android:background="@drawable/bg_login_btn"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="25dp"
+                android:text="@string/begin_chat"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_add_friend"
+                style="@style/info_operate_style"
+                android:background="@drawable/bg_login_btn"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="25dp"
+                android:text="@string/add_friend"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_message_agree"
+                style="@style/info_operate_style"
+                android:background="@drawable/bg_login_btn"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="25dp"
+                android:text="@string/agree_friend"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- 下面这个View只用于俱乐部申请 -->
+        <LinearLayout
+            android:id="@+id/ll_club_pane"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:id="@+id/tv_reply_reject"
+                style="@style/btn_user_profile_reply"
+                android:background="@drawable/bg_login_btn_warning"
+                android:text="@string/friend_action_reject" />
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/tv_reply_agree"
+                style="@style/btn_user_profile_reply"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/bg_login_btn"
+                android:text="@string/friend_action_agree" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <com.htgames.nutspoker.view.widget.ObservableScrollView
+        android:id="@+id/mObservableScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/up_fl_layout"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.htgames.nutspoker.view.UserInfoView
+                android:id="@+id/mUserInfoView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View style="@style/common_column_divider_style" />
+
+            <RelativeLayout
+                android:id="@+id/rl_column_alias"
+                style="@style/rl_common_column_style"
+                android:layout_marginTop="0dp">
+
+                <TextView
+                    style="@style/tv_common_column_title_style"
+                    android:text="@string/me_column_alias" />
+
+                <ImageView style="@style/iv_userinfo_column_arrow_style" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_size_55"
+                android:layout_margin="@dimen/dp_size_20"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:id="@+id/user_profile_invite_club_tv"
+                android:background="@drawable/bg_login_btn"
+                android:visibility="gone"
+                android:text="@string/user_profile_invite_club"/>
+
+            <View style="@style/common_column_divider_style" />
+
+            <RelativeLayout
+                android:id="@+id/rl_column_data"
+                style="@style/rl_common_column_style"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/tv_common_column_title_style"
+                    android:text="@string/record_statistics" />
+
+                <ImageView style="@style/iv_userinfo_column_arrow_style" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_club_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/club_another_count"
+                android:textColor="@android:color/white"
+                android:visibility="gone"
+                android:textSize="14sp" />
+
+            <com.htgames.nutspoker.view.widget.CustomGridView
+                android:id="@+id/grid_club_joined"
+                style="@style/listview_common_style"
+                android:layout_height="wrap_content"
+                android:background="@color/list_item_bg_normal"
+                android:numColumns="4"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                tools:visibility="visible"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:verticalSpacing="10dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </com.htgames.nutspoker.view.widget.ObservableScrollView>
+
+    <include layout="@layout/view_common_head"/>
+</RelativeLayout>

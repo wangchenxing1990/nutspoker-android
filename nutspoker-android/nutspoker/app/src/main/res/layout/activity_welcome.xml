@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/circular_reveal_view_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/login_bg"
+                android:orientation="vertical">
+
+    <com.github.jorgecastillo.FillableLoader
+        android:id="@+id/fillableLoader"
+        android:layout_width="232dp"
+        android:layout_height="91dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="190dp"
+        app:fl_clippingTransform="waves"
+        app:fl_fillColor="@color/login_solid_color"
+        app:fl_fillDuration="200"
+        app:fl_fillPercentage="100"
+        app:fl_originalHeight="165"
+        app:fl_originalWidth="418"
+        app:fl_strokeColor="@color/login_solid_color"
+        app:fl_strokeDrawingDuration="800"/>
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textColor="#1b5663"-->
+        <!--android:textSize="12dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:paddingBottom="100dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="抵制不良游戏   拒绝盗版游戏\n注意自我保护   谨防受骗上当\n适度游戏益脑   沉迷游戏伤身\n合理安排时间   享受健康生活"/>-->
+
+    <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="-8dp"
+    android:layout_alignTop="@+id/fillableLoader"
+    android:layout_toRightOf="@+id/fillableLoader"
+    android:src="@mipmap/icon_tm"/>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+           tools:ignore="MissingTranslation">
+
+    <string name="pull_to_refresh_pull">下拉刷新</string>
+    <string name="pull_to_refresh_up">上拉刷新</string>
+    <string name="pull_to_refresh_release">松开刷新</string>
+    <string name="pull_to_refresh_refreshing">加载中&#8230;</string>
+</resources>

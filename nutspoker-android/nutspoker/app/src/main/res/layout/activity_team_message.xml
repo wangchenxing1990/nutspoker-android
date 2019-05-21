@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.htgames.nutspoker.view.ShareCodeView
+        android:id="@+id/mShareCodeView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:visibility="invisible" />
+
+    <include
+        android:id="@+id/layout_head"
+        layout="@layout/view_common_head" />
+
+    <include
+        android:id="@+id/layout_head_invalid_tip"
+        layout="@layout/layout_invalid_tip"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_below="@id/layout_head" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mQuickGameTableView">
+
+        <LinearLayout
+            android:id="@+id/message_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+
+        <TextView
+            android:id="@+id/tv_chatroom_game"
+            android:layout_width="71dp"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@color/head_title_color"
+            android:textSize="7sp"
+            android:visibility="gone"
+            tools:text="\ddd"
+            tools:visibility="visible" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_shadow"
+        style="@style/view_shadow_style" />
+
+</RelativeLayout>

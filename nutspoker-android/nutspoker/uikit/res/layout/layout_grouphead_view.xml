@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/avatar_size_default"
+    android:layout_height="@dimen/avatar_size_default"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_grouphead"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <com.netease.nim.uikit.chesscircle.view.CircularImageView
+            android:id="@+id/circularImageView"
+            android:layout_width="@dimen/avatar_size_default"
+            android:layout_height="@dimen/avatar_size_default"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/mDefaultHead"
+            android:layout_width="@dimen/avatar_size_default"
+            android:layout_height="@dimen/avatar_size_default"
+            android:src="@drawable/default_group_head" />
+
+    </LinearLayout>
+</RelativeLayout>

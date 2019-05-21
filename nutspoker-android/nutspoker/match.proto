@@ -1,0 +1,115 @@
+syntax = "proto2";
+
+message HeartbeatNtf {
+    optional uint32 time = 1;
+}
+
+message MatchSelfStatusReq {
+}
+
+message MatchSelfStatusRep {
+    optional int32 checkin = 1;
+    optional int32 curr_sblinds_index = 2;
+    optional int32 curr_left_players = 3;
+    optional int32 all_reward = 4;
+    optional int32 max_chips = 5;
+    optional int32 min_chips = 6;
+    optional int32 match_status = 7;
+    optional int32 game_status = 8;
+    optional int32 checkin_player = 9;
+    optional int32 is_control = 10;
+    optional int32 begin_time = 11;
+    optional int32 start_time = 12;
+    optional uint32 match_pause_time = 13;
+    optional int32 match_in_rest = 14;
+    optional int32 buy_type = 15;
+    optional int32 score = 16;
+    optional int32 rebuy_cnt = 17;
+    optional uint32 checkin_time = 18;
+}
+
+message UserInfo {
+    required uint32 uid = 1;
+    optional bytes nickname = 2;
+    optional uint32 uuid = 3;
+    optional int32 ranking = 4;
+    optional int32 chips = 5;
+    optional int32 rebuy_cnt = 6;
+    optional int32 ko_worth = 7;
+    optional int32 ko_head_cnt = 8;
+    optional int32 ko_head_reward = 9;
+    optional bytes opt_user = 10;
+    optional int32 opt_user_type = 11;
+    optional bytes opt_user_real = 12;
+}
+
+message MatchUserListReq {
+    optional uint32 rank_type = 1;
+    optional uint32 sequence = 2;
+    optional string channel = 3;
+}
+
+message MatchUserListRep {
+    optional uint32 msg_index = 1;
+    optional uint32 msg_cnt = 2;
+    optional uint32 rank_type = 3;
+    repeated UserInfo user_list = 4;
+    optional uint32 sequence = 5;
+    optional string channel = 6;
+    optional uint32 rebuy_cnt = 7;
+    optional uint32 checkin_cnt = 8;
+    optional uint32 ko_head_total = 9;
+}
+
+message SearchMatchUserReq {
+    optional bytes nickname = 1;
+}
+
+message SearchMatchUserRep {
+    repeated UserInfo user_list = 1;
+}
+
+message MatchUserInfoReq {
+    optional uint32 msg_type = 1;
+    optional uint32 uid = 2;
+    optional string channel = 3;
+}
+
+message MatchUserInfoRep {
+    optional uint32 msg_type = 1;
+    optional UserInfo user_info = 2;
+    optional string channel = 3;
+}
+
+message MatchTableListReq {
+}
+
+message MatchTableListRep {
+    message TableInfo {
+        optional int32 index = 1;
+        optional int32 count = 2;
+        optional int32 max_chips = 3;
+        optional int32 min_chips = 4;
+    }
+
+    repeated TableInfo table_list = 1;
+}
+
+message MatchCheckInNtf {
+    optional uint32 uid = 1;
+    optional uint32 checkin_type = 2;
+    optional uint32 checkin_player = 3;
+    optional uint32 all_reward = 4;
+    optional string channel = 5;
+
+}
+
+message MatchStartNtf {
+    optional int32 start_time = 1;
+}
+
+
+message MatchInResttNtf {
+    optional int32 match_in_rest = 1;
+    optional int32 match_pause_time = 2;
+}

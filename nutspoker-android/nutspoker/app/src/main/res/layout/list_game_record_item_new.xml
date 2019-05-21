@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_record_item"
+    android:layout_width="match_parent"
+    android:layout_height="68dp"
+    android:background="@drawable/common_column_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp">
+
+    <LinearLayout
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_game_date_node_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:text=""
+            android:textColor="@color/shop_text_no_select_color"
+            android:textSize="14sp"
+            tools:text="dddddd" />
+
+        <TextView
+            android:id="@+id/tv_game_date_node_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dp"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:textColor="@color/shop_text_no_select_color"
+            android:textSize="10sp"
+            tools:text="aaaaa" />
+
+        <CheckBox
+            android:id="@+id/ck_select"
+            style="@style/rb_game_create_insurance_style"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ck_common_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:visibility="gone"
+            tools:visibility="visible" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="0dp"
+        android:paddingRight="10dp"
+        android:paddingTop="2dp">
+        <TextView
+            android:id="@+id/tv_game_create_time"
+            android:layout_width="50dp"
+            android:layout_height="18dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="18:02"
+            android:textColor="@color/shop_text_no_select_color" />
+        <ImageView
+            android:id="@+id/iv_game_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tv_game_create_time"
+            tools:visibility="visible"
+            android:visibility="gone"
+            android:src="@mipmap/icon_control_mtt" />
+        <ImageView
+            android:id="@+id/game_record_hunter_iv"
+            android:layout_toRightOf="@id/iv_game_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginLeft="5dp"
+            tools:visibility="visible"
+            android:src="@mipmap/icon_hunter"/>
+        <ImageView
+            android:id="@+id/horde_marker"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/game_record_hunter_iv"
+            android:src="@mipmap/icon_clan"/>
+        <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+            android:id="@+id/iv_game_creator_userhead"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/tv_game_create_time"
+            android:layout_marginTop="1dp"
+            android:src="@mipmap/default_male_head" />
+        <ImageView
+            android:id="@+id/iv_omaha_icon"
+            android:layout_alignBottom="@+id/iv_game_creator_userhead"
+            android:layout_width="40dp"
+            android:layout_height="14dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/tag_omaha_4"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+        <ImageView
+            android:id="@+id/iv_pineapple_icon"
+            android:layout_alignBottom="@+id/iv_game_creator_userhead"
+            android:layout_width="49dp"
+            android:layout_height="17dp"
+            android:layout_marginLeft="6dp"
+            android:src="@mipmap/p_tags_normal"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+
+        <RelativeLayout
+            android:id="@+id/info_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_game_create_time"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/iv_game_creator_userhead"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_game_name"
+                style="@style/tv_gameinfo_list_text_style"
+                android:text=""
+                tools:text="暴走的苹果的牌局2"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/text_select_color" />
+
+            <LinearLayout
+                android:id="@+id/record_common_info_container"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:id="@+id/tv_game_member"
+                    style="@style/tv_gameinfo_list_text_style"
+                    android:paddingRight="8dp"
+                    android:textColor="@color/shop_text_no_select_color"
+                    android:drawableLeft="@mipmap/icon_club_chat_member"
+                    tools:text="2/6" />
+
+                <TextView
+                    android:id="@+id/tv_pineapple_ante"
+                    style="@style/tv_recentgame_text_small_style"
+                    android:drawableLeft="@mipmap/di_icon_2"
+                    android:paddingRight="8dp"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    android:text="2" />
+
+                <TextView
+                    android:id="@+id/tv_game_blind"
+                    style="@style/tv_gameinfo_list_text_style"
+                    android:paddingRight="8dp"
+                    android:textColor="@color/shop_text_no_select_color"
+                    android:drawableLeft="@mipmap/icon_club_chat_chip"
+                    android:text="1/2" />
+
+                <TextView
+                    android:id="@+id/tv_game_match_chips"
+                    style="@style/tv_gameinfo_list_text_style"
+                    android:paddingRight="8dp"
+                    android:textColor="@color/shop_text_no_select_color"
+                    android:drawableLeft="@mipmap/icon_club_chat_checkin_fee"
+                    tools:visibility="visible"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_game_duration"
+                    style="@style/tv_gameinfo_list_text_style"
+                    android:drawableLeft="@mipmap/icon_club_chat_time"
+                    android:gravity="left"
+                    android:paddingRight="8dp"
+                    android:textColor="@color/shop_text_no_select_color"
+                    android:text="1h30m" />
+
+                <TextView
+                    android:id="@+id/iv_game_insurance"
+                    style="@style/tv_gameinfo_list_text_style"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/game_create_config_insurance"
+                    tools:visibility="visible"
+                    android:drawableLeft="@mipmap/icon_club_chat_game_item_insurance"
+                    android:textColor="@color/shop_text_no_select_color"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_game_ante"
+                    style="@style/tv_gameinfo_list_text_style"
+                    android:text="ANTE:2000"
+                    android:textColor="@color/shop_text_no_select_color"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+                <com.htgames.nutspoker.view.record.RankView
+                    android:id="@+id/mRankView"
+                    android:layout_width="match_parent"
+                    android:layout_height="23dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:gravity="right|center_vertical"
+                    android:minWidth="14dp"
+                    app:rankTextSize="6sp"
+                    app:rankWidth="14dp" />
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_game_earnings"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            style="@style/tv_gameinfo_list_text_style"
+            tools:text="110"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/record_list_earn_yes"
+            android:textSize="20dp" />
+        <View
+            style="@style/record_divider_style"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="2dp" />
+    </RelativeLayout>
+</LinearLayout>
+
+
+
+

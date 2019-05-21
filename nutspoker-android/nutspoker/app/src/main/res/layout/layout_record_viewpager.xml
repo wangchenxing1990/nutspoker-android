@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view class="com.htgames.nutspoker.ui.fragment.main.RecordFragment$RecordTopView"  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:maxHeight="220dp"
+    android:minHeight="180dp">
+    <TextView
+        android:id="@+id/record_viewpager_money_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/record_viewpager_money_num_size"
+        android:text="+0"
+        android:textColor="#FF5353"
+        android:paddingBottom="20dp"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="总盈利"
+        android:textColor="@color/white"
+        android:alpha="0.4"
+        android:paddingBottom="10dp"
+        android:layout_above="@id/record_viewpager_money_num"/>
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/record_viewpager_paiju_num_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:alpha="0.6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="@dimen/record_viewpager_bottom_item_margin"
+        android:paddingLeft="35dp"
+        android:text="@string/record_all_paiju"/>
+    <TextView
+        android:id="@+id/record_viewpager_paiju_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:alpha="0.6"
+        android:layout_toRightOf="@id/record_viewpager_paiju_num_des"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="@dimen/record_viewpager_bottom_item_margin"
+        android:paddingLeft="10dp"
+        android:text="0"/>
+    <TextView
+        android:id="@+id/record_viewpager_hands_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:alpha="0.6"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="@dimen/record_viewpager_bottom_item_margin"
+        android:paddingRight="35dp"
+        android:text="1503"/>
+    <TextView
+        android:id="@+id/record_viewpager_hands_num_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:alpha="0.6"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="@dimen/record_viewpager_bottom_item_margin"
+        android:layout_toLeftOf="@id/record_viewpager_hands_num"
+        android:paddingRight="10dp"
+        android:text="@string/record_hands_count"/>
+
+
+
+
+
+    <TextView
+        android:id="@+id/record_viewpager_sng_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:alpha="0.6"
+        android:drawablePadding="5dp"
+        android:drawableTop="@mipmap/icon_record_sng"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:paddingBottom="@dimen/record_viewpager_bottom_item_margin"
+        tools:layout_marginBottom="50dp"
+        android:paddingLeft="35dp"
+        android:text="22场"/>
+    <TextView
+        android:id="@+id/record_viewpager_mtt_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:alpha="0.6"
+        android:drawablePadding="5dp"
+        android:drawableTop="@mipmap/icon_record_mtt"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="@dimen/record_viewpager_bottom_item_margin"
+        tools:layout_marginBottom="50dp"
+        android:paddingRight="35dp"
+        android:text="22场"/>
+</view>

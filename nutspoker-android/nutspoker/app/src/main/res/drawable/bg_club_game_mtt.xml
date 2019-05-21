@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<gradient-->
+        <!--android:angle="0"-->
+        <!--android:startColor="@color/bg_mtt_start"-->
+        <!--android:endColor="@color/bg_mtt_end" />-->
+    <solid android:color="@color/paiju_list_bg_mtt"/>
+    <corners android:radius="@dimen/bg_club_common_radius"/>
+</shape>

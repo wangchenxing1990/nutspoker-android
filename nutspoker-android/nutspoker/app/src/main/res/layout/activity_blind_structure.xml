@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <include layout="@layout/view_common_head" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_blinds_stucture_level"
+            style="@style/tv_blinds_stucture_column"
+            android:layout_weight="1"
+            android:text="@string/blinds_structure_column_level" />
+
+        <TextView
+            android:id="@+id/tv_blinds_stucture_blinds"
+            style="@style/tv_blinds_stucture_column"
+            android:layout_weight="1"
+            android:text="@string/blinds_structure_column_blinds" />
+
+
+        <TextView
+            android:id="@+id/tv_blinds_stucture_ante"
+            style="@style/tv_blinds_stucture_column"
+            android:layout_weight="1"
+            android:text="@string/blinds_structure_column_ante" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/register_page_bg_color"/>
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/blinds_view_pager"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="5dp"
+        android:id="@+id/blinds_recyclerview"/>
+</LinearLayout>

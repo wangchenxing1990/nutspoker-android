@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_common_head" />
+
+    <FrameLayout
+        android:id="@+id/view_pager_container"
+        android:layout_width="match_parent"
+        android:foreground="@drawable/fg_horde"
+        android:clickable="true"
+        android:layout_height="@dimen/discovery_notice_height">
+        <com.htgames.nutspoker.ui.fragment.main.BannerViewPager
+            android:id="@+id/view_pager_auto_notice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/banner_default"/>
+        <com.htgames.nutspoker.ui.fragment.main.DiscoveryBannerIndicator
+            android:id="@+id/discovery_banner_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="4dp"/>
+    </FrameLayout>
+
+    <com.htgames.nutspoker.chat.app_msg.view.AppMessageRecentView
+        android:id="@+id/mAppMessageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.htgames.nutspoker.chat.app_msg.view.AppMessageRecentView
+        android:id="@+id/mAppMessageControl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"/>
+    <com.htgames.nutspoker.chat.app_msg.view.AppMessageRecentView
+        android:id="@+id/mAppMessageClub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"/>
+    <com.htgames.nutspoker.ui.recycler.MeRecyclerView
+        android:id="@+id/frg_discovery_p2p_msg_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+    </com.htgames.nutspoker.ui.recycler.MeRecyclerView>
+</LinearLayout>

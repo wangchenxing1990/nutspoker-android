@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/register_page_bg_color">
+
+    <com.htgames.nutspoker.view.ShareCodeView
+        android:id="@+id/mShareCodeView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:visibility="gone" />
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <include
+            android:id="@+id/layout_head"
+            layout="@layout/view_common_head"/>
+        <RelativeLayout
+            android:id="@+id/ll_head_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include layout="@layout/layout_invalid_tip"
+                     android:id="@+id/rl_invalid_tip"/>
+            <com.htgames.nutspoker.game.match.view.PagerSlidingTabStrip
+                android:id="@+id/team_message_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:background="@color/head_bg"
+                app:pstsDividerColor="@color/transparent"
+                app:pstsIndicatorColor="@color/login_solid_color"
+                app:pstsIndicatorHeight="3dp"
+                app:pstsScaleZoomMax="0.1"
+                app:pstsShouldExpand="true"
+                app:pstsSmoothScrollWhenClickTab="true"
+                app:pstsTabPaddingLeftRight="12dp"
+                app:pstsTextColor="@color/login_grey_color"
+                app:pstsTextSelectedColor="@color/login_solid_color"
+                app:pstsTextSize="17dp"
+                app:pstsUnderlineColor="@color/probar_voice_timer_normal_color"
+                app:pstsUnderlineHeight="0dp"
+                app:pstsDividerPaddingTopBottom="8dp"
+                android:layout_below="@id/rl_invalid_tip"
+                tools:visibility="visible"/>
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/team_message_chat_unread_num"
+                android:background="@drawable/unread_badge_bg"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_below="@id/rl_invalid_tip"
+                android:layout_marginBottom="10dp"
+                tools:visibility="visible"
+                android:textColor="@color/white"
+                tools:text="88"
+                android:includeFontPadding="false"
+                android:layout_marginTop="5dp"
+                android:textSize="13dp"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/team_message_view_pager"
+        android:layout_below="@id/appbar"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    </android.support.v4.view.ViewPager>
+
+    <View
+        android:id="@+id/view_shadow"
+        style="@style/view_shadow_style" />
+
+</RelativeLayout>

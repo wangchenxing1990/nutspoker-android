@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include layout="@layout/view_common_head" />
+
+    <!-- ↑头部↑ -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:clickable="true"
+        android:foreground="@drawable/fg_horde"
+        android:background="@mipmap/fund_bg">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="15dp"
+            android:textColor="@color/white"
+            android:text="@string/text_fund"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="20dp">
+            <ImageView
+                android:id="@+id/iv_fund_top"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:tint="@color/white"
+                android:src="@mipmap/icon_me_coin"/>
+            <TextView
+                android:id="@+id/tv_fund_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                tools:text="24352"
+                android:gravity="center_vertical"
+                android:textSize="32dp"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 充值基金  -->
+    <RelativeLayout
+        android:id="@+id/rl_recharge_fund"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/common_column_bg"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            style="@style/tv_common_column_title_style"
+            android:gravity="center_vertical"
+            android:drawableLeft="@mipmap/me_icon_shop"
+            android:text="@string/rechange_fund"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="5dp"
+            android:paddingLeft="5dp"
+            android:drawableRight="@mipmap/icon_common_arrow_normal"
+            android:textColor="@color/shop_text_no_select_color"
+            android:textSize="15dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:background="@color/register_page_bg_color"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <!-- 发放基金 -->
+    <RelativeLayout
+        android:id="@+id/rl_grant_fund"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/common_column_bg"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            style="@style/tv_common_column_title_style"
+            android:gravity="center_vertical"
+            android:drawableLeft="@mipmap/fund_gift_icon"
+            android:text="@string/grant_fund"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="5dp"
+            android:paddingLeft="5dp"
+            android:drawableRight="@mipmap/icon_common_arrow_normal"
+            android:textColor="@color/shop_text_no_select_color"
+            android:textSize="15dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:background="@color/register_page_bg_color"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <!-- 基金明细 -->
+    <RelativeLayout
+        android:id="@+id/rl_fund_particulars"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/common_column_bg"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            style="@style/tv_common_column_title_style"
+            android:gravity="center_vertical"
+            android:drawableLeft="@mipmap/fund_detail_icon"
+            android:text="@string/fund_particulars"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="5dp"
+            android:paddingLeft="5dp"
+            android:drawableRight="@mipmap/icon_common_arrow_normal"
+            android:textColor="@color/shop_text_no_select_color"
+            android:textSize="15dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:background="@color/register_page_bg_color"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/rl_head_bg_style"
+    android:background="@color/head_bg"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <ProgressBar
+        android:id="@+id/mProgressBar"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateDrawable="@drawable/nim_progress_small_white"
+        android:indeterminateDuration="500"
+        android:indeterminateOnly="true"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/mStatusText"
+        style="@style/tv_head_title_style"
+        android:text="@string/connecting" />
+</LinearLayout>

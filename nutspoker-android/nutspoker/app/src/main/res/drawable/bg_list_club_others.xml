@@ -1,0 +1,12 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:centerX="70%"
+        android:centerY="22%"
+        android:startColor="#4CB5CE"
+        android:endColor="#2F6071"
+        android:gradientRadius="280dp"
+        android:type="radial"></gradient>
+
+    <corners android:radius="@dimen/bg_club_common_radius"/>
+</shape>

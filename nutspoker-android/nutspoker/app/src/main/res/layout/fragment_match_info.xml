@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/match_room_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/match_room_top_bg"
+            android:padding="5dp">
+            <LinearLayout
+                android:id="@+id/game_mode_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:paddingTop="5dp">
+                <ImageView
+                    android:id="@+id/iv_game_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_mtt_blue" />
+                <TextView
+                    android:id="@+id/match_info_tv_hunter_marker"
+                    android:layout_width="75dp"
+                    android:layout_height="21dp"
+                    android:paddingLeft="5dp"
+                    android:drawablePadding="5dp"
+                    android:alpha="0.6"
+                    android:drawableRight="@mipmap/icon_room_tips_coin"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    android:textSize="16dp"
+                    android:layout_toRightOf="@id/iv_game_mode"
+                    android:text="@string/game_match_hunter"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_game_code"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/game_mode_container">
+
+                <include
+                    android:id="@+id/rl_game_share"
+                    layout="@layout/layout_game_code_new" />
+
+                <TextView
+                    android:id="@+id/tv_mtt_chips"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/rl_game_share"
+                    android:paddingBottom="16dp"
+                    android:alpha="0.6"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:text="初始记分牌" />
+
+                <TextView
+                    android:id="@+id/tv_mtt_chips_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_mtt_chips"
+                    android:layout_marginTop="-16dp"
+                    android:layout_toLeftOf="@id/rl_game_share"
+                    android:alpha="0.6"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    tools:text="1000" />
+
+                <LinearLayout
+                    android:id="@+id/ll_mtt_checkin_fee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/rl_game_share"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_mtt_checkin_fee_des"
+                        style="@style/tv_match_info_content_style"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.6"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@mipmap/icon_room_tips_coin"
+                        android:gravity="center"
+                        android:text="@string/game_mtt_checkfee"
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_mtt_checkin_fee"
+                        style="@style/tv_match_info_content_style"
+                        android:alpha="0.6"
+                        android:textColor="@color/white"
+                        android:drawablePadding="5dp"
+                        android:textSize="13sp"
+                        tools:text="222" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_mtt_creator"
+                style="@style/tv_match_info_content_style"
+                android:layout_below="@id/rl_game_code"
+                android:layout_centerHorizontal="true"
+                android:alpha="0.6"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                tools:text="房主：周智慧" />
+
+            <TextView
+                android:id="@+id/tv_mtt_max_cnt"
+                style="@style/tv_match_info_content_style"
+                android:layout_below="@id/tv_mtt_creator"
+                android:layout_centerHorizontal="true"
+                android:alpha="0.6"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:paddingTop="5dp"
+                tools:text="总买入次数上限：1000" />
+
+            <FrameLayout
+                android:id="@+id/deprecated_views"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_mtt_max_cnt"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_match_start_style"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    tools:text="定时开赛" />
+
+                <TextView
+                    android:id="@+id/tv_match_start_time"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:textSize="10sp"
+                    tools:text="12月18日23:06" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_mtt_checkin_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_mtt_max_cnt"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="5dp"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                tools:text="已报名：111" />
+
+            <TextView
+                android:id="@+id/tv_mtt_all_reward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_mtt_checkin_count"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/mtt_text_common_color"
+                android:visibility="gone"
+                tools:text="总奖池：111" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_mtt_instructions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/match_room_top"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="3dp"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/icon_warning_solid_login"
+            android:gravity="center"
+            android:text="@string/game_create_sng_blinds_relation"
+            android:textColor="@color/login_solid_color"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/tv_mtt_reward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_mtt_instructions"
+            android:layout_centerHorizontal="true"
+            android:drawablePadding="5dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="3dp"
+            android:drawableRight="@mipmap/icon_warning_solid_login"
+            android:gravity="center"
+            android:text="@string/mtt_match_reward_table"
+            android:textColor="@color/login_solid_color"
+            android:textSize="17dp" />
+
+        <View
+            android:id="@+id/view_divider_1"
+            style="@style/view_match_game_info_divider_style"
+            android:layout_below="@id/tv_mtt_reward" />
+        <LinearLayout
+            android:id="@+id/match_hunter_info_container"
+            android:layout_below="@id/view_divider_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:visibility="gone"
+            android:orientation="vertical"
+            tools:visibility="visible">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+                <TextView
+                    android:id="@+id/hunter_reward_rate"
+                    tools:text="报名费分配：奖池100+奖金100"
+                    android:gravity="center_vertical"
+                    style="@style/tv_match_info_title_style"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    android:id="@+id/hunter_head_rate"
+                    tools:text="淘汰玩家分得对方赏金比例：50%"
+                    android:gravity="center_vertical"
+                    style="@style/tv_match_info_title_style"
+                    android:layout_width="wrap_content" />
+            </LinearLayout>
+            <View
+                style="@style/view_match_game_info_divider_style" />
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/mtt_info_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white"
+            android:layout_below="@id/match_hunter_info_container">
+            <LinearLayout
+                android:id="@+id/ll_mtt_info_status_wait"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="5dp">
+                <TextView
+                    android:id="@+id/tv_mtt_blinds_duration"
+                    tools:text="涨盲时间：3分钟"
+                    style="@style/tv_match_info_title_style"
+                    android:layout_width="match_parent" />
+                <TextView
+                    android:id="@+id/tv_mtt_match_player"
+                    tools:text="单桌人数：9人"
+                    style="@style/tv_match_info_title_style"
+                    android:layout_width="match_parent" />
+                <TextView
+                    android:id="@+id/tv_mtt_match_blind_level"
+                    tools:text="延时报名：1-8盲注级别"
+                    style="@style/tv_match_info_title_style"
+                    android:layout_width="match_parent" />
+                <TextView
+                    android:id="@+id/tv_mtt_rebuy"
+                    tools:text="重购次数：0"
+                    style="@style/tv_match_info_title_style"
+                    android:layout_width="match_parent" />
+                <TextView
+                    android:id="@+id/tv_mtt_addon"
+                    tools:text="增购：无"
+                    android:visibility="gone"
+                    style="@style/tv_match_info_title_style"
+                    android:layout_width="match_parent" />
+                <TextView
+                    android:id="@+id/tv_mtt_termination_join"
+                    tools:text="终止参赛：第6盲注级别"
+                    android:visibility="gone"
+                    style="@style/tv_match_info_title_style"
+                    android:layout_width="match_parent" />
+                <TextView
+                    android:id="@+id/tv_mtt_midfield_rest"
+                    tools:text="@string/game_match_midfield_rest_desc"
+                    style="@style/tv_match_info_title_style"
+                    android:layout_width="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_mtt_info_status_ing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="5dp">
+                <TextView
+                    android:id="@+id/tv_match_current_level"
+                    style="@style/tv_match_info_title_style"
+                    tools:text="当前等级9：盲注200/400   前注20"
+                    android:layout_width="match_parent" />
+                <TextView
+                    android:id="@+id/tv_match_next_level"
+                    style="@style/tv_match_info_title_style"
+                    tools:text="下一等级10：盲注400/800   前注30"
+                    android:layout_width="match_parent" />
+                <TextView
+                    android:id="@+id/tv_match_current_duration"
+                    tools:text="涨盲时间：3分钟"
+                    style="@style/tv_match_info_title_style"
+                    android:layout_width="match_parent" />
+                <TextView
+                    android:id="@+id/tv_match_current_chips"
+                    tools:text="记分牌：最大29000  平均5800  最小24"
+                    style="@style/tv_match_info_title_style"
+                    android:layout_width="match_parent" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <View
+            android:id="@+id/view_divider_2"
+            style="@style/view_match_game_info_divider_style"
+            android:layout_below="@id/mtt_info_container" />
+
+        <TextView
+            android:id="@+id/tv_match_prompt"
+            style="@style/tv_match_info_title_style"
+            android:layout_width="match_parent"
+            android:layout_below="@id/view_divider_2"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:gravity="center"
+            android:text="@string/game_mtt_prompt"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/iv_omaha_icon"
+            android:layout_width="62dp"
+            android:layout_height="22dp"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/tag_omaha_2"/>
+    </RelativeLayout>
+</ScrollView>

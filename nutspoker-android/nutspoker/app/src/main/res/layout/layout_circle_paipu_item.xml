@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_circle_paipu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/common_column_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_game_mode"
+            android:layout_width="30dp"
+            android:layout_height="@dimen/record_detail_player_bg_height"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp">
+
+            <ImageView
+                android:id="@+id/iv_game_mode"
+                android:layout_width="22dp"
+                android:layout_height="12dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/icon_paiju_item_sng" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.htgames.nutspoker.view.hands.HandCardView
+                    android:id="@+id/mCardTypeView"
+                    android:layout_width="77dp"
+                    android:layout_height="45dp"
+                    tools:visibility="visible"
+                    app:viewsNum="5"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone" />
+
+                <com.htgames.nutspoker.view.hands.HandCardView
+                    android:id="@+id/mHandCardView"
+                    android:layout_width="76dp"
+                    android:layout_height="49dp"
+                    tools:visibility="gone"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp">
+
+                <TextView
+                    android:id="@+id/tv_paipu_cardtype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text=""
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@id/tv_paipu_cardtype"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_game_checkin_fee"
+                        style="@style/tv_gameinfo_list_text_style"
+                        android:layout_marginRight="10dp"
+                        android:drawableLeft="@mipmap/icon_club_chat_checkin_fee"
+                        android:text=""
+                        android:visibility="gone"
+                        android:textColor="@color/paiju_view_content_text_color"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tv_game_blind"
+                        style="@style/tv_gameinfo_list_text_style"
+                        android:drawableLeft="@mipmap/icon_club_chat_chip"
+                        android:text="1/2"
+                        android:textColor="@color/paiju_view_content_text_color"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_game_earnings"
+                    style="@style/tv_gameinfo_list_text_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/record_item_divider_color" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

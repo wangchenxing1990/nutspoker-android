@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_head"
+        layout="@layout/view_common_head" />
+    <com.htgames.nutspoker.view.widget.ClearableEditTextWithIcon
+        android:id="@+id/edit_search_record"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:background="@drawable/edt_common_bg"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/edt_common_hint_color"
+        android:gravity="center_vertical"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@null"
+        android:drawablePadding="5dp"
+        android:focusable="true"
+        android:hint="@string/hint_search_record"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="53dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="86dp">
+
+        <LinearLayout
+            android:id="@+id/ll_select_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            tools:visibility="visible"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_select_mode_prompt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/grid_record_game_select_height"
+                android:background="#585858"
+                android:gravity="center"
+                android:text="@string/record_list_select_mode_prompt"
+                android:textColor="@color/white_main_text_color"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+            <HorizontalScrollView
+                android:id="@+id/selectHorizontalScrollView"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/grid_record_game_select_height"
+                android:background="#585858"
+                android:fillViewport="true"
+                android:scrollbars="none"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="0dp"
+                    android:paddingTop="0dp">
+
+                    <GridView
+                        android:id="@+id/gv_select_game"
+                        style="@style/grid_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:horizontalSpacing="0dip"
+                        android:listSelector="@android:color/transparent"
+                        android:verticalSpacing="0dip" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <Button
+                android:id="@+id/btn_select_confim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#333335"
+                tools:text="btn_select_confim"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/mSwipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/ll_select_mode">
+
+            <com.htgames.nutspoker.view.TouchableRecyclerView
+                android:id="@+id/lv_list"
+                app:dividerHeight="0dp"
+                style="@style/listview_common_style" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+        
+        <include layout="@layout/fast_scroller"/>
+
+        <com.htgames.nutspoker.view.ResultDataView
+            android:id="@+id/mResultDataView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_shadow"
+        style="@style/view_shadow_style" />
+</FrameLayout>

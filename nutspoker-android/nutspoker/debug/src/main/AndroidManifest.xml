@@ -1,0 +1,48 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.htgames.nutspoker.debug"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="22"/>
+
+    <application android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        tools:replace="icon">
+        <activity
+            android:name=".DevelopAC"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="com.htgames.nutspoker" android:pathPrefix="/goto/develop" android:scheme="everpoker"/>
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".network_monitor.data.ChuckContentProvider"
+            android:authorities="${applicationId}.chuck.provider"
+            android:exported="false" />
+        <activity
+            android:name=".network_monitor.ChuckActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/Chuck.Theme"
+            android:label="@string/chuck_name">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="com.htgames.nutspoker" android:pathPrefix="/goto/network_monitor" android:scheme="everpoker"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".network_monitor.ui.TransactionActivity"
+            android:parentActivityName=".network_monitor.ChuckActivity"
+            android:theme="@style/Chuck.Theme"/>
+        <service
+            android:name=".network_monitor.support.ClearTransactionsService"
+            android:exported="false" />
+    </application>
+
+</manifest>

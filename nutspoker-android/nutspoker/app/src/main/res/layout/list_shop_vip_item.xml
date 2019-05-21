@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_vip_item"
+    style="@style/ll_shop_vip_column_style"
+    android:layout_marginTop="5dp"
+    android:background="@color/shop_vip_item_black_bg_color">
+
+    <TextView
+        android:id="@+id/tv_vip_desc"
+        style="@style/tv_shop_vip_column_style"
+        android:text="@string/giving_taxas_coin" />
+
+    <View style="@style/tv_shop_vip_divider_style" />
+
+    <TextView
+        android:id="@+id/tv_vip_white"
+        style="@style/tv_shop_vip_column_style"
+        android:text="" />
+
+    <View style="@style/tv_shop_vip_divider_style" />
+
+    <TextView
+        android:id="@+id/tv_vip_black"
+        style="@style/tv_shop_vip_column_style"
+        android:text=""
+        android:textColor="@color/shop_vip_black_text_color" />
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_daily_gain_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="8dp"
+        android:layout_height="140dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal">
+
+            <View
+                android:id="@+id/view_daily_gain_line"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_centerInParent="true"
+                android:background="@color/daily_gain_item_line_color" />
+
+            <View
+                android:id="@+id/view_daily_gain"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_above="@id/view_daily_gain_line"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/record_detail_win" />
+
+            <View
+                android:id="@+id/view_daily_lose"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_below="@id/view_daily_gain_line"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="@drawable/record_detail_lose" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_daily_gain_day"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/daily_gain_item_normal_text_color"
+        android:textSize="12sp" />
+</LinearLayout>

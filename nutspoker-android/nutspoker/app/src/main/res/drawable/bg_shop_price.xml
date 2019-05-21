@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape>
+            <corners android:radius="@dimen/btn_common_radius"/>
+            <solid android:color="@color/btn_login_bg_disable_color"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/bg_shop_price_press" android:state_pressed="true"/>
+    <item android:drawable="@drawable/bg_shop_price_normal" android:state_pressed="false"/>
+</selector>

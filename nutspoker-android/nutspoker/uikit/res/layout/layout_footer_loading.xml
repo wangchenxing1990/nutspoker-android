@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="25dp">
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/tv_footer_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="上拉加载更多"/>
+    <ProgressBar
+        android:id="@+id/progress_bar_footer_loading"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_gravity="center"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateDrawable="@drawable/nim_progress_small_white"
+        android:indeterminateDuration="500"
+        android:visibility="visible"
+        android:indeterminateOnly="true" />
+</FrameLayout>

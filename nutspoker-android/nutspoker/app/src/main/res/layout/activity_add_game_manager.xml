@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/include_head"
+        layout="@layout/view_common_head" />
+
+    <LinearLayout
+        style="@style/common_column_style"
+        android:clickable="true"
+        android:id="@+id/ll_addgame_mgr_column">
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@mipmap/club_manager_add_normal" />
+        <TextView
+            android:id="@+id/tv_add_channel_des"
+            style="@style/tv_common_column_title_style"
+            android:paddingLeft="10dp"
+            android:text="@string/add_mttgamemgr" />
+    </LinearLayout>
+
+    <com.htgames.nutspoker.view.TouchableRecyclerView
+        android:id="@+id/channel_recyc"
+        app:dividerHeight="1.5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

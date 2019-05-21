@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 设置几何图形四个角的弧度 -->
+    <corners
+        android:bottomLeftRadius="5dp"
+        android:bottomRightRadius="5dp"
+        android:radius="5dp"
+        android:topLeftRadius="0dp"
+        android:topRightRadius="0dp" />
+    <!-- 设置填充颜色 -->
+    <solid android:color="@color/download_progress_view_bg_color" />
+</shape>

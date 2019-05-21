@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_table_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/desk_count_container"
+            style="@style/ll_match_top_other_info_style"
+            android:background="@color/match_room_top_bg"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_mtt_count"
+                style="@style/tv_match_singleline_count_style"
+                android:gravity="center"
+                android:layout_weight="1"
+                tools:text="牌桌数：12"
+                android:background="@android:color/transparent" />
+            <TextView
+                android:id="@+id/tv_mtt_table_count"
+                style="@style/tv_match_singleline_count_style"
+                android:layout_weight="1"
+                android:gravity="center"
+                tools:text="单桌人数：6"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/desk_info_container"
+            style="@style/ll_match_list_column_common_style"
+            android:background="@color/match_room_top_bg_deep">
+
+            <TextView
+                style="@style/tv_match_list_column_common_style"
+                android:textColor="@color/white"
+                android:alpha="0.6"
+                android:textSize="14sp"
+                android:text="@string/game_match_table_no" />
+
+            <TextView
+                style="@style/tv_match_list_column_common_style"
+                android:textColor="@color/white"
+                android:alpha="0.6"
+                android:textSize="14sp"
+                android:text="@string/game_match_table_player_count" />
+
+            <TextView
+                style="@style/tv_match_list_column_common_style"
+                android:textColor="@color/white"
+                android:alpha="0.6"
+                android:textSize="14sp"
+                android:text="@string/game_match_table_chips" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        style="@style/listview_common_style"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_table_list"
+        android:divider="@color/match_list_divider_color"
+        android:dividerHeight="@dimen/list_divider_height" />
+
+    <TextView
+        android:id="@+id/tv_match_table_status"
+        tools:text="比赛未开始"
+        android:paddingTop="30dp"
+        android:drawablePadding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:drawableTop="@mipmap/icon_room_no_tablelist"
+        android:textColor="@color/shop_text_no_select_color"
+        android:textSize="16sp" />
+</RelativeLayout>

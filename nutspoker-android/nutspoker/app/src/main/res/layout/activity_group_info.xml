@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_head"
+        layout="@layout/view_common_head" />
+
+    <Button
+        android:id="@+id/btn_group_quit"
+        style="@style/info_operate_style"
+        android:background="@drawable/btn_operate_red"
+        android:text="@string/club_info_operate_quit" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_group_quit"
+        android:layout_below="@id/layout_head"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_column_bg"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_group_info_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/me_column_bg"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/iv_group_info_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_common_arrow" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_group_info_name"
+                            style="@style/tv_common_column_title_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true" />
+
+                        <TextView
+                            android:id="@+id/tv_group_info_member"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/member_grid_text_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <com.htgames.nutspoker.view.TeamInfoGridView
+                    android:id="@+id/team_members_grid_view"
+                    style="@style/grid_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:numColumns="5"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:verticalSpacing="10dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_newmessage_notify"
+                style="@style/rl_other_column_style"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    style="@style/tv_common_column_title_style"
+                    android:text="@string/chat_info_newmessage_notify" />
+
+                <com.htgames.nutspoker.view.switchbutton.SwitchButton
+                    android:id="@+id/switch_newmessage_notify"
+                    style="@style/SwitchButtonStyle"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical" />
+            </RelativeLayout>
+
+            <View
+                style="@style/common_column_divider_style"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                style="@style/rl_other_column_style"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/tv_common_column_title_style"
+                    android:text="@string/group_info_invite_by_host" />
+
+                <com.htgames.nutspoker.view.switchbutton.SwitchButton
+                    android:id="@+id/switch_invite_by_host"
+                    style="@style/SwitchButtonStyle"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical" />
+
+            </RelativeLayout>
+
+            <View style="@style/common_column_divider_style" />
+
+            <RelativeLayout
+                style="@style/rl_other_column_style"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/tv_common_column_title_style"
+                    android:text="@string/group_info_creat_game_by_host" />
+
+                <com.htgames.nutspoker.view.switchbutton.SwitchButton
+                    android:id="@+id/switch_creat_game_by_host"
+                    style="@style/SwitchButtonStyle"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical" />
+
+            </RelativeLayout>
+
+            <View style="@style/common_column_divider_style" />
+
+            <RelativeLayout
+                android:id="@+id/rl_clear_cache"
+                style="@style/rl_other_column_style">
+
+                <TextView
+                    style="@style/tv_common_column_title_style"
+                    android:text="@string/chat_info_clear_record" />
+            </RelativeLayout>
+
+            <View style="@style/common_column_divider_style" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/edt_game_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/edt_common_hint_color"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@null"
+        android:textSize="16dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edt_create_game_bg"
+        android:gravity="center"
+        android:hint="@string/game_create_name_hint"
+        android:imeOptions="actionDone"
+        android:maxLength="20"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/shop_text_no_select_color" />
+    <ViewStub
+        android:id="@+id/view_stub_match_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/viewstub_match_type"/>
+    <include layout="@layout/layout_game_create_match_config"/>
+
+    <LinearLayout
+        android:id="@+id/blind_setting_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:visibility="gone"
+        android:layout_marginTop="@dimen/game_create_start_module_margin"
+        android:background="@drawable/edt_create_game_bg"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        <FrameLayout
+            android:id="@+id/game_create_blind_switch"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/create_game_single_outer_column_height">
+            <TextView
+                android:id="@+id/blind_switch_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="盲注设置"
+                android:textColor="@color/shop_text_no_select_color" />
+            <ImageView
+                android:id="@+id/game_create_blind_switch_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:paddingRight="10dp"
+                android:src="@mipmap/arrow_advance_down" />
+        </FrameLayout>
+        <LinearLayout
+            android:id="@+id/ll_blind_config_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="visible">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/register_page_bg_color" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/mtt_start_sblinds_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/shop_text_no_select_color"
+                    android:text="起始盲注"/>
+                <TextView
+                    android:id="@+id/mtt_start_sblinds_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="70dp"
+                    android:textColor="@color/login_solid_color"
+                    android:text="500/1000"/>
+                <TextView
+                    android:id="@+id/mtt_blinds_click_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/login_solid_color"
+                    android:paddingRight="10dp"
+                    android:drawablePadding="5dp"
+                    android:layout_gravity="right"
+                    android:drawableRight="@mipmap/icon_warning_solid_login"
+                    android:text="盲注结构表"/>
+            </FrameLayout>
+            <com.htgames.nutspoker.view.NodeSeekBar
+                android:id="@+id/mtt_start_blind_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:shouldDrawDot="false"
+                app:showTip="false"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="5dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/register_page_bg_color" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp">
+                <View
+                    android:layout_width="1dp"
+                    android:background="@color/register_page_bg_color"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/mtt_select_blind_tv_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="盲注表(普通)"
+                    android:textSize="16dp"
+                    android:textColor="@color/seekbar_time_tv_color"
+                    android:layout_gravity="left"/>
+                <TextView
+                    android:id="@+id/mtt_select_blind_tv_quick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="盲注表(快速)"
+                    android:textSize="16dp"
+                    android:textColor="@color/seekbar_time_tv_color"
+                    android:layout_gravity="right"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- ************************************************************************************************ advanced config ************************************************************************************************ -->
+    <LinearLayout
+        android:id="@+id/advanced_setting_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/game_create_start_module_margin"
+        android:background="@drawable/edt_create_game_bg"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        tools:visibility="gone"
+        android:paddingRight="20dp">
+        <FrameLayout
+            android:id="@+id/game_create_advanced_switch"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/create_game_single_outer_column_height">
+            <TextView
+                android:id="@+id/advanced_switch_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/game_create_config_advanced"
+                android:textColor="@color/shop_text_no_select_color" />
+            <ImageView
+                android:id="@+id/game_create_advanced_switch_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:paddingRight="10dp"
+                android:src="@mipmap/arrow_advance_down" />
+        </FrameLayout>
+        <LinearLayout
+            android:id="@+id/ll_advanced_config_new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="visible">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/register_page_bg_color" />
+            <TextView
+                android:id="@+id/tv_game_match_table_count"
+                style="@style/tv_game_create_common_column_style"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/create_game_single_inner_column_height"
+                android:gravity="center_vertical"
+                android:text="@string/game_create_match_table_player_count" />
+            <com.htgames.nutspoker.view.NodeSeekBar
+                android:id="@+id/mDeskNumSeekBarNew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="-5dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/register_page_bg_color" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/create_game_single_inner_column_height"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/checkin_player_limit_des"
+                    style="@style/tv_game_create_common_column_style"
+                    android:text="总买入次数上限"/>
+                <TextView
+                    android:id="@+id/checkin_player_limit_click"
+                    style="@style/tv_game_create_common_column_style"
+                    android:layout_width="21dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="5dp"
+                    android:drawableLeft="@mipmap/icon_waring"
+                    android:textColor="@color/gray_auxiliary_text_color"
+                    android:textSize="10sp" />
+                <TextView
+                    android:id="@+id/checkin_player_limit_num"
+                    style="@style/tv_game_create_common_column_style"
+                    android:textColor="@color/login_solid_color"
+                    android:paddingLeft="20dp"
+                    android:text="1000"/>
+            </LinearLayout>
+            <com.htgames.nutspoker.view.NodeSeekBar
+                android:id="@+id/checkin_player_limit_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:shouldDrawDot="false"
+                app:showTip="false"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="5dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/register_page_bg_color" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/create_game_single_inner_column_height">
+                <TextView
+                    android:id="@+id/tv_game_create_blind_level"
+                    style="@style/tv_game_create_common_column_style"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="终止报名级别   " />
+                <TextView
+                    android:id="@+id/tv_game_create_blind_level_new"
+                    style="@style/tv_game_create_common_column_style"
+                    android:layout_toRightOf="@id/tv_game_create_blind_level"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/login_solid_color"
+                    android:text="@string/game_create_blind_level_new" />
+            </RelativeLayout>
+            <com.htgames.nutspoker.view.NodeSeekBar
+                android:id="@+id/mBlindsLevelSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:shouldDrawDot="false"
+                app:showTip="false"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/register_page_bg_color" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/create_game_single_inner_column_height">
+                <TextView
+                    android:id="@+id/rebuy_left"
+                    style="@style/tv_game_create_common_column_style"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/game_create_rebuy" />
+                <TextView
+                    android:id="@+id/rebuy_instructions"
+                    style="@style/tv_game_create_common_column_style"
+                    android:layout_width="21dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/rebuy_left"
+                    android:paddingLeft="5dp"
+                    android:drawableLeft="@mipmap/icon_waring"
+                    tools:text="@string/game_match_rebuy_introduce"
+                    android:textColor="@color/gray_auxiliary_text_color"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+            <com.htgames.nutspoker.view.NodeSeekBar
+                android:id="@+id/mtt_rebuy_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="-5dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/register_page_bg_color" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/create_game_single_inner_column_height"
+                android:clickable="true">
+                <TextView
+                    android:id="@+id/ck_game_control_into_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/create_game_single_inner_column_height"
+                    android:gravity="center_vertical"
+                    android:text="@string/game_create_match_control_into"
+                    android:textColor="@color/shop_text_no_select_color" />
+                <com.htgames.nutspoker.view.switchbutton.SwitchButton
+                    android:id="@+id/ck_game_control_into"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:paddingRight="10dp"
+                    app:kswAnimationDuration="300"
+                    app:kswBackDrawable="@drawable/ios_back_drawable"
+                    app:kswBackMeasureRatio="1.8"
+                    app:kswThumbDrawable="@mipmap/slide_toggle" />
+            </FrameLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/register_page_bg_color" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/create_game_single_inner_column_height">
+                <TextView
+                    android:id="@+id/rest_left"
+                    style="@style/tv_game_create_common_column_style"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/game_create_match_rest" />
+                <TextView
+                    android:id="@+id/rest_instructions"
+                    style="@style/tv_game_create_common_column_style"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/rest_left"
+                    android:layout_width="21dp"
+                    android:paddingLeft="5dp"
+                    tools:text="@string/game_match_midfield_rest_desc"
+                    android:drawableLeft="@mipmap/icon_waring"
+                    android:text=""
+                    android:textColor="@color/gray_auxiliary_text_color"
+                    android:textSize="10sp" />
+                <com.htgames.nutspoker.view.switchbutton.SwitchButton
+                    android:id="@+id/ck_game_match_rest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    app:kswAnimationDuration="300"
+                    app:kswBackDrawable="@drawable/ios_back_drawable"
+                    app:kswBackMeasureRatio="1.8"
+                    app:kswThumbDrawable="@mipmap/slide_toggle" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- ************************************************************************************************ advanced config ************************************************************************************************ -->
+
+    <!-- ******************************************************************猎人赛 ******************************************************************-->
+    <include layout="@layout/layout_hunter"/>
+
+    <include layout="@layout/layout_mtt_time"/>
+
+    <ViewStub
+        android:id="@+id/view_stub_select_horde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/game_create_start_module_margin"
+        android:layout="@layout/layout_game_create_horde_config" />
+
+    <ViewStub
+        android:id="@+id/view_stub"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="@dimen/game_create_start_module_margin"
+        android:layout="@layout/layout_sure_horde" />
+
+    <Button
+        android:id="@+id/btn_game_start"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_common_height"
+        android:layout_marginLeft="@dimen/game_create_start_btn_margin_left"
+        android:layout_marginRight="@dimen/game_create_start_btn_margin_left"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_login_btn"
+        android:gravity="center"
+        android:text="@string/game_create_start_match"
+        android:textColor="@color/btn_common_text_color"
+        android:layout_gravity="bottom"
+        android:textSize="16dp" />
+</LinearLayout>

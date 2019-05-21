@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htgames.nutspoker.view.JellyView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_quick_game_join_jelly"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/register_page_bg_color"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.netease.nim.uikit.customview.GridPwdView
+            android:id="@+id/join_game_grid_pwd_view"
+            app:gridColor="#60000000"
+            app:lineColor="#aa202832"
+            app:lineWidth="2dp"
+            app:passwordLength="6"
+            app:passwordType="numberPassword"
+            app:textColor="@color/gray_auxiliary_text_color"
+            app:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="100dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="@string/quick_game_join_prompt"
+            android:textColor="@color/gray_auxiliary_text_color"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+    <com.netease.nim.uikit.customview.NumKeyboard
+        android:id="@+id/num_keyboard_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"/>
+</com.htgames.nutspoker.view.JellyView>

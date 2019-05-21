@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_new_friends"
+        style="@style/rl_contact_column_style">
+
+        <ImageView
+            android:id="@+id/iv_new_friends"
+            style="@style/iv_contact_column_icon_style"
+            android:src="@mipmap/icon_contact_new_friend" />
+
+        <TextView
+            android:id="@+id/tv_new_friends"
+            style="@style/tv_contact_column_title_style"
+            android:layout_toRightOf="@id/iv_new_friends"
+            android:text="@string/contancts_column_newfriends" />
+
+        <TextView
+            android:id="@+id/tv_newfiends_newnotify"
+            style="@style/iv_contact_column_notify_style" />
+    </RelativeLayout>
+
+    <View style="@style/common_column_divider_style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/rl_my_group"
+            style="@style/rl_contact_column_style">
+
+            <ImageView
+                android:id="@+id/iv_my_group"
+                style="@style/iv_contact_column_icon_style"
+                android:src="@mipmap/default_club_head" />
+
+            <TextView
+                android:id="@+id/tv_my_group"
+                style="@style/tv_contact_column_title_style"
+                android:layout_toRightOf="@id/iv_my_group"
+                android:text="@string/contancts_column_mycircle" />
+        </RelativeLayout>
+
+        <View style="@style/common_column_divider_style" />
+
+        <RelativeLayout
+            android:id="@+id/rl_my_club"
+            style="@style/rl_contact_column_style">
+
+            <ImageView
+                android:id="@+id/iv_my_club"
+                style="@style/iv_contact_column_icon_style"
+                android:src="@mipmap/default_club_head" />
+
+            <TextView
+                android:id="@+id/tv_my_club"
+                style="@style/tv_contact_column_title_style"
+                android:layout_toRightOf="@id/iv_my_club"
+                android:text="@string/contancts_column_myclub" />
+
+            <TextView
+                android:id="@+id/tv_club_newnotify"
+                style="@style/iv_contact_column_notify_style" />
+        </RelativeLayout>
+
+        <View style="@style/common_column_divider_style" />
+    </LinearLayout>
+
+
+</LinearLayout>

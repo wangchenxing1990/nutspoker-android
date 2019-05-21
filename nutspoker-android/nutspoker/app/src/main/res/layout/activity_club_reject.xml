@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <include layout="@layout/view_common_head" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_vertical|left"
+        android:text="@string/reject_reason"
+        android:textColor="@color/shop_text_no_select_color" />
+    <com.htgames.nutspoker.view.widget.ClearableEditTextWithIcon
+        android:id="@+id/edt_verify_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edt_common_bg"
+        android:textColor="@color/black"
+        android:textColorHint="@color/edt_common_hint_color"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@null"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="16dp"
+        android:drawablePadding="10dp"
+        android:gravity="left|top"
+        android:imeOptions="actionSend"
+        tools:hint="ddddd"
+        android:padding="10dp"
+        android:lines="5"/>
+
+</LinearLayout>

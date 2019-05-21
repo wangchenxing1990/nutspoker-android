@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <include layout="@layout/view_common_head" />
+
+    <RadioGroup
+        android:layout_margin="10dp"
+        style="@style/radioGroup_statistics_style">
+
+        <RadioButton
+            android:id="@+id/radio_head_all"
+            style="@style/radioButton_statistics_style"
+            android:background="@drawable/radio_btn_record_left"
+            android:checked="true"
+            android:text="@string/text_all"
+            android:textColor="@color/radio_btn_text_record"
+            />
+
+        <RadioButton
+            android:id="@+id/radio_head_week"
+            style="@style/radioButton_statistics_style"
+            android:background="@drawable/radio_btn_record_middle"
+            android:text="@string/text_last_week"
+            android:textColor="@color/radio_btn_text_record"
+            />
+
+        <RadioButton
+            android:id="@+id/radio_head_month"
+            style="@style/radioButton_statistics_style"
+            android:background="@drawable/radio_btn_record_right"
+            android:text="@string/text_last_month"
+            android:textColor="@color/radio_btn_text_record"
+            />
+    </RadioGroup>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                style="@style/layout_data_find_bg_light"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/tv_statistics_paiju_style"
+                            android:text="@string/statistics_paiju"
+                            android:layout_marginRight="10dp"
+                            android:layout_width="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/tv_statistics_paiju_count"
+                            style="@style/tv_statistics_paiju_style"
+                            android:text="0"
+                            android:textColor="@color/head_title_color" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/tv_statistics_paiju_style"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/statistics_handcard" />
+
+                        <TextView
+                            android:id="@+id/tv_statistics_handcard_count"
+                            style="@style/tv_statistics_paiju_style"
+                            android:text="0"
+                            android:textColor="@color/head_title_color" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    style="@style/layout_data_find_bg_light"
+                    android:background="@drawable/bg_data_find_dark"
+                    android:orientation="vertical"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="20dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                style="@style/tv_insurance_name"
+                                android:text="@string/record_details_colunm_all_winchips"
+                                />
+                            <TextView
+                                android:id="@+id/tv_statistics_gain_all"
+                                style="@style/tv_statistics_gain_style"
+                                android:text="0" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                style="@style/tv_insurance_name"
+                                android:text="@string/statistics_gain_hundred_hand"
+                                />
+                            <TextView
+                                android:id="@+id/tv_statistics_gain_hundred_hand"
+                                style="@style/tv_statistics_gain_style"
+                                android:text="0" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                style="@style/tv_insurance_name"
+                                android:text="@string/statistics_gain_hundred_hand_bigblind"
+                                />
+                            <TextView
+                                android:id="@+id/tv_statistics_gain_hundred_hand_bigblind"
+                                style="@style/tv_statistics_gain_style"
+                                android:text="0" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                style="@style/tv_insurance_name"
+                                android:text="@string/statistics_gain_allin"
+                                />
+                            <TextView
+                                android:id="@+id/tv_statistics_gain_allin"
+                                style="@style/tv_statistics_gain_style"
+                                android:text="0" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="40dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_analysis_table_title"
+                        style="@style/tv_statistics_table_title_style"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/statistics_tab_table_winrate" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_winrate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            >
+
+                            <TextView
+                                style="@style/tv_statistics_winrate_style"
+                                android:text="@string/statistics_rate_all" />
+
+                            <TextView
+                                android:id="@+id/tv_statistics_winrate_all"
+                                style="@style/tv_statistics_winrate_style"
+                                android:layout_alignParentRight="true"
+                                android:text="0%" />
+                        </RelativeLayout>
+
+                        <com.htgames.nutspoker.view.HorizontalProgressBar
+                            android:id="@+id/proBar_winrate_all"
+                            style="@style/proBar_statistics_style" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            >
+
+                            <TextView
+                                style="@style/tv_statistics_winrate_style"
+                                android:text="@string/statistics_rate_showdown" />
+
+                            <TextView
+                                android:id="@+id/tv_statistics_winrate_showdown"
+                                style="@style/tv_statistics_winrate_style"
+                                android:layout_alignParentRight="true"
+                                android:text="0%" />
+                        </RelativeLayout>
+
+                        <com.htgames.nutspoker.view.HorizontalProgressBar
+                            android:id="@+id/proBar_winrate_showdown"
+                            style="@style/proBar_statistics_style" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            >
+
+                            <TextView
+                                style="@style/tv_statistics_winrate_style"
+                                android:text="@string/statistics_rate_look_card" />
+
+                            <TextView
+                                android:id="@+id/tv_statistics_winrate_look_card"
+                                style="@style/tv_statistics_winrate_style"
+                                android:layout_alignParentRight="true"
+                                android:text="0%" />
+                        </RelativeLayout>
+
+                        <com.htgames.nutspoker.view.HorizontalProgressBar
+                            android:id="@+id/proBar_winrate_look_card"
+                            style="@style/proBar_statistics_style" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp">
+
+                            <TextView
+                                style="@style/tv_statistics_winrate_style"
+                                android:text="@string/statistics_rate_follow" />
+
+                            <TextView
+                                android:id="@+id/tv_statistics_winrate_follow"
+                                style="@style/tv_statistics_winrate_style"
+                                android:layout_alignParentRight="true"
+                                android:text="0%" />
+                        </RelativeLayout>
+
+                        <com.htgames.nutspoker.view.HorizontalProgressBar
+                            android:id="@+id/proBar_winrate_follow"
+                            style="@style/proBar_statistics_style" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>

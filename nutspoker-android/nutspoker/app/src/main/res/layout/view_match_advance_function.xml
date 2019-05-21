@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2E464F"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/btn_match_menu_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/room_manager_close" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="105dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:text="可向比赛中的所有玩家发送语音消息"
+        android:textSize="14dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_match_advance_voice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="55dp"
+        android:layout_marginTop="65dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/ll_match_advance_voice_ing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <ProgressBar
+                android:id="@+id/probar_voice_timer"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="4.0dip"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentTop="true"
+                android:max="100"
+                android:maxHeight="4.0dip"
+                android:minHeight="4.0dip"
+                android:progressDrawable="@drawable/progress_match_voice" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_voice_timer"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="18sp" />-->
+
+            <Chronometer
+                android:id="@+id/tv_voice_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/probar_voice_timer"
+                android:layout_marginTop="10dp"
+                android:text="@string/timer_default"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_voice_timer_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_tv_voice_timer_tip"
+                android:text="@string/match_advance_voice_timer_tip"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_match_voice_success"
+            android:layout_width="80dp"
+            android:layout_height="26dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/room_manager_record_number"
+            tools:visibility="visible"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/tv_match_voice_count"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                tools:text="2"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/start_record_container"
+            android:layout_width="90dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_start_record"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:clickable="false"
+                android:src="@mipmap/room_manager_record_normal" />
+
+            <TextView
+                android:id="@+id/btn_match_menu_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:clickable="false"
+                android:text="按住说话"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/mtt_send_text_notice_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="55dp"
+        android:maxHeight="84dp"
+        android:layout_alignParentBottom="true"
+        android:scrollbars="none"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:background="@color/list_item_bg_press">
+        <RelativeLayout
+            android:id="@+id/fl_mtt_send_text_notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="41dp"
+            android:maxHeight="70dp"
+            android:layout_gravity="center_vertical">
+            <TextView
+                android:id="@+id/mtt_send_text_notice_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textSize="15dp"
+                android:text="@string/picker_image_send"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@drawable/bg_login_btn"/>
+            <com.htgames.nutspoker.view.widget.ClearableEditTextWithIcon
+                android:id="@+id/mtt_send_text_notice_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="41dp"
+                android:maxHeight="70dp"
+                android:textColor="@color/white_half_transparent"
+                android:textColorHint="@color/white_half_transparent"
+                android:includeFontPadding="false"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical|left"
+                android:layout_toLeftOf="@+id/mtt_send_text_notice_btn"
+                android:textSize="13dp"
+                android:hint="输入文字公告"/>
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

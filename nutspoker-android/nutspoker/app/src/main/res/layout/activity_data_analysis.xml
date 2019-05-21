@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_common_head" />
+
+    <ScrollView
+        android:id="@+id/scrollview_data_analysis"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        tools:visibility="visible"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <LinearLayout
+                    style="@style/ll_data_analysis_square_style"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right|center_vertical">
+
+                    <View
+                        style="@style/view_data_analysis_square_style"
+                        android:background="@color/data_analysis_good_color" />
+
+                    <TextView
+                        style="@style/tv_data_analysis_square_style"
+                        android:text="@string/data_analysis_good" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/ll_data_analysis_square_style"
+                    android:gravity="center">
+
+                    <View
+                        style="@style/view_data_analysis_square_style"
+                        android:background="@color/data_analysis_improve_color" />
+
+                    <TextView
+                        style="@style/tv_data_analysis_square_style"
+                        android:text="@string/data_analysis_improve" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/ll_data_analysis_square_style"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="left|center_vertical">
+
+                    <View
+                        style="@style/view_data_analysis_square_style"
+                        android:background="@color/data_analysis_poor_color" />
+
+                    <TextView
+                        style="@style/tv_data_analysis_square_style"
+                        android:text="@string/data_analysis_poor" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--<TextView-->
+            <!--style="@style/tv_data_analysis_column_title_style"-->
+            <!--android:text="@string/data_analysis_results" />-->
+
+
+            <LinearLayout
+                style="@style/ll_data_analysis_column_style">
+
+                <com.htgames.nutspoker.view.record.DataAnalysisItemView
+                    android:id="@+id/mWsdItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.htgames.nutspoker.view.record.DataAnalysisItemView
+                    android:id="@+id/mWtsdItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" />
+
+                <com.htgames.nutspoker.view.record.DataAnalysisItemView
+                    android:id="@+id/mWwsfItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" />
+
+            </LinearLayout>
+
+            <!--<TextView-->
+            <!--style="@style/tv_data_analysis_column_title_style"-->
+            <!--android:text="@string/data_analysis_aggression" />-->
+
+            <LinearLayout
+                style="@style/ll_data_analysis_column_style"
+                android:layout_marginTop="30dp">
+
+                <com.htgames.nutspoker.view.record.DataAnalysisItemView
+                    android:id="@+id/mAfItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.htgames.nutspoker.view.record.DataAnalysisItemView
+                    android:id="@+id/mAfqItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+            <!--<TextView-->
+            <!--style="@style/tv_data_analysis_column_title_style"-->
+            <!--android:text="@string/data_analysis_preflop" />-->
+
+            <LinearLayout
+                style="@style/ll_data_analysis_column_style"
+                android:layout_marginTop="30dp">
+
+                <com.htgames.nutspoker.view.record.DataAnalysisItemView
+                    android:id="@+id/mVpipItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" />
+
+                <com.htgames.nutspoker.view.record.DataAnalysisItemView
+                    android:id="@+id/mPfrItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" />
+
+                <com.htgames.nutspoker.view.record.DataAnalysisItemView
+                    android:id="@+id/mPfrVpipItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" />
+
+                <com.htgames.nutspoker.view.record.DataAnalysisItemView
+                    android:id="@+id/m3BetItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+            <!--<TextView-->
+            <!--style="@style/tv_data_analysis_column_title_style"-->
+            <!--android:text="@string/data_analysis_blinds" />-->
+
+            <LinearLayout
+                style="@style/ll_data_analysis_column_style"
+                android:layout_marginTop="30dp">
+
+                <com.htgames.nutspoker.view.record.DataAnalysisItemView
+                    android:id="@+id/mStlItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" />
+
+                <com.htgames.nutspoker.view.record.DataAnalysisItemView
+                    android:id="@+id/mFoldStlItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" />
+
+                <com.htgames.nutspoker.view.record.DataAnalysisItemView
+                    android:id="@+id/mSb3BetItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" />
+
+                <com.htgames.nutspoker.view.record.DataAnalysisItemView
+                    android:id="@+id/mBb3BetItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_data_analysis_noshow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/message_system" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/data_analysis_noshow_first"
+                android:textColor="#8b8a8b"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_data_analysis_noshow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#af975a"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/data_analysis_noshow_hand"
+                android:textColor="#8b8a8b"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/data_analysis_noshow_second"
+            android:textColor="#8b8a8b"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</LinearLayout>

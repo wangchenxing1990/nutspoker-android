@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_record_match"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="com.htgames.nutspoker.ui.activity.Record.RecordMatchActivity">
+
+    <include layout="@layout/view_common_head" />
+
+    <com.will.common.view.springview.widget.SpringView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:footer="@layout/view_spring_empty"
+        app:header="@layout/view_spring_empty">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    style="@style/layout_record_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/rl_sng_head"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout style="@style/rl_card_record_style">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/icon_paiju_item_sng" />
+
+                            <TextView
+                                android:id="@+id/tv_sng_money"
+                                style="@style/text_record_money"
+                                android:layout_marginRight="0dp"
+                                android:text="0" />
+
+                        </RelativeLayout>
+
+                        <View style="@style/line_black_seperate" />
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_below="@id/rl_sng_head"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_sng_nodata"
+                            style="@style/tv_record_data_title_style"
+                            android:layout_gravity="center"
+                            android:text="@string/game_no_data"
+                            android:textSize="20sp"
+                            android:visibility="gone" />
+
+                        <RelativeLayout
+                            android:id="@+id/rl_sng_data"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        style="@style/tv_record_data_title_style"
+                                        android:text="@string/game_join_fee" />
+
+                                    <TextView
+                                        android:id="@+id/tv_sng_join_fee"
+                                        style="@style/tv_record_data_content_style"
+                                        android:text="0" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        style="@style/tv_record_data_title_style"
+                                        android:text="@string/sng_rule_bonus" />
+
+                                    <TextView
+                                        android:id="@+id/tv_sng_reward"
+                                        style="@style/tv_record_data_content_style"
+                                        android:layout_gravity="right"
+                                        android:text="0" />
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rl_circle_sng"
+                                android:layout_width="130dp"
+                                android:layout_height="130dp"
+                                android:layout_centerHorizontal="true">
+
+                                <com.htgames.nutspoker.view.CircleMatchView
+                                    android:id="@+id/match_sng_circle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerHorizontal="true"
+                                    app:circle_paint_width="4dp"
+                                    app:circle_space="10dp"
+                                    app:in_color="@color/light_black_15"
+                                    app:middle_color="@color/light_black_15"
+                                    app:middle_cur="25"
+                                    app:middle_ring_color="@color/record_orange_color"
+                                    app:out_circle_visible="false"
+                                    app:out_color="@color/light_black_15"
+                                    app:out_cur="75"
+                                    app:out_ring_color="@color/record_yellow_color" />
+
+                                <!--<com.htgames.chesscircle.view.CircularProgressBar
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerHorizontal="true" />
+
+                                <com.htgames.chesscircle.view.CircularProgressBar
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerHorizontal="true" />-->
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        style="@style/tv_record_data_title_style"
+                                        android:text="@string/join_match"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_sng_game_times"
+                                        style="@style/tv_record_data_content_style"
+                                        android:text="@string/game_match_times_format"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@id/rl_circle_sng"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_sng_game_in_finaltable"
+                                    style="@style/tv_final_round_table"
+                                    android:text="@string/game_in_final_circle"
+                                    android:visibility="gone" />
+
+                                <TextView
+                                    android:id="@+id/tv_sng_game_in_rewardlist"
+                                    style="@style/tv_reward_circle"
+                                    android:text="@string/game_in_reward_circle" />
+
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </FrameLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/layout_record_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/rl_mtsng_head"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout style="@style/rl_card_record_style">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/message_system" />
+
+                            <TextView
+                                android:id="@+id/tv_mtsng_money"
+                                style="@style/text_record_money"
+                                android:layout_marginRight="0dp"
+                                android:text="0" />
+
+                        </RelativeLayout>
+
+                        <View style="@style/line_black_seperate" />
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_below="@id/rl_mtsng_head"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_mtsng_data"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        style="@style/tv_record_data_title_style"
+                                        android:text="@string/game_join_fee" />
+
+                                    <TextView
+                                        android:id="@+id/tv_mtsng_join_fee"
+                                        style="@style/tv_record_data_content_style"
+                                        android:text="0" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        style="@style/tv_record_data_title_style"
+                                        android:text="@string/sng_rule_bonus" />
+
+                                    <TextView
+                                        android:id="@+id/tv_mtsng_reward"
+                                        style="@style/tv_record_data_content_style"
+                                        android:layout_gravity="right"
+                                        android:text="0" />
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rl_mtsng_record_circular"
+                                android:layout_width="130dp"
+                                android:layout_height="130dp"
+                                android:layout_centerHorizontal="true">
+
+                                <com.htgames.nutspoker.view.CircleMatchView
+                                    android:id="@+id/match_mtsng_circle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerHorizontal="true"
+                                    app:circle_paint_width="4dp"
+                                    app:circle_space="10dp"
+                                    app:in_color="@color/light_black_15"
+                                    app:middle_color="@color/light_black_15"
+                                    app:middle_cur="25"
+                                    app:middle_ring_color="@color/record_orange_color"
+                                    app:out_color="@color/light_black_15"
+                                    app:out_cur="75"
+                                    app:out_ring_color="@color/record_yellow_color" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        style="@style/tv_record_data_title_style"
+                                        android:text="@string/join_match"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_mtsng_game_times"
+                                        style="@style/tv_record_data_content_style"
+                                        android:text="@string/game_match_times_format"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@id/rl_mtsng_record_circular"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_mtsng_game_in_finaltable"
+                                    style="@style/tv_final_round_table"
+                                    android:text="@string/game_in_final_circle" />
+
+                                <TextView
+                                    android:id="@+id/tv_mtsng_game_in_rewardlist"
+                                    style="@style/tv_reward_circle"
+                                    android:text="@string/game_in_reward_circle" />
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tv_mtsng_nodata"
+                            style="@style/tv_record_data_title_style"
+                            android:layout_gravity="center"
+                            android:text="@string/game_no_data"
+                            android:textSize="20sp"
+                            android:visibility="gone" />
+
+                    </FrameLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/layout_record_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/rl_mtt_head"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout style="@style/rl_card_record_style">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/icon_paiju_item_mtt" />
+
+                            <TextView
+                                android:id="@+id/tv_mtt_money"
+                                style="@style/text_record_money"
+                                android:layout_marginRight="0dp"
+                                android:text="0" />
+
+                        </RelativeLayout>
+
+                        <View style="@style/line_black_seperate" />
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_below="@id/rl_mtt_head"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_mtt_data"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        style="@style/tv_record_data_title_style"
+                                        android:text="@string/game_join_fee" />
+
+                                    <TextView
+                                        android:id="@+id/tv_mtt_join_fee"
+                                        style="@style/tv_record_data_content_style"
+                                        android:text="0" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        style="@style/tv_record_data_title_style"
+                                        android:text="@string/sng_rule_bonus" />
+
+                                    <TextView
+                                        android:id="@+id/tv_mtt_reward"
+                                        style="@style/tv_record_data_content_style"
+                                        android:layout_gravity="right"
+                                        android:text="0" />
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rl_mtt_record_circular"
+                                android:layout_width="130dp"
+                                android:layout_height="130dp"
+                                android:layout_centerHorizontal="true">
+
+                                <com.htgames.nutspoker.view.CircleMatchView
+                                    android:id="@+id/match_mtt_circle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerHorizontal="true"
+                                    app:circle_paint_width="4dp"
+                                    app:circle_space="10dp"
+                                    app:in_color="@color/light_black_15"
+                                    app:middle_color="@color/light_black_15"
+                                    app:middle_cur="25"
+                                    app:middle_ring_color="@color/record_orange_color"
+                                    app:out_color="@color/light_black_15"
+                                    app:out_cur="75"
+                                    app:out_ring_color="@color/record_yellow_color" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        style="@style/tv_record_data_title_style"
+                                        android:text="@string/join_match"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_mtt_game_times"
+                                        style="@style/tv_record_data_content_style"
+                                        android:text="@string/game_match_times_format"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@id/rl_mtt_record_circular"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_mtt_game_in_finaltable"
+                                    style="@style/tv_final_round_table"
+                                    android:text="@string/game_in_final_circle" />
+
+                                <TextView
+                                    android:id="@+id/tv_mtt_game_in_rewardlist"
+                                    style="@style/tv_reward_circle"
+                                    android:text="@string/game_in_reward_circle" />
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tv_mtt_nodata"
+                            style="@style/tv_record_data_title_style"
+                            android:layout_gravity="center"
+                            android:text="@string/game_no_data"
+                            android:textSize="20sp"
+                            android:visibility="gone" />
+
+                    </FrameLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </com.will.common.view.springview.widget.SpringView>
+</LinearLayout>

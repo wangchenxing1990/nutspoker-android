@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_time"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_height="30dp"
+        android:gravity="bottom"
+        android:orientation="horizontal" />
+
+    <com.htgames.nutspoker.view.dotseekbar.DotSeekBar
+        android:id="@+id/mSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_time"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:max="5"
+        android:maxHeight="4.0dip"
+        android:minHeight="4.0dip"
+        android:progressDrawable="@drawable/seekbar_progress_bg"
+        android:thumb="@mipmap/game_chip_thumb"
+        app:dotCount="6"
+        app:dotHeight="@dimen/point_dotseekbar_height"
+        app:dotLeft="@drawable/point_dotseekbar_normal"
+        app:dotRight="@drawable/point_dotseekbar_press"
+        app:dotWidth="@dimen/point_dotseekbar_height" />
+</RelativeLayout>

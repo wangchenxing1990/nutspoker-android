@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_head"
+    style="@style/rl_head_bg_style">
+
+    <RelativeLayout
+        android:id="@+id/rl_head_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/btn_head_back"
+            style="@style/tv_head_common_style"
+            android:clickable="true"
+            android:drawableLeft="@drawable/btn_back"
+            android:drawablePadding="5dp"
+            android:onClick="onBack"
+            android:text="@string/back" />
+
+        <TextView
+            android:id="@+id/tv_head_right"
+            style="@style/tv_head_common_style"
+            tools:text="清除"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="0dp" />
+
+        <TextView
+            android:id="@+id/tv_head_right_second"
+            style="@style/tv_head_common_style"
+            android:layout_toLeftOf="@id/tv_head_right"
+            tools:text="右2"
+            tools:visibility="visible"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_head_title"
+            style="@style/tv_head_title_style"
+            android:text="11" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.SearchView
+                android:id="@+id/mSearchView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_search_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="8dp"
+                android:text="@string/cancel"
+                tools:visibility="visible"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/rl_head_bg_style"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/cancel"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <com.htgames.nutspoker.view.widget.ClearableEditTextWithIcon
+            android:id="@+id/edit_search"
+            style="@style/edt_common_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="0dp"
+            android:layout_toLeftOf="@id/tv_cancel"
+            android:hint="@string/search_hint"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingBottom="0dp"
+            android:paddingTop="0dp"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

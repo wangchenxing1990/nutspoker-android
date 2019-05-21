@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:orientation="vertical"
+             android:foreground="@drawable/fg_horde"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent"
+               android:id="@+id/item_pic_list_img"
+               android:scaleType="fitCenter"/>
+
+    <FrameLayout android:layout_width="40dp" android:layout_height="40dp"
+                 android:id="@+id/item_pic_list_close"
+                 android:layout_gravity="right"
+                 android:paddingTop="6dp"
+                 android:paddingRight="6dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   android:src="@mipmap/btn_blinds_dialog_close"
+                   android:layout_gravity="right"/>
+    </FrameLayout>
+
+</FrameLayout>

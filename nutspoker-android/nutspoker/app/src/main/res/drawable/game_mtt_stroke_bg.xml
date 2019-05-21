@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 设置几何图形四个角的弧度 -->
+    <corners
+        android:bottomLeftRadius="@dimen/game_mtt_stroke_bg_radius"
+        android:bottomRightRadius="@dimen/game_mtt_stroke_bg_radius"
+        android:radius="@dimen/game_mtt_stroke_bg_radius"
+        android:topLeftRadius="@dimen/game_mtt_stroke_bg_radius"
+        android:topRightRadius="@dimen/game_mtt_stroke_bg_radius" />
+    <!-- 设置填充颜色 为白色 -->
+    <solid android:color="@android:color/transparent" />
+    <!-- 设置几何形状绘制边框 红色边框 -->
+    <!--<stroke android:width="1dp" android:color="@color/head_title_color" />-->
+    <stroke
+        android:width="1dp"
+        android:color="@color/mtt_text_common_color" />
+</shape>

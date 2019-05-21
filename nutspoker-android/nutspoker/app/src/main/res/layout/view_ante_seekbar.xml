@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="@dimen/game_create_ante_bg_width"
+        android:layout_height="@dimen/game_create_ante_thumb_height"
+        android:layout_gravity="center">
+
+        <com.will.common.view.phasedseekbar.PhasedSeekBar
+            android:id="@+id/psb_star"
+            android:layout_width="@dimen/game_create_ante_bg_width"
+            android:layout_height="@dimen/game_create_ante_thumb_height"
+            app:phased_anchor_height="@dimen/game_create_ante_bg_height"
+            app:phased_anchor_width="@dimen/game_create_ante_bg_height"
+            app:phased_base_background="@drawable/game_create_config_ante_bg"
+            app:phased_base_margin_bottom="6dp"
+            app:phased_base_margin_left="2dp"
+            app:phased_base_margin_right="2dp"
+            app:phased_base_margin_top="6dp"
+            app:phased_item_height="@dimen/game_create_ante_thumb_height"
+            app:phased_item_width="@dimen/game_create_ante_thumb_height"
+            app:phased_mode="horizontal" />
+
+        <LinearLayout
+            android:layout_width="@dimen/game_create_ante_bg_width"
+            android:layout_height="@dimen/game_create_ante_thumb_height"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_ante_0"
+                style="@style/tv_game_create_config_ante_style"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/tv_ante_1"
+                style="@style/tv_game_create_config_ante_style"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/tv_ante_2"
+                style="@style/tv_game_create_config_ante_style"
+                android:text="2" />
+
+            <TextView
+                android:id="@+id/tv_ante_3"
+                style="@style/tv_game_create_config_ante_style"
+                android:text="3" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

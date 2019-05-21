@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       xmlns:tools="http://schemas.android.com/tools"
+       android:orientation="vertical" android:layout_width="match_parent"
+       android:layout_height="match_parent">
+    <include layout="@layout/view_common_head" />
+
+    <com.htgames.nutspoker.game.match.view.PagerSlidingTabStrip
+        android:id="@+id/ante_table_tabs"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/action_bar_height"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        app:pstsDividerColor="@color/tab_text_color_normal"
+        app:pstsDividerWidth="1dp"
+        app:pstsScaleZoomMax="0.2"
+        app:pstsIndicatorHeight="0dp"
+        app:pstsShouldExpand="true"
+        app:pstsSmoothScrollWhenClickTab="true"
+        app:pstsTabPaddingLeftRight="12dp"
+        app:pstsTextColor="@color/tab_text_color_normal"
+        app:pstsTextSelectedColor="@color/login_solid_color"
+        app:pstsTextSize="16dp"
+        app:pstsUnderlineHeight="0dp"
+        app:pstsDividerPaddingTopBottom="6dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:layout_marginTop="98dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/tv_blinds_stucture_level"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/gray_auxiliary_text_color"
+                android:text="@string/blinds_structure_column_level" />
+            <TextView
+                android:id="@+id/tv_blinds_stucture_blinds"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/gray_auxiliary_text_color"
+                android:text="底注" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="bottom"
+            android:background="@color/register_page_bg_color"/>
+    </FrameLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_marginTop="123dp"
+        android:id="@+id/view_pager"/>
+</merge>

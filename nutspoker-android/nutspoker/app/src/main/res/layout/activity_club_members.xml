@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/view_common_head" />
+
+    <RelativeLayout
+        android:layout_marginTop="53dp"
+        android:id="@+id/edit_text_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/search_mtt_mgr_tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/cancel"
+            android:textColor="@color/login_solid_color"
+            android:textSize="16sp" />
+
+        <com.htgames.nutspoker.view.widget.ClearableEditTextWithIcon
+            android:layout_toLeftOf="@id/search_mtt_mgr_tv_cancel"
+            android:id="@+id/edit_search_record"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:background="@drawable/edt_common_bg"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/edt_common_hint_color"
+            android:gravity="center_vertical"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@null"
+            android:drawablePadding="5dp"
+            android:focusable="true"
+            android:hint="昵称"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="86dp">
+        <com.htgames.nutspoker.view.TouchableRecyclerView
+            android:id="@+id/lv_members"
+            style="@style/listview_common_style"/>
+        <com.htgames.nutspoker.view.ResultDataView
+            android:id="@+id/mResultDataView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+        <TextView
+            android:id="@+id/tv_hit_letter"
+            android:background="@drawable/nim_contact_hit_letter_bg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="40sp"
+            android:text="A"
+            tools:visibility="visible"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="86dp">
+        <include layout="@layout/fast_scroller"
+            android:id="@+id/fast_scroller"/>
+        <com.netease.nim.uikit.common.ui.liv.LetterIndexView
+            android:id="@+id/liv_index"
+            android:layout_width="15dip"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="12dp"
+            android:layout_alignParentRight="true"
+            android:background="#00000000" />
+    </RelativeLayout>
+</merge>

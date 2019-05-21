@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <corners
+        android:bottomLeftRadius="@dimen/dialog_common_radius"
+        android:bottomRightRadius="@dimen/dialog_common_radius"
+        android:radius="@dimen/dialog_common_radius"
+        android:topLeftRadius="@dimen/dialog_common_radius"
+        android:topRightRadius="@dimen/dialog_common_radius" />
+    <!-- 设置圆角半径 -->
+    <solid android:color="@color/message_new_prompt_bg_color" />
+
+</shape>

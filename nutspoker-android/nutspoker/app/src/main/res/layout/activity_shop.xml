@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/register_page_bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_common_head" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_size_55"
+        android:id="@+id/shop_bg_ignore_me_fucker_for_not_nest_too_deep"
+        android:layout_below="@+id/rl_head"
+        android:background="@color/white"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="@dimen/dp_size_35"
+        android:id="@+id/shop_coin_diamond_divider"
+        android:layout_below="@+id/rl_head"
+        android:background="#96999C"
+        android:layout_marginTop="10dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_size_55"
+        android:id="@+id/shop_coin_click_area"
+        android:layout_toLeftOf="@id/shop_coin_diamond_divider"
+        android:layout_below="@+id/rl_head">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/shop_coin_text"
+            android:gravity="center"
+            android:lines="1"
+            android:ellipsize="end"
+            android:drawableLeft="@mipmap/icon_me_coin"
+            android:layout_gravity="center"
+            android:text=" 33333"
+            android:textSize="@dimen/dp_size_20"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_size_55"
+        android:id="@+id/shop_diamond_click_area"
+        android:layout_toRightOf="@id/shop_coin_diamond_divider"
+        android:layout_below="@+id/rl_head">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/shop_diamond_text"
+            android:gravity="center"
+            android:lines="1"
+            android:ellipsize="end"
+            android:drawableLeft="@mipmap/icon_me_diamond"
+            android:layout_gravity="center"
+            android:text=" 33333"
+            android:textSize="@dimen/dp_size_20"/>
+    </FrameLayout>
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/shop_view_pager"
+        android:layout_marginTop="@dimen/dp_size_15"
+        android:layout_below="@id/shop_diamond_click_area">
+    </android.support.v4.view.ViewPager>
+    <com.htgames.nutspoker.view.ResultDataView
+        android:id="@+id/mResultDataView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_size_15"
+        android:layout_below="@id/shop_diamond_click_area"/>
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_common_head" />
+    <com.htgames.nutspoker.game.match.view.PagerSlidingTabStrip
+        android:id="@+id/create_game_tabs"
+        android:layout_marginTop="@dimen/action_bar_height"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        app:pstsDividerColor="@android:color/transparent"
+        app:pstsIndicatorColor="@color/login_solid_color"
+        app:pstsIndicatorHeight="3dp"
+        app:pstsScaleZoomMax="0.2"
+        app:pstsShouldExpand="true"
+        app:pstsTabTextSize="18dp"
+        app:pstsSmoothScrollWhenClickTab="true"
+        app:pstsTabPaddingLeftRight="12dp"
+        app:pstsTextColor="@color/tab_text_color_normal"
+        app:pstsTextSelectedColor="@color/login_solid_color"
+        app:pstsTextSize="18dp"
+        app:pstsIndicatorMargin="22dp"
+        app:pstsUnderlineHeight="0dp"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/create_view_pager"
+        android:layout_width="1dp"
+        android:layout_height="1dp"></android.support.v4.view.ViewPager>
+
+    <com.htgames.nutspoker.game.match.view.PagerSlidingTabStrip
+        android:id="@+id/pineapple_tabs"
+        android:visibility="invisible"
+        android:layout_marginTop="@dimen/action_bar_height"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        app:pstsDividerColor="@android:color/transparent"
+        app:pstsIndicatorColor="@color/login_solid_color"
+        app:pstsIndicatorHeight="3dp"
+        app:pstsScaleZoomMax="0.2"
+        app:pstsShouldExpand="true"
+        app:pstsTabTextSize="18dp"
+        app:pstsSmoothScrollWhenClickTab="true"
+        app:pstsTabPaddingLeftRight="12dp"
+        app:pstsTextColor="@color/tab_text_color_normal"
+        app:pstsTextSelectedColor="@color/login_solid_color"
+        app:pstsTextSize="18dp"
+        app:pstsIndicatorMargin="22dp"
+        app:pstsUnderlineHeight="0dp"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager_pineapple"
+        android:layout_width="1dp"
+        android:layout_height="1dp"></android.support.v4.view.ViewPager>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/game_create_margin_left"
+        android:paddingRight="@dimen/game_create_margin_left"
+        android:layout_marginTop="98dp"
+        android:paddingBottom="10dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/frame_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"/>
+    </android.support.v4.widget.NestedScrollView>
+
+    <FrameLayout
+        android:id="@+id/frame_content_pineapple"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="88dp"/>
+</merge>

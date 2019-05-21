@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/main_tab_height"
+    android:orientation="vertical">
+    <android.support.v4.widget.Space
+        android:id="@+id/home_tab_item_center_view"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="3dp" />
+    <ImageView
+        android:id="@+id/home_tab_top_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/home_tab_item_center_view"
+        android:src="@drawable/home_tab_chat"/>
+    <TextView
+        android:id="@+id/home_tab_bottom_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/home_tab_item_center_view"
+        android:textColor="@color/home_tab_text_color"
+        android:text="@string/club" />
+
+    <TextView
+        android:id="@+id/tv_chat_new_notify"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/unread_badge_bg_height"
+        android:minWidth="@dimen/unread_badge_bg_height"
+        android:layout_toRightOf="@id/home_tab_top_iv"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/unread_badge_bg"
+        android:gravity="center"
+        tools:text="1"
+        android:textColor="@android:color/white"
+        android:includeFontPadding="false"
+        android:textSize="10dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginTop="3dp" />
+
+    <ImageView
+        android:id="@+id/iv_chat_new_notify"
+        android:layout_toRightOf="@id/home_tab_top_iv"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:src="@mipmap/icon_new_notify"
+        tools:visibility="visible"
+        android:layout_marginLeft="-3dp"
+        android:layout_marginTop="5dp" />
+</merge>

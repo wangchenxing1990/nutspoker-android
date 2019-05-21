@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_circle_paiju"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/common_column_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_game_mode"
+            android:layout_width="30dp"
+            android:layout_height="@dimen/record_detail_player_bg_height"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp">
+
+            <ImageView
+                android:id="@+id/iv_game_mode"
+                android:layout_width="22dp"
+                android:layout_height="12dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/icon_paiju_item_sng" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="5dp"
+            android:paddingTop="8dp">
+
+            <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+                android:id="@+id/iv_game_creator_userhead"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/default_male_head" />
+
+            <TextView
+                android:id="@+id/tv_game_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="0dp"
+                android:layout_toRightOf="@id/iv_game_creator_userhead"
+                android:text="牌局"
+                android:textColor="@color/paiju_view_name_text_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_game_earnings"
+                style="@style/tv_gameinfo_list_text_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp" />
+
+            <com.htgames.nutspoker.view.record.RankView
+                android:id="@+id/mRankView"
+                style="@style/rank_tag_style"
+                android:layout_width="wrap_content"
+                app:rankWidth="14dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/tv_game_earnings" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iv_game_creator_userhead"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/iv_game_creator_userhead"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_game_member"
+                    style="@style/tv_recentgame_text_style"
+                    android:layout_marginRight="5dp"
+                    android:drawableLeft="@mipmap/icon_history_member"
+                    android:text=""
+                    android:textColor="@color/paiju_view_content_text_color"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tv_game_checkin_fee"
+                    style="@style/tv_recentgame_text_style"
+                    android:layout_marginRight="5dp"
+                    android:drawableLeft="@mipmap/icon_club_chat_checkin_fee"
+                    android:text=""
+                    android:textColor="@color/paiju_view_content_text_color"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tv_game_duration"
+                    style="@style/tv_recentgame_text_style"
+                    android:layout_marginRight="5dp"
+                    android:drawableLeft="@mipmap/icon_club_chat_time"
+                    android:text="1h30m"
+                    android:textColor="@color/paiju_view_content_text_color"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tv_game_blind"
+                    style="@style/tv_recentgame_text_style"
+                    android:layout_marginRight="5dp"
+                    android:drawableLeft="@mipmap/icon_club_chat_chip"
+                    android:text="1/2"
+                    android:textColor="@color/paiju_view_content_text_color"
+                    android:textSize="10sp" />
+
+                <ImageView
+                    android:id="@+id/iv_game_insurance"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginRight="2dp"
+                    android:src="@mipmap/icon_club_chat_game_item_insurance"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_game_ante"
+                    style="@style/tv_recentgame_text_small_style"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/ante_text_color"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

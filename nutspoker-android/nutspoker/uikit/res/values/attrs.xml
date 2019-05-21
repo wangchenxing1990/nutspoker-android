@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ImageViewEx">
+        <attr name="exiv_default_image_res" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="RefreshView">
+        <attr name="animation" format="enum">
+            <enum name="down" value="0" />
+            <enum name="up" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean" />
+        <attr name="matProg_barColor" format="color" />
+        <attr name="matProg_rimColor" format="color" />
+        <attr name="matProg_rimWidth" format="dimension" />
+        <attr name="matProg_spinSpeed" format="float" />
+        <attr name="matProg_barSpinCycleTime" format="integer" />
+        <attr name="matProg_circleRadius" format="dimension" />
+        <attr name="matProg_fillRadius" format="boolean" />
+        <attr name="matProg_barWidth" format="dimension" />
+        <attr name="matProg_linearProgress" format="boolean" />
+    </declare-styleable>
+
+    <!-- 來自common-libs module -->
+    <declare-styleable name="PhasedSeekBar">
+        <attr name="phased_mode">
+            <enum name="horizontal" value="1" />
+            <enum name="vertical" value="2" />
+        </attr>
+        <attr name="phased_base_margin_left" format="dimension|reference" />
+        <attr name="phased_base_margin_right" format="dimension|reference" />
+        <attr name="phased_base_margin_top" format="dimension|reference" />
+        <attr name="phased_base_margin_bottom" format="dimension|reference" />
+        <attr name="phased_base_background" format="color|reference" />
+        <attr name="phased_item_width" format="dimension|reference" />
+        <attr name="phased_item_height" format="dimension|reference" />
+        <attr name="phased_anchor_width" format="dimension|reference" />
+        <attr name="phased_anchor_height" format="dimension|reference" />
+        <attr name="phased_draw_on_off" format="boolean" />
+        <attr name="phased_fix_point" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SpringView">
+        <attr name="type">
+            <enum name="overlap" value="0" />
+            <enum name="follow" value="1" />
+        </attr>
+        <attr name="give">
+            <enum name="both" value="0" />
+            <enum name="top" value="1" />
+            <enum name="bottom" value="2" />
+            <enum name="none" value="3" />
+        </attr>
+        <attr name="header" format="reference" />
+        <attr name="footer" format="reference" />
+    </declare-styleable>
+
+    <!-- PokerView相关 -->
+    <declare-styleable name="PokerView">
+        <attr name="viewsNum" format="integer" />
+        <attr name="singleViewWidth" format="dimension"/>
+        <attr name="singleViewHeight" format="dimension"/>
+        <attr name="singleViewMarginLeft" format="dimension"/>
+        <attr name="pools_type" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="gridPasswordView">
+        <attr name="textColor" format="color|reference" />
+        <attr name="textSize" format="dimension" />
+        <attr name="lineColor" format="color" />
+        <attr name="gridColor" format="color" />
+        <attr name="lineWidth" format="dimension" />
+        <attr name="passwordLength" format="integer" />
+        <attr name="passwordTransformation" format="string" />
+        <attr name="passwordType" format="enum">
+            <enum name="numberPassword" value="0" />
+            <enum name="textPassword" value="1" />
+            <enum name="textVisiblePassword" value="2" />
+            <enum name="textWebPassword" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="merecyclerview">
+        <attr name="dividerHeight" format="dimension"/>
+        <attr name="layout_manager_type" format="integer"/>
+        <attr name="grid_span_count" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="EasySwitchBtn">
+        <attr name="EasySwitchBtn_width" format="dimension|reference"/>
+        <attr name="EasySwitchBtn_height" format="dimension|reference"/>
+        <attr name="EasySwitchBtn_checked_image" format="reference"/>
+        <attr name="EasySwitchBtn_unchecked_image" format="reference"/>
+        <attr name="EasySwitchBtn_isChecked" format="boolean"/>
+    </declare-styleable>
+
+    <!-- home页底部的5个tab -->
+    <declare-styleable name="homeTab">
+        <attr name="itemCount" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="sparkbutton">
+        <attr name="sparkbutton_iconSize" format="dimension|reference" />
+        <attr name="sparkbutton_activeImage" format="reference" />
+        <attr name="sparkbutton_inActiveImage" format="reference" />
+        <attr name="sparkbutton_primaryColor" format="reference" />
+        <attr name="sparkbutton_secondaryColor" format="reference" />
+        <attr name="sparkbutton_pressOnTouch" format="boolean" />
+        <attr name="sparkbutton_animationSpeed" format="float" />
+        <attr name="sparkbutton_activeImageTint" format="reference" />
+        <attr name="sparkbutton_inActiveImageTint" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SwitchButton">
+        <attr name="kswThumbDrawable" format="reference" />
+        <attr name="kswThumbColor" format="color|reference" />
+        <attr name="kswThumbMargin" format="dimension|reference" />
+        <attr name="kswThumbMarginTop" format="dimension|reference" />
+        <attr name="kswThumbMarginBottom" format="dimension|reference" />
+        <attr name="kswThumbMarginLeft" format="dimension|reference" />
+        <attr name="kswThumbMarginRight" format="dimension|reference" />
+        <attr name="kswThumbWidth" format="dimension|reference" />
+        <attr name="kswThumbHeight" format="dimension|reference" />
+        <attr name="kswThumbRadius" format="dimension|reference" />
+        <attr name="kswBackRadius" format="dimension|reference" />
+        <attr name="kswBackDrawable" format="reference" />
+        <attr name="kswBackColor" format="color|reference" />
+        <attr name="kswFadeBack" format="boolean" />
+        <attr name="kswBackMeasureRatio" format="float" />
+        <attr name="kswAnimationDuration" format="integer" />
+        <attr name="kswTintColor" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CircularProgressBar">
+        <attr name="progress" format="integer" />
+        <attr name="progressbar_color" format="color" />
+        <attr name="background_progressbar_color" format="color" />
+        <attr name="progressbar_width" format="dimension" />
+        <attr name="background_progressbar_width" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="LabelView">
+        <!-- 设置文字内容 -->
+        <attr name="lv_text" format="string" />
+        <!-- 设置文字颜色,默认#ffffff -->
+        <attr name="lv_text_color" format="color" />
+        <!-- 设置文字大小,默认11sp -->
+        <attr name="lv_text_size" format="dimension" />
+        <!-- 设置文字是否支持加粗,默认true -->
+        <attr name="lv_text_bold" format="boolean" />
+        <!-- 设置文字是否支持全部大写,默认true-->
+        <attr name="lv_text_all_caps" format="boolean" />
+        <!-- 设置背景颜色,默认"#FF4081"-->
+        <attr name="lv_background_color" format="color" />
+        <!-- 设置LabelView所在矩形最小宽高,默认mFillTriangle?35dp:50dp-->
+        <attr name="lv_min_size" format="dimension" />
+        <!-- 设置文字上下padding,默认3.5dp,mFillTriangle为true时无效-->
+        <attr name="lv_padding" format="dimension" />
+        <!-- 设置LabelView方向 -->
+        <attr name="lv_gravity" format="enum">
+            <enum name="TOP_LEFT" value="51" />
+            <enum name="TOP_RIGHT" value="53" />
+            <enum name="BOTTOM_LEFT" value="83" />
+            <enum name="BOTTOM_RIGHT" value="85" />
+        </attr>
+        <!-- 设置是否填充三角区域,默认false -->
+        <attr name="lv_fill_triangle" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ExpandableTextView">
+        <attr name="maxCollapsedLines" format="integer" />
+        <attr name="animDuration" format="integer" />
+        <attr name="animAlphaStart" format="float" />
+        <attr name="expandDrawable" format="reference" />
+        <attr name="collapseDrawable" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CPhoneEditView">
+        <attr name="phoneHint" format="string" />
+        <attr name="showPrefix" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="SelectableRoundedImageView">
+        <attr name="sriv_left_top_corner_radius" format="dimension" />
+        <attr name="sriv_right_top_corner_radius" format="dimension" />
+        <attr name="sriv_left_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_right_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_border_width" format="dimension" />
+        <attr name="sriv_border_color" format="color" />
+        <attr name="sriv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsTextSize" format="dimension"/>
+        <attr name="pstsTextColor" format="color"/>
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerWidth" format="dimension" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsIndicatorMargin" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsDividerPaddingTopBottom" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsPaddingMiddle" format="boolean" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsTabTextSize" format="dimension" />
+        <attr name="pstsTabTextColor" format="reference" />
+        <!-- 该属性表示里面的TAB是否均分整个PagerSlidingTabStrip控件的宽,true是,false不均分,从左到右排列,默认false -->
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+        <attr name="pstsTextSelectedColor" format="color" />
+        <!-- 缩放的最大值,0.3表示放大后最大是原来的0.3倍,默认未0.3  -->
+        <attr name="pstsScaleZoomMax" format="float" />
+        <attr name="pstsSmoothScrollWhenClickTab" format="boolean" />
+        <attr name="pstsTabTextStyle" format="reference">
+            <flag name="normal" value="0x0" />
+            <flag name="bold" value="0x1" />
+            <flag name="italic" value="0x2" />
+        </attr>
+        <attr name="pstsTabTextAllCaps" format="boolean" />
+        <attr name="pstsTabTextAlpha" format="integer" />
+        <attr name="pstsTabTextFontFamily" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="DotSeekBar">
+        <attr name="dotCount"  format="integer" />
+        <attr name="dotLeft" format="reference" />
+        <attr name="dotRight" format="reference" />
+        <attr name="dotWidth" format="dimension" />
+        <attr name="dotHeight" format="dimension" />
+        <attr name="dotOnly" format="boolean" />
+        <attr name="dotExact" format="boolean" />
+        <attr name="shouldDrawDot" format="boolean" />
+        <attr name="showTip" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="RankView">
+        <attr name="rankWidth"  format="dimension" />
+        <attr name="rankTextSize"  format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleMatchView">
+        <!-- 内圈背景色-->
+        <attr name="in_color" format="color"/>
+        <!--中圈背景色-->
+        <attr name="middle_color" format="color"/>
+        <!--外圈背景色-->
+        <attr name="out_color" format="color"/>
+        <!--中圈圆弧颜色-->
+        <attr name="middle_ring_color" format="color"/>
+        <!--外圈圆弧颜色-->
+        <attr name="out_ring_color" format="color"/>
+        <!--圈圈间隙-->
+        <attr name="circle_space" format="dimension" />
+        <!--圈圈画笔大小-->
+        <attr name="circle_paint_width" format="dimension" />
+        <!--中圈最大值-默认100-->
+        <attr name="middle_max" format="float" />
+        <!--中圈当前值-默认0-->
+        <attr name="middle_cur" format="float" />
+        <!--外圈最大值-默认100-->
+        <attr name="out_max" format="float" />
+        <!--外圈当前值-默认0-->
+        <attr name="out_cur" format="float" />
+        <!--外圈是否可见-->
+        <attr name="out_circle_visible" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="BGASwipeItemLayout">
+        <attr name="bga_sil_swipeDirection" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+        <attr name="bga_sil_bottomMode" format="enum">
+            <enum name="pullOut" value="0" />
+            <enum name="layDown" value="1" />
+        </attr>
+        <attr name="bga_sil_springDistance" format="dimension" />
+        <attr name="bga_sil_swipeAble" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ChannelTypeView">
+        <attr name="ChannelTypeViewWidth" format="dimension|reference"/>
+        <attr name="ChannelTypeViewHeight" format="dimension|reference"/>
+        <attr name="ChannelTypeViewNormalImage" format="reference"/>
+        <attr name="ChannelTypeViewSelectImage" format="reference"/>
+        <attr name="ChannelTypeViewSelected" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="FilterView">
+        <attr name="arrow_type" format="integer"/><!-- 0无箭头  1上箭头  2下箭头  3上下两个箭头 -->
+        <attr name="color_normal" format="color"/>
+        <attr name="color_selected" format="color"/>
+        <attr name="text" format="string"/><!-- 最左边的文案 -->
+        <attr name="iv_right" format="reference"/><!-- 最右边的图片 -->
+        <attr name="id_arrow" format="reference"/>
+        <attr name="filter_view_is_selected" format="boolean"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,1866 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">撲克部落</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="cancel">取消</string>
+
+    <string name="main_tab_discovery">動態</string>
+    <string name="main_tab_chat">通訊</string>
+    <string name="main_tab_contacts">人脈</string>
+    <string name="main_tab_record">生涯</string>
+    <string name="main_tab_me">我</string>
+
+    <string name="head_title_discovery">發現</string>
+    <string name="head_title_game">快速牌局</string>
+    <string name="head_title_game_test_server">快速牌局（測試服）</string>
+
+    <string name="friend">好友</string>
+    <string name="search">搜索</string>
+    <string name="user">用戶</string>
+    <string name="added">已添加</string>
+
+    <string name="search_hint">昵稱/手機號/俱樂部</string>
+    <string name="search_hint_user">昵稱/手機號/ID</string>
+    <string name="contacts">人脈</string>
+    <string name="chat_new_circle">新建圈子</string>
+    <string name="contacts_new_friend">添加朋友</string>
+
+    <string name="contancts_column_newfriends">新朋友</string>
+    <string name="contancts_column_mycircle">我的圈子</string>
+    <string name="contancts_column_myclub">我的俱樂部</string>
+    <string name="contancts_num">%d個好友</string>
+    <string name="group_num">%d個圈子</string>
+    <string name="club_num">%d個俱樂部</string>
+
+    <string name="group_name_null">未命名</string>
+    <string name="group_info_head">圈子信息(%d)</string>
+    <string name="group_info_newmessage_notify">新消息通知</string>
+    <string name="group_info_invite_by_host">只能圈主邀請</string>
+    <string name="group_info_creat_game_by_host">只能圈主開局</string>
+    <string name="group_info_clear_record">清空聊天記錄</string>
+
+    <string name="group_select_member">選擇朋友</string>
+    <string name="group_select_member_must_leastone">請選擇至少一個連絡人!</string>
+    <string name="group_member_capacity">群成員數量不能超過%1$d</string>
+
+    <string name="group_edit_name_head">圈子名稱</string>
+    <string name="group_edit_name_desc">為圈子想一個名稱</string>
+
+    <string name="me_column_paipu_count">已收藏了%d個牌譜</string>
+    <string name="me_column_record">戰績</string>
+    <!--<string nameId="me_column_data">資料統計</string>-->
+    <string name="me_column_alias">設置備註</string>
+    <string name="me_column_settings">設置</string>
+    <string name="user_profile_invite_club">邀請加入俱樂部</string>
+    <string name="user_profile_remove_club">刪除會員</string>
+    <string name="me_column_friend">好友</string>
+    <string name="me_column_group">圈子</string>
+    <string name="me_column_club">俱樂部</string>
+    <string name="me_column_paipu">牌譜收藏</string>
+    <string name="me_column_share">分享印象撲克</string>
+    <string name="me_column_game">小遊戲</string>
+    <string name="me_column_circle">我的印象撲克</string>
+    <string name="me_column_shop">商城</string>
+    <string name="help">幫助</string>
+    <string name="rule">規則</string>
+
+    <string name="contact_friend">我的好友</string>
+    <string name="contact_group">我的圈子</string>
+    <string name="contact_club">我的俱樂部</string>
+
+    <string name="back">返回</string>
+    <string name="back_unread">返回(%s)</string>
+    <string name="login">登錄</string>
+    <string name="register">註冊</string>
+    <string name="register_finish">註冊完成</string>
+    <string name="submit">提交</string>
+    <string name="next">下一步</string>
+    <string name="finish">完成</string>
+    <string name="create_club">創建</string>
+    <string name="send">發送</string>
+    <string name="close">關閉</string>
+    <string name="notconnected">未連接</string>
+    <string name="getauthcode">獲取驗證碼</string>
+
+    <string name="me">我</string>
+
+    <string name="friend_action_invite">邀請</string>
+    <string name="friend_action_invite_already">已發送邀請</string>
+    <string name="friend_action_team_member_already">已經是俱樂部成員</string>
+    <string name="friend_action_add">添加</string>
+    <string name="friend_action_agree">通過</string>
+    <string name="friend_action_reject">拒絕</string>
+    <string name="friend_status_already_add">已添加</string>
+
+    <string name="phone">手機號</string>
+    <string name="login_phone_hint">請輸入手機號碼</string>
+    <string name="login_password_hint"></string>
+    <string name="login_ing">登錄中\u2026</string>
+    <string name="login_success">登錄成功!</string>
+    <string name="login_failed_error">帳號或密碼錯誤</string>
+    <string name="login_not_null">帳號或密碼不能為空</string>
+    <string name="login_failed">登錄失敗!</string>
+    <string name="login_phone_invalid">您輸入的手機號碼無效</string>
+    <string name="login_failed_account_not_exist">帳號不存在，登錄失敗!</string>
+
+    <string name="login_in_otherip">帳號在其它地方登錄!</string>
+    <string name="login_in_forbidden">該賬號已被禁用!</string>
+
+    <string name="verify_send_message">你好,我是%s</string>
+
+    <string name="register_ing">註冊中\u2026</string>
+    <string name="register_success">註冊成功!</string>
+
+    <string name="register_head">註冊</string>
+    <string name="register_phone">請輸入您的手機號</string>
+    <string name="register_phone_not_null">手機號碼不能為空!</string>
+    <string name="register_region_not_null">請選擇你所在區域!</string>
+    <string name="register_phone_registered">該手機號已註冊</string>
+    <!--<string nameId="register_phone_hint">手機號用於接收驗證短信</string>-->
+    <string name="register_password">設置密碼</string>
+    <string name="register_nickname">請設置昵稱，方便好友認出你</string>
+    <string name="register_invitation_code">請輸入邀請碼</string>
+    <string name="register_app_terms_hint">點擊“獲取驗證碼”按鈕，即表示你同意</string>
+    <string name="register_app_terms">《印象撲克軟體許可及服務協定》</string>
+    <string name="register_app_terms_head">使用條款和隱私政策</string>
+    <string name="invitation_code">邀請碼</string>
+
+    <string name="authcode_get_ing">獲取中\u2026</string>
+    <string name="authcode_head">填寫驗證碼</string>
+    <string name="authcode_get_success">驗證碼已發送!</string>
+    <string name="authcode_get_failed">驗證碼獲取失敗</string>
+    <string name="authcode_already_send">驗證碼短信已發送至%s</string>
+    <string name="authcode_receive_not">重新獲取驗證碼</string>
+    <string name="authcode_please_enter">請輸入驗證碼</string>
+    <string name="authcode_time_countdown">重新獲取（%d）</string>
+    <string name="authcode_not_null">驗證碼不能為空!</string>
+    <string name="authcode_not_right">驗證碼不正確，請重新輸入</string>
+
+    <string name="authcode_back_tip">驗證碼短信可能略有延遲，確定返回？</string>
+    <string name="authcode_reget_tip">是否重新獲取驗證碼？</string>
+
+    <string name="reset_password_ing">修改中\u2026</string>
+    <string name="reset_password_success">密碼修改成功!</string>
+    <string name="reset_password_failed">密碼修改失敗!</string>
+
+    <string name="forget_password">忘記密碼？</string>
+    <string name="forget_phone_unregistered">該手機號還未註冊!</string>
+    <string name="reset_password_head">重置密碼</string>
+    <string name="set_password_head">設置密碼</string>
+    <string name="set_password_hint">輸入6-32位元密碼</string>
+    <string name="set_password_phone">手機號：%s</string>
+    <string name="set_password_success">修改密碼成功，請重新登錄!</string>
+    <string name="set_password_not_null">密碼不能為空!</string>
+    <string name="set_password_is_short">密碼過短，密碼長度應為6–32個字元</string>
+    <string name="set_password_is_long">密碼太長，密碼長度應為6–32個字元</string>
+
+    <string name="network_is_not_available">網路連接失敗，請檢查你的網路設置</string>
+
+    <string name="not_allow_empty">不能為空</string>
+
+    <string name="team_apply_sending">發送中…</string>
+    <string name="delete_system_message">刪除該條系統消息？</string>
+    <string name="delete_success">刪除成功</string>
+    <string name="clear_all_success">清除成功</string>
+    <string name="delete_tip">刪除提示</string>
+
+    <string name="chat_info_head">聊天詳情</string>
+    <string name="chat_info_newmessage_notify">新消息通知</string>
+    <string name="chat_info_cant_search">不能被搜索到</string>
+    <string name="chat_info_just_creator_create">只能會長開局</string>
+    <string name="chat_info_clear_record">清空聊天記錄</string>
+    <string name="chat_info_cant_search_prompt">打開後，用戶將無法搜索到該俱樂部</string>
+
+    <string name="add">添加</string>
+    <string name="delete">刪除</string>
+    <string name="remove">移除</string>
+    <string name="club_remove">踢出俱樂部</string>
+    <string name="edit">編輯</string>
+    <string name="save">保存</string>
+    <string name="invite">邀請</string>
+    <string name="create_team_success">創建成功</string>
+    <string name="create_team_failed">創建失敗</string>
+    <string name="invite_member_success">邀請成功</string>
+    <string name="invite_member_failed">邀請失敗</string>
+    <string name="remove_member_success">移除成功</string>
+    <string name="remove_member_failed">移除失敗</string>
+
+    <string name="create_group_failed">創建圈子失敗</string>
+
+    <string name="verify_message">驗證消息</string>
+    <string name="verify_add_friend">朋友驗證</string>
+    <string name="verify_add_club">俱樂部驗證</string>
+    <string name="verify_invite">收到的邀請</string>
+    <!-- 通訊錄 -->
+    <string name="add_friend">加為好友</string>
+    <string name="agree_friend">通過好友驗證</string>
+    <string name="agree_club_apply">通過俱樂部申請</string>
+    <string name="add_friend_verify_prompt">你需要發送驗證申請，等待對方通過。</string>
+    <string name="remove_friend">刪除好友</string>
+    <string name="begin_chat">發信息</string>
+    <string name="remove_friend_tip">刪除後將清除相關資料，確定刪除好友“%s”？</string>
+    <string name="remove_friend_ing">刪除中...</string>
+    <string name="remove_friend_success">刪除好友成功!</string>
+    <string name="remove_friend_failed">刪除好友失敗!</string>
+    <string name="add_friend_self_tip">不能添加自己為好友</string>
+    <string name="add_friend_verify_tip">好友驗證請求</string>
+    <string name="add_friend_verify_send_ing">發送申請中...</string>
+    <string name="add_friend_verify_send_prompt">好友申請已發送!</string>
+    <string name="add_friend_verify_send_failed">好友申請發送失敗!</string>
+    <string name="add_friend_success">添加好友成功!</string>
+    <string name="add_friend_failure">添加好友失敗!</string>
+
+    <string name="friend_search_failed">用戶搜索失敗!</string>
+    <string name="friend_search_null">無法找到該用戶，請檢查您填寫的用戶昵稱是否正確</string>
+    <string name="search_null">搜索結果為空</string>
+    <string name="search_failed">搜索失敗!</string>
+
+    <string name="head_user_profile">詳細資料</string>
+    <string name="head_add_newfriends">添加好友</string>
+
+    <!--<string nameId="add_newfriends_search_hint">搜索好友昵稱</string>-->
+    <string name="add_newfriends_search_hint">昵稱/手機號/俱樂部</string>
+    <string name="add_newfriends_by_phone_contact">添加手機連絡人</string>
+    <string name="add_newfriends_by_social_contact">邀請好友</string>
+    <string name="add_newfriends_by_qrcode">掃一掃</string>
+    <string name="phone_contact_head">手機連絡人</string>
+    <string name="phone_contact_null">您還沒有任何連絡人</string>
+
+    <string name="settings_column_logout">退出登錄</string>
+    <string name="settings_column_game_sound">遊戲音效</string>
+    <string name="settings_column_message_notice">新消息通知</string>
+    <string name="settings_column_message_sound">消息聲音</string>
+    <string name="settings_column_message_shake">消息震動</string>
+    <string name="settings_column_feedback">意見回饋</string>
+    <string name="settings_column_aboutus">關於我們</string>
+    <string name="settings_column_app_update">檢測新版本</string>
+    <string name="settings_column_app_current_version">當前版本</string>
+    <string name="settings_column_game_current_version">資源版本</string>
+
+    <string name="details">詳情</string>
+    <string name="more">更多</string>
+    <string name="message">消息</string>
+
+    <string name="club_my">我的俱樂部</string>
+    <string name="create">建立</string>
+    <string name="club_create">創建俱樂部</string>
+    <string name="club_join">加入俱樂部</string>
+    <string name="club_create_head">建立俱樂部</string>
+    <string name="club_create_confirm">建立</string>
+    <string name="club_create_already">已建立俱樂部數：%s</string>
+    <string name="club_create_name">俱樂部名稱</string>
+    <string name="club_create_name_hint">1-20個字元</string>
+    <string name="club_create_introduce">介紹</string>
+    <string name="club_create_area">所在地區</string>
+    <string name="club_create_name_not_null">俱樂部名稱不能為空</string>
+    <string name="club_create_region_not_null">俱樂部區域不能為空</string>
+    <string name="club_my_null_prompt">您還沒有加入任何俱樂部\n\n自己組建一個或加入一個吧</string>
+    <string name="club_join_search_hint">俱樂部名/ID</string>
+    <string name="club_edit_head">俱樂部設置</string>
+    <!--<string nameId="create_club_is_limit">您已無法再創建俱樂部</string>-->
+    <string name="club_create_count_is_limit">您所創的俱樂部數已達上限!</string>
+    <string name="club_create_failed">俱樂部創建失敗</string>
+
+    <string name="club_create_count_is_limit_normal">您所創的俱樂部數已達上限</string>
+    <string name="club_create_count_is_limit_vip">用戶最多創建%d個俱樂部</string>
+    <string name="club_create_vip_is_top">會員等級已經最高</string>
+
+    <string name="club_member_more_invite">邀請新會員</string>
+    <string name="club_member_more_remove">移除會員</string>
+
+    <!--<string nameId="club_search_by_id">按"俱樂部號"搜索</string>-->
+    <!--<string nameId="club_search_by_name">按"俱樂部名稱"搜索</string>-->
+
+    <string name="club_search_null">沒有找到相關俱樂部，請重新搜索</string>
+
+    <string name="club_edit_change_head">更換頭像</string>
+    <string name="club_edit_introduce">俱樂部介紹</string>
+    <string name="club_edit_ing">保存中\u2026</string>
+    <string name="club_edit_success">俱樂部資料修改成功!</string>
+    <string name="club_edit_failed">俱樂部資料修改失敗!</string>
+    <string name="club_edit_heaa_success">俱樂部頭像更換成功!</string>
+    <string name="club_edit_heaa_failed">俱樂部頭像更換失敗!</string>
+
+    <string name="club_eedit_name_desc">設置俱樂部名稱</string>
+    <string name="club_eedit_introduce_desc">設置俱樂部介紹</string>
+
+    <string name="club_join_search_notexist_title">俱樂部不存在</string>
+    <string name="club_join_search_notexist_content">沒有找到相關俱樂部，請更換搜索條件再試。</string>
+    <string name="club_join_search_failed">俱樂部搜索失敗!</string>
+
+    <string name="club_info_head">俱樂部資訊</string>
+    <string name="club_info_founder">會長</string>
+    <string name="club_info_members">會員</string>
+    <string name="club_info_members_count">會員 %1$d/%2$d</string>
+    <string name="club_info_introduce">介紹</string>
+    <string name="club_info_card">名片</string>
+    <string name="club_info_create_time">創建於%s</string>
+    <string name="club_info_share">分享</string>
+    <string name="club_info_operate_dismiss">刪除並解散</string>
+    <string name="club_info_operate_quit">刪除並退出</string>
+    <string name="club_info_operate_apply">申請加入</string>
+    <string name="club_info_operate_enter">發消息</string>
+    <string name="club_info_operate_agree_inviter">通過俱樂部邀請</string>
+
+    <string name="club_info_head_operate_quit">退出俱樂部</string>
+    <string name="club_info_head_operate_dismiss">解散俱樂部</string>
+
+    <string name="club_name_empty">俱樂部名稱不能為空</string>
+    <string name="club_name_is_long">昵稱不能超過5個漢字\n或10個英文字母。</string>
+    <string name="club_introduce_is_long">個性簽名不能超過30個漢字\n或60個英文字母。</string>
+
+    <string name="club_area_label_hotcity">熱門城市</string>
+    <string name="club_area_label_province">省份</string>
+    <string name="club_area_head">選擇城市</string>
+    <string name="club_search_head">搜索結果</string>
+
+    <string name="club_invite_members_success">邀請發送成功</string>
+    <string name="club_invite_members_failed">邀請發送失敗</string>
+
+    <string name="club_members_manage_remove">移出俱樂部</string>
+
+    <!--<string nameId="club_remove_members_title">移除會員</string>-->
+    <string name="club_remove_members_tip">確定將會員“%s”移出俱樂部？</string>
+    <string name="club_remove_membersmgr_tip">會員“%s”當前為俱樂部管理員,確定將該會員移出俱樂部？</string>
+
+    <string name="club_another_count">對方加入的俱樂部（%s）</string>
+
+    <string name="quit_club_dialog_title">退出俱樂部</string>
+    <string name="quit_club_dialog_message">退出俱樂部後你將不再收到俱樂部的任何資訊!</string>
+    <string name="dismiss_club_dialog_title">解散俱樂部</string>
+    <string name="dismiss_club_dialog_message">解散俱樂部後你將不再收到俱樂部的任何資訊!</string>
+
+    <string name="club_member_manager">會員管理</string>
+
+    <string name="group_name_is_long">圈子名稱不能超過10個漢字或20個字元</string>
+
+    <string name="quit_group_success">您已退出圈子</string>
+    <string name="quit_group_failed">退出圈子失敗!</string>
+    <string name="dismiss_group_success">圈子已解散</string>
+    <string name="dismiss_group_failed">解散圈子失敗</string>
+
+    <string name="edit_group_name_success">圈子名稱修改成功!</string>
+    <string name="edit_group_name_failed">圈子名稱修改失敗!</string>
+
+    <string name="quit_group_dialog_title">退出圈子</string>
+    <string name="quit_group_dialog_message">退出圈子後你將不再收到圈子的任何資訊!</string>
+    <string name="dismiss_group_dialog_title">解散圈子</string>
+    <string name="dismiss_group_dialog_message">解散圈子後你將不再收到圈子的任何資訊!</string>
+
+    <string name="remove_group_member_dialog_message">確定刪除圈子成員%s？</string>
+
+    <string name="quit_game_dialog_title">退出快速牌局</string>
+    <string name="quit_game_dialog_message">確定退出該牌局？</string>
+    <string name="dismiss_game_dialog_title">解散快速牌局</string>
+    <string name="dismiss_game_dialog_message">確定解散該牌局？</string>
+
+    <string name="quit_club_ing">退出中...</string>
+    <string name="quit_club_success">您已退出俱樂部</string>
+    <string name="quit_club_failed">退出俱樂部失敗!</string>
+    <string name="dismiss_club_ing">解散中...</string>
+    <string name="dismiss_club_success">俱樂部已解散!</string>
+    <string name="dismiss_club_failed">解散俱樂部失敗!</string>
+
+    <!-- team -->
+    <string name="team_need_authentication">需要身份驗證</string>
+    <string name="team_allow_anyone_join">允許任何人加入</string>
+    <string name="team_not_allow_anyone_join">不允許任何人申請加入</string>
+
+    <string name="team_apply_to_join_send_ing">發送中...</string>
+    <string name="team_apply_to_join_send_success">申請已發送</string>
+    <string name="team_apply_to_join_send_failed">申請發送失敗</string>
+    <string name="has_exist_in_team">已經在俱樂部中</string>
+    <string name="team_not_exist">該俱樂部不存在</string>
+    <string name="team_already_dismiss">該俱樂部已解散</string>
+
+    <string name="edit_alias_head">備註名</string>
+    <string name="edit_userinfo_head">個人資訊</string>
+    <string name="edit_userinfo_userhead">頭像</string>
+    <string name="edit_userinfo_nickname">修改昵稱</string>
+    <string name="edit_userinfo_account">登錄帳號</string>
+    <string name="edit_userinfo_sex">性別</string>
+    <string name="edit_userinfo_area">所在地</string>
+    <string name="edit_userinfo_sex_male">男</string>
+    <string name="edit_userinfo_sex_female">女</string>
+    <string name="edit_userinfo_signature">個性簽名</string>
+    <string name="edit_userinfo_level">等級</string>
+    <string name="edit_userinfo_register_time">註冊時間</string>
+
+    <string name="edit_userinfo_alias_desc">為好友設置一個備註名</string>
+    <string name="edit_userinfo_nickname_hint">1-10個字元</string>
+    <string name="edit_userinfo_nickname_desc">設置昵稱</string>
+    <string name="edit_userinfo_signature_desc">設置個性簽名</string>
+
+    <string name="edit_userinfo_alias_ing">設置備註中...</string>
+
+    <string name="userinfo_signature_null">暫無簽名</string>
+    <string name="club_introduce_null">暫無簡介</string>
+
+    <!-- session -->
+    <string name="input_panel_bill">戰績</string>
+    <string name="input_panel_paipu">牌譜</string>
+    <string name="input_panel_game_create">開局</string>
+    <string name="input_panel_pic">圖片</string>
+
+    <string name="invite_message">【印象撲克】專業的朋友間約局神器，首推保險模式與千人俱樂部。模式豐富，玩法隨心，更多更全的功能體驗，等您來選擇。</string>
+    <string name="share_title">印象撲克，保險模式震撼來襲</string>
+    <string name="share_message">專業的朋友間約局神器，首推保險模式與千人俱樂部。模式豐富，玩法隨心，更多更全的功能體驗，等您來選擇。</string>
+    <string name="share_message_sina">【印象撲克】專業的朋友間約局神器，首推保險模式與千人俱樂部。模式豐富，玩法隨心，更多更全的功能體驗，等您來選擇。</string>
+
+    <string name="share_hands_content">印象撲克牌譜分享，快來看我精彩瞬間</string>
+
+    <string name="share_hands_is_old">該牌譜版本過低，無法分享</string>
+
+    <string name="collect">收藏</string>
+    <string name="cancel_collect">取消收藏</string>
+    <string name="collected">已收藏</string>
+    <string name="share">分享</string>
+    <string name="share_to">分享到</string>
+    <string name="share_wechat">微信</string>
+    <string name="share_moments">朋友圈</string>
+    <string name="share_sinaweibo">新浪微博</string>
+
+    <string name="set_head_image">更換頭像</string>
+    <string name="user_info_update_success">設置成功</string>
+    <string name="user_info_update_cancel">取消更新</string>
+    <string name="user_info_update_failed">設置失敗，請重試</string>
+    <string name="head_update_success">頭像更換成功</string>
+    <string name="head_update_failed">頭像更換失敗，請重試</string>
+    <string name="nickname_hint">在此輸入昵稱</string>
+    <string name="nickname_empty">昵稱不能為空</string>
+    <string name="nickname_is_long">昵稱不能超過5個漢字\n或10個英文字母。</string>
+    <string name="nickname_existed">昵称已經存在。</string>
+    <string name="signature_is_long">個性簽名不能超過30個漢字\n或60個英文字母。</string>
+
+    <string name="game_create_name_notnull">牌局名稱不能為空!</string>
+    <string name="game_create_success">牌局創建成功!</string>
+
+    <string name="game_create_failed_already">你已經創建過牌局!</string>
+    <string name="game_create_failed_balance_insufficient">您的餘額不足，創建失敗!</string>
+    <string name="game_create_name_long">牌局名稱太長!</string>
+    <string name="game_create_name_invalid">牌局名稱格式不正確!</string>
+    <string name="game_create_by_club_creator">只能會長開局!</string>
+    <string name="game_create_head">創建牌局</string>
+    <string name="game_create_start">開始</string>
+    <string name="game_create_start_match">創建比賽</string>
+    <string name="game_create_invite">邀請</string>
+    <string name="game_create_name_hint">牌局名稱</string>
+    <string name="game_create_blind">小盲/大盲</string>
+    <string name="game_create_chip">帶入記分牌</string>
+    <string name="game_create_normal_min_chip">最小帶入</string>
+    <string name="game_create_normal_max_chip">最大帶入</string>
+    <string name="game_create_normal_total_chip">總帶入</string>
+    <string name="game_create_wealthvalue">餘額：</string>
+    <string name="game_create_servicefee">服務費：</string>
+    <string name="game_create_config_minnte">%s分鐘</string>
+    <string name="game_create_config_hour">%s小時</string>
+    <string name="game_create_config_insurance">保險</string>
+    <string name="game_create_config_ante">ANTE(前注)</string>
+    <string name="game_create_team_count_is_limit">您創建的俱樂部牌局已經達到上限!</string>
+    <string name="game_create_private_count_is_limit">您創建的私人牌局已經達到上限!</string>
+
+    <string name="game_create_topup_dialog_tip">您的德州幣不足，請先購買</string>
+    <string name="buy">購買</string>
+
+    <string name="record_vip_dialog_tip">是否購買VIP？</string>
+
+    <string name="game_quick_dismiss">解散</string>
+    <string name="game_quick_quit">退出</string>
+
+    <string name="game_desk_head">牌局</string>
+    <string name="game_desk_start">開局</string>
+    <string name="game_desk_playing">%d\n進行中</string>
+    <string name="game_create_tip">成功創建快速牌局</string>
+    <string name="game_start_tip">牌局已開始</string>
+
+    <string name="user_not_exsit">該用戶不存在</string>
+    <string name="user_tips">請檢查你輸入的帳號是否正確</string>
+
+    <string name="addfriend_success_tip">您已經添加了%s，你們現在可以對話啦!</string>
+    <string name="createclub_success_tip">您已經創建俱樂部“%s”</string>
+    <string name="agree_addfriend_invite_message">我通過了你的好友驗證請求，現在我們可以開始對話啦!</string>
+    <string name="create_team_activity">創建群聊</string>
+
+    <string name="join">加入</string>
+    <string name="quick_game_join">加入牌局</string>
+    <string name="quick_game_create">我要組局</string>
+    <string name="quick_game_join_prompt">輸入邀請碼，加入朋友的局。</string>
+    <string name="quick_game_create_prompt">成為牌局的發起者，邀請好友入局!</string>
+
+    <string name="quick_game_table_ante">ANTE(前注)：%s</string>
+
+    <string name="game_join_code_notnull">邀請碼不能為空!</string>
+
+    <string name="game_start_success">牌局開始!</string>
+    <string name="game_start_failure">開始牌局失敗!</string>
+    <string name="game_start_notexist">當前牌局已經不存在!</string>
+    <string name="game_join_success">成功加入牌局!</string>
+    <string name="game_join_failure">加入牌局失敗\n請檢查網路!</string>
+    <string name="game_join_notexist">牌局不存在!</string>
+    <string name="game_finished">該牌局已結束!</string>
+    <string name="token_error">Token異常，請重新登錄</string>
+
+    <!--<string nameId="game_inivite_tip">%s邀請您加入牌局：</string>-->
+    <string name="game_inivite_tip">%s邀請您加入牌局，點擊即可加入</string>
+    <string name="game_inivite_send_success">邀請發送成功!</string>
+
+    <string name="game_status_finished">已結束</string>
+    <string name="game_status_ing">進行中</string>
+    <string name="game_status_will_start">即將開始</string>
+    <string name="game_status_pause">暫停中</string>
+    <string name="game_message_ante">ANTE: %d</string>
+
+    <string name="game_dismiss_success">解散牌局成功!</string>
+    <string name="game_dismiss_failure_be_gameisstart">遊戲已經開始，解散牌局失敗!</string>
+    <string name="game_dismiss_failure">解散牌局失敗!</string>
+
+    <string name="game_dismiss_by_creator">當前牌局已被“%s”解散!</string>
+
+    <string name="quit_game_ing">退出中...</string>
+    <string name="quit_game_success">退出牌局!</string>
+    <string name="quit_game_failure">退出牌局失敗!</string>
+
+    <string name="prepare_data">正在準備資料...</string>
+
+    <string name="record_get_failed">戰績獲取失敗!</string>
+
+    <!--<string nameId="record_details_all_hand">%d手牌</string>-->
+    <string name="record_details_join_hand">參與: %s</string>
+    <string name="record_details_ruchi_hand">入池: %s</string>
+    <string name="record_details_win">勝: %d</string>
+    <string name="record_details_lose">負: %d</string>
+    <string name="record_details_user_win_chips">總盈利:</string>
+    <string name="record_details_user_reward">獎勵:</string>
+    <string name="record_details_user_insurance_chips">保險:</string>
+    <string name="record_details_read_hands">查看本局牌譜</string>
+    <string name="record_details_read_info">查看明細</string>
+    <string name="record_details_colunm_members">玩家（%d）</string>
+    <!--<string nameId="record_details_big_dichi">最大底池\n%s</string>-->
+    <string name="record_details_colunm_all_buy">買入</string>
+    <string name="record_details_colunm_all_winchips">盈利</string>
+    <string name="record_details_colunm_insurance">保險記錄</string>
+    <string name="record_details_colunm_insurance_buy">投保</string>
+    <string name="record_details_colunm_insurance_pay">保險盈利</string>
+
+    <string name="record_details_mvp">MVP\n%s</string>
+    <string name="record_details_bigfish">大魚\n%s</string>
+    <string name="record_details_rich">土豪\n%s</string>
+    <string name="record_title_all_profit">7日總盈虧%s</string>
+
+    <string name="record_all_paiju">牌局數</string>
+    <string name="record_ruchi">入池率</string>
+    <string name="record_winrate_in">其中勝率</string>
+    <string name="record_hands_count">總手數</string>
+
+    <string name="statistics_career">生涯合計</string>
+    <string name="statistics_paiju">牌局數:</string>
+    <string name="statistics_handcard">總手數:</string>
+    <string name="statistics_rate_all">總勝率</string>
+    <string name="statistics_rate_showdown">攤牌勝率</string>
+    <string name="statistics_rate_look_card">看翻牌勝率</string>
+    <string name="statistics_rate_follow">河牌圈跟注後勝率</string>
+
+    <string name="statistics_gain_all">總盈利</string>
+    <string name="statistics_gain_hundred_hand">平均百手盈利</string>
+    <string name="statistics_gain_hundred_hand_bigblind">平均百手贏得大盲</string>
+    <string name="statistics_gain_allin">平均All-in</string>
+
+    <string name="statistics_tab_distribution">勝率分佈</string>
+    <string name="statistics_tab_analysis">圖示分析</string>
+    <string name="statistics_tab_gaininfo">盈利情況</string>
+    <string name="statistics_tab_dailygain">每日盈利</string>
+
+    <string name="statistics_tab_table_winrate">勝率統計</string>
+    <string name="statistics_tab_table_gain">盈利能力</string>
+
+    <string name="other_gain_title">盈利：%s</string>
+    <string name="daily_gain_title">您今天盈利 %s</string>
+
+    <string name="shop_head">商店</string>
+    <string name="shop_tab_coin">遊戲商店</string>
+    <string name="shop_tab_diamond">鑽石商城</string>
+    <string name="shop_tab_vip">VIP特權</string>
+
+    <string name="region_head">地區選擇</string>
+    <string name="region_county_tip">選擇國家</string>
+    <string name="region_province_tip">選擇省份</string>
+    <string name="region_city_tip">選擇城市</string>
+    <string name="region_city_current">已選擇：%s</string>
+
+    <string name="exit_again_tips">再按一次退出程式!</string>
+
+    <string name="game_invite_member_title">邀請好友參加牌局</string>
+
+    <string name="record_statistics">數據統計</string>
+    <string name="record_data_analysis">數據分析</string>
+    <string name="record_paiju">牌局信息</string>
+    <string name="record_handcard">牌譜記錄</string>
+
+    <string name="data_reload">重新載入</string>
+    <string name="loading">載入中...</string>
+    <string name="load_failed">載入失敗啦.</string>
+    <string name="no_internet">網路未連接</string>
+    <string name="no_data">未找到相關內容</string>
+
+    <string name="pass">跳過</string>
+    <string name="friend_guide_head">添加好友</string>
+    <string name="friend_guide_add">添加通訊錄好友</string>
+    <string name="friend_guide_not">暫不添加</string>
+    <string name="friend_guide_title">看看手機連絡人裡誰在印象撲克裡？</string>
+    <string name="friend_guide_content">添加手機通訊錄好友可以讓你更快的組建自己的圈子，只有在圈子裡才可以和朋友一起打牌。\n我們不會保存您的通訊錄資訊，只會向你推薦通訊錄中已經使用印象撲克的連絡人</string>
+
+    <string name="game_back_tip">您確定要離開當前牌局？</string>
+    <string name="session_clear_tip">確定清空聊天記錄？</string>
+    <string name="session_clear_success">已清空</string>
+
+    <string name="shop_vip_column_giving">贈送德州幣</string>
+    <string name="shop_vip_column_create_count">創建牌局數</string>
+    <string name="shop_vip_column_club_count">俱樂部數量</string>
+    <string name="shop_vip_column_record">記錄牌局</string>
+    <string name="shop_vip_column_collection">收藏牌譜</string>
+    <string name="shop_vip_column_anlysis">資料分析</string>
+    <string name="shop_diamond_head">購買鑽石</string>
+
+    <string name="shop_vip_routine_anlysis">常規分析</string>
+    <string name="shop_vip_professional_anlysis">專業分析</string>
+    <string name="days_count">%d天</string>
+    <string name="hands_count">%d手</string>
+
+    <string name="chatroom_adddesk_create">點擊創建</string>
+    <string name="chatroom_adddesk_join">點擊加入</string>
+
+    <string name="chat_null">您還沒有發起對話</string>
+    <string name="friend_null">您還沒有添加朋友</string>
+    <string name="friend_new_null">您沒有收到新的好友邀請</string>
+    <string name="group_null">您還沒有自己的圈子</string>
+    <string name="message_null">您還沒有收到任何消息</string>
+    <string name="record_null">您還沒有參與過任何牌局</string>
+    <string name="phonecontact_null">您還沒有手機連絡人</string>
+    <string name="paipu_collect_null">您還沒有任何牌譜收藏</string>
+    <string name="paipu_record_null">您還沒有任何牌譜記錄</string>
+
+    <string name="recent_game_null">未加入任何牌局</string>
+
+    <string name="search_more">查看更多</string>
+
+    <string name="system_tip_no_internet">世界上最遙遠的距離是沒有網。檢測網路</string>
+
+    <string name="logout_tip">確定退出？</string>
+
+    <string name="recent_game_on_top">置頂該牌局</string>
+    <string name="recent_game_clear_on_top">取消置頂</string>
+    <string name="recent_game_ignore">忽略</string>
+
+    <string name="data_analysis_good">標準值</string>
+    <string name="data_analysis_improve">偏差值</string>
+    <string name="data_analysis_poor">極端值</string>
+
+    <string name="data_analysis_wsd">WSD</string>
+    <string name="data_analysis_wtsd">WTSD</string>
+    <string name="data_analysis_wwsf">WWSF</string>
+    <string name="data_analysis_af">AF</string>
+    <string name="data_analysis_afq">AFq</string>
+    <string name="data_analysis_vpip">VPIP</string>
+    <string name="data_analysis_prf">PFR</string>
+    <string name="data_analysis_prfvpip">PFR/VPIP</string>
+    <string name="data_analysis_3bet">3Bet</string>
+    <string name="data_analysis_stl">STL</string>
+    <string name="data_analysis_fold">Fold STL</string>
+    <string name="data_analysis_sb">SB 3Bet Steal Att</string>
+    <string name="data_analysis_bb">BB 3Bet Steal Att</string>
+
+    <string name="data_analysis_wsd_name">攤牌勝率</string>
+    <string name="data_analysis_wsd_desc">玩家打到河牌並攤牌，通過對比牌型大小戰勝對手的比率。</string>
+    <string name="data_analysis_wtsd_name">攤牌率</string>
+    <string name="data_analysis_wtsd_desc">指一個玩家看到翻牌圈並玩到攤牌的百分比。它表明一個玩家在看到翻牌後打到攤牌的頻率，並可以衡量一個玩家在翻牌後棄牌的傾向。</string>
+    <string name="data_analysis_wwsf_name">看翻牌勝率</string>
+    <string name="data_analysis_wwsf_desc">玩家打牌進入翻牌圈，並最終獲得勝利的比率。</string>
+    <string name="data_analysis_af_name">激進度</string>
+    <string name="data_analysis_af_desc">用來衡量一個玩家打牌激進程度的數值。一個玩家的AF資料越高，他主動下注或者加注的比例就更高，被動跟注的比例就更低。</string>
+    <string name="data_analysis_afq_name">激進率</string>
+    <string name="data_analysis_afq_desc">用來衡量一個玩家攻擊性，在不選擇check的情況下發起攻擊的百分比。</string>
+    <string name="data_analysis_vpip_name">入局率</string>
+    <string name="data_analysis_vpip_desc">是指玩家主動向底池中投入籌碼的比率，即除了位於大盲注並看牌（即沒有其他人加注）以外的，所有的跟注/下注/加注行為的頻率。</string>
+    <string name="data_analysis_prf_name">翻牌前加注率</string>
+    <string name="data_analysis_prf_desc">指的是一個玩家翻牌前加注的比率。如果頻率越高,那麼對手的牌風也就越凶。</string>
+    <string name="data_analysis_prfvpip_name">PFR/VPIP</string>
+    <string name="data_analysis_prfvpip_desc">這一比值可以從某種程度上反映一個牌手的技術水準。利用翻牌前加前入局獲得更多的主動，好的牌手PFR可能會占到VPIP的70%。</string>
+    <string name="data_analysis_3bet_name">翻牌前再加注率</string>
+    <string name="data_analysis_3bet_desc">在他人下注，有人加注之後的再加注，由於是一輪下注中的第三次加注，故稱3bet。</string>
+    <string name="data_analysis_stl_name">偷盲率</string>
+    <string name="data_analysis_stl_desc">指玩家以盲注為目標而進行加注，以圖迫使剩下的玩家也棄牌，從而直接贏得大小盲注。</string>
+    <string name="data_analysis_fold_name">被偷盲率</string>
+    <string name="data_analysis_fold_desc">用以衡量一個玩家在面對steal時的棄牌率。若一個玩家的被偷盲率值很低，那麼你需要注意他在盲注位置是的偷盲頻率。</string>
+    <string name="data_analysis_sb_name">小盲位反偷盲率</string>
+    <string name="data_analysis_sb_desc">玩家在小盲位時，面對對手加注試圖偷盲時，再加注進行反偷盲的比率。</string>
+    <string name="data_analysis_bb_name">大盲位反偷盲率</string>
+    <string name="data_analysis_bb_desc">玩家在大盲位時，面對對手加注試圖偷盲時，再加注進行反偷盲的比率。</string>
+
+    <string name="data_analysis_chart_analysis_fanpai">翻牌前獲勝</string>
+    <string name="data_analysis_chart_analysis_tanpai">攤牌獲勝</string>
+    <string name="data_analysis_chart_analysis_other">其他</string>
+
+    <string name="data_analysis_noshow_first">還需要完成</string>
+    <string name="data_analysis_noshow_hand">手牌</string>
+    <string name="data_analysis_noshow_second">才可以查看資料分析</string>
+
+    <string name="contact_from_phone">手機號:%s</string>
+    <string name="contact_app_name">印象撲克：%s</string>
+    <string name="contact_from_phone_search">手機通訊錄：%s</string>
+
+    <string name="discovery_circle">印象撲克</string>
+    <string name="discovery_game">小遊戲</string>
+
+    <string name="circle_content_all">全文</string>
+    <string name="circle_content_packup">收起</string>
+    <string name="circle_new_message">%d條新消息</string>
+    <string name="circle_publish_hint">這一刻的想法...</string>
+    <string name="circle_publish_paiju">戰績</string>
+    <string name="circle_publish_paipu">牌譜</string>
+    <string name="circle_share_ing">分享中...</string>
+    <string name="circle_share_success">分享成功!</string>
+    <string name="circle_share_failure">分享失敗!</string>
+    <string name="circle_comment_success">評論成功!</string>
+    <string name="circle_comment_failure">評論失敗!</string>
+    <string name="circle_reply_success">回復成功!</string>
+    <string name="circle_reply_failure">回復失敗!</string>
+    <string name="circle_like_count">贊:%d</string>
+    <string name="comment">評論</string>
+    <string name="comment_content_null">評論內容不能為空</string>
+    <string name="circle_delete_circle_tip">確定刪除該分享？</string>
+    <string name="circle_delete_success">刪除成功!</string>
+    <string name="circle_delete_failure">刪除失敗!</string>
+
+    <string name="invalid_action_addfriend">添 加</string>
+    <string name="invalid_action_apply_club">申請加入</string>
+
+    <string name="error_try_again">獲取失敗，點擊重新獲取</string>
+    <string name="no_connection_try_again">網路連接錯誤，請重試</string>
+
+    <string name="handcard_more_send">發送給朋友</string>
+    <string name="handcard_more_share">分享到印象撲克</string>
+
+    <string name="select">選擇</string>
+    <string name="select_recent_contact_createchat">創建新聊天</string>
+    <string name="select_recent_contact_recentchat">最近聊天</string>
+    <string name="select_recent_contact_club">俱樂部</string>
+    <string name="select_recent_contact_group">圈子</string>
+    <string name="select_recent_contact_club_head">選擇俱樂部</string>
+    <string name="select_recent_contact_group_head">選擇圈子</string>
+    <string name="my_collect">我的收藏</string>
+
+    <string name="chatroom_msg_custom_type_paiju">牌局</string>
+    <string name="chatroom_msg_custom_type_paipu">牌譜</string>
+
+    <string name="msg_custom_type_game_create_desc">[開局消息]</string>
+    <string name="msg_custom_type_paiju_info_desc">[牌局信息]</string>
+    <string name="msg_custom_type_paipu_info_desc">[牌譜信息]</string>
+
+    <string name="collect_ing">收藏中\u2026</string>
+    <string name="collect_success">收藏成功!</string>
+    <string name="collect_failure">收藏失敗!</string>
+    <string name="collect_cancel_ing">取消收藏中\u2026</string>
+    <string name="collect_cancel_success">取消收藏成功!</string>
+    <string name="collect_cancel_failure">取消收藏失敗!</string>
+
+    <string name="game_table_wait_code">邀請碼</string>
+    <string name="game_table_wait_clickshare">點擊分享</string>
+    <string name="game_table_wait_private">私人牌局</string>
+    <string name="game_table_wait_hint">對方可以通過邀請碼\n加入你的私人局</string>
+    <string name="game_table_wait_insurance">保險模式</string>
+
+    <string name="share_code_desc">牌局邀請碼是私人牌局生成，\n在加入牌局中輸入邀請碼，可快速加入朋友的私人局</string>
+
+    <!--<string nameId="game_mode_normal">普通模式</string>-->
+    <string name="game_mode_insurance">保險模式</string>
+    <string name="game_create_config_advanced">高級設置</string>
+    <string name="game_create_normal_control_into">授權帶入</string>
+    <string name="game_create_checkin_setting">帶入設置</string>
+    <!--<string nameId="game_mode_insurance_pool">分池購買</string>-->
+    <!--<string nameId="game_mode_insurance_quick">快速購買</string>-->
+
+    <string name="system_announcement">“德州撲克圈”1.0版已經正式上線了。新版本修復了“添加好友時閃退”等bug，同時增加了牌局道具等新功能。請您及時下載並更新安裝。祝您在“德州撲克圈”愉快!</string>
+
+    <string name="upgrade_vip">升級VIP</string>
+    <string name="shop_vip_not_hint">您還沒有成為VIP會員</string>
+    <string name="shop_vip_white_hint">尊敬的白金會員，%s到期</string>
+    <string name="shop_vip_black_hint">尊敬的黑金會員，%s到期</string>
+    <string name="member_normal">普通會員</string>
+    <string name="member_vip_white">白金會員</string>
+    <string name="member_vip_black">黑金會員</string>
+    <string name="vip_white">白金月卡</string>
+    <string name="vip_black">黑金年卡</string>
+
+    <string name="terms_service">服務條款</string>
+    <string name="terms_private">隱私政策</string>
+
+    <string name="vip_lock_hint">VIP可查看</string>
+
+    <string name="get_ing">資料獲取中\u2026</string>
+    <string name="prompt">提示</string>
+    <string name="retry">重試</string>
+    <string name="get_userinfo_failure">使用者資訊獲取失敗!</string>
+    <string name="get_teaminfo_failure">俱樂部資訊獲取失敗!</string>
+
+    <string name="hundred_hand_not_reached">未滿百手</string>
+
+    <string name="taem_invite_agree_failure">操作失敗，請重試!</string>
+    <string name="taem_apply_agree_failure">操作失敗，請重試!</string>
+    <string name="addfriend_agree_failure">操作失敗，請重試!</string>
+
+    <string name="expected">敬請期待</string>
+
+    <string name="game_create_private_limit_normal">最多只能創建一個私人牌局\n升級VIP可創建更多</string>
+    <string name="game_create_private_limit_whitevip">最多只能創建三個私人牌局\n升級VIP可創建更多</string>
+    <string name="game_create_private_limit_blackvip">最多只能創建五個私人牌局\nVIP等級已達上限</string>
+    <string name="game_create_team_limit_normal">群組中最多能創建一個牌局\n升級VIP可創建更多</string>
+    <string name="game_create_team_limit_whitevip">群組中最多能創建三個牌局\n升級VIP可創建更多</string>
+    <string name="game_create_team_limit_blackvip">群組中最多能創建五個牌局\nVIP等級已達上限</string>
+
+    <string name="club_name_long">俱樂部名稱太長!</string>
+    <string name="get_failuer">獲取失敗</string>
+    <string name="name_format_wrong">名稱格式不正確!</string>
+    <string name="club_name_format_wrong">俱樂部名稱格式不正確!</string>
+    <string name="nickname_format_wrong">昵稱格式不正確!</string>
+
+    <string name="authcode_error_try">驗證碼輸入錯誤，還可以嘗試%d次</string>
+    <string name="authcode_error_limit">錯誤次數過多，請重新獲取驗證碼</string>
+    <!--<string nameId="authcode_error_limit_later_again">驗證碼錯誤次數太多，請10分鐘後再試!</string>-->
+    <!--<string nameId="authcode_check_error">驗證碼校驗失敗</string>-->
+    <string name="reget">重新獲取</string>
+
+    <string name="update">更新</string>
+    <string name="update_not">暫不更新</string>
+    <string name="game_hot_update_title">遊戲更新</string>
+    <!--<string nameId="game_hot_update_message">版本 %1$s，更新大小 %2$sMB\n為更好體驗遊戲，請選擇更新</string>-->
+    <string name="game_hot_update_message">版本 %1$s，更新大小 %2$sMB</string>
+    <string name="game_update_progress">版本更新中：%d</string>
+    <string name="game_update_success">遊戲更新完成</string>
+    <string name="game_update_failure">遊戲更新失敗</string>
+    <string name="game_updating_later">遊戲更新中，請稍後再試</string>
+
+    <string name="app_update_title">版本更新</string>
+    <string name="exit">退出</string>
+
+    <string name="shop_goodslist_get_failure">商品獲取失敗!</string>
+    <string name="shop_buy_failure">購買商品失敗!</string>
+    <string name="shop_buy_failure_balance_insufficient">餘額不足，購買失敗!</string>
+
+    <string name="werixin_not_install">請安裝微信用戶端</string>
+
+    <!--<string nameId="game_create_ing">創建中\u2026</string>-->
+    <!--<string nameId="game_enter_ing">進入中\u2026</string>-->
+    <string name="game_enter_fauiler">進入牌局失敗</string>
+
+    <string name="app_download_success">印象撲克下載成功</string>
+    <string name="version_downloading">印象撲克下載中\u2026</string>
+
+    <string name="contact_search">搜索</string>
+    <string name="contact_select">選擇</string>
+    <string name="group">圈子</string>
+    <string name="team_num_head_title">(%d)</string>
+    <string name="unknown_notification_tip">未知通知提醒</string>
+    <string name="get_group_member_failure">獲取圈子成員列表失敗</string>
+    <string name="clear_chat_history_confirm">確定要清空嗎？</string>
+    <string name="circle_reply">回復</string>
+    <string name="circle_comment">評論</string>
+    <string name="unknown_error">未知錯誤</string>
+    <string name="buy_goods_confirm">確定花費%1$d鑽石購買%2$s?</string>
+    <string name="topup_function_not_opened">充值功能暫未開放!</string>
+    <string name="enter_game_tip">%1$s進入了牌局：%2$s</string>
+    <string name="buy_success">購買成功!</string>
+    <string name="buy_failure">購買失敗!</string>
+    <string name="buy_failure_balance_insufficient">餘額不足，購買失敗!</string>
+    <string name="game_status_ready">準備中</string>
+    <string name="user_nickname">昵稱：%s</string>
+    <string name="ten_thousand">萬</string>
+    <string name="today">今天</string>
+    <string name="yesterday">昨天</string>
+    <string name="day">日</string>
+    <string name="month">月</string>
+    <string name="time_just">剛剛</string>
+    <string name="time_minutes_ago">%d分鐘前</string>
+    <string name="time_hour_ago">%d小時前</string>
+    <string name="minutes">分鐘</string>
+    <string name="hour">小時</string>
+
+    <string name="become">成為</string>
+    <string name="can_create">可創建</string>
+    <string name="can_create_club_count">個俱樂部</string>
+    <string name="connecting">連接中\u2026</string>
+    <string name="recent_chat">最近聊天</string>
+    <string name="contact">連絡人</string>
+    <string name="phone_contact">手機連絡人</string>
+    <string name="person">人</string>
+    <string name="leave_message">留言</string>
+    <string name="comment_input_send">發 送</string>
+    <string name="data_analysis_evaluation">評價：</string>
+    <string name="like">贊</string>
+    <string name="remaining">剩餘</string>
+    <string name="giving_taxas_coin">贈送德州幣</string>
+
+    <string name="club_member_limit_upgrade">升級人數上限</string>
+    <string name="club_member_limit_upgrade_to">升級人數上限至</string>
+    <string name="club_member_limit_time_choice">選擇有效期</string>
+    <string name="club_member_limit_time_extended">延長有效期</string>
+    <string name="club_member_limit_price">升級費用</string>
+    <string name="upgrade">升級</string>
+    <string name="club_member_limit_time_extended_hint">延長%s個月</string>
+    <string name="club_member_limit_diamond_balance">鑽石餘額：%d</string>
+    <string name="club_member_limit_month_num">%d個月</string>
+
+    <string name="hands_category_fold">棄牌</string>
+    <string name="hands_category_high_card">高牌</string>
+    <string name="hands_category_on_pair">一對</string>
+    <string name="hands_category_two_pair">兩對</string>
+    <string name="hands_category_three_of_a_kind">三條</string>
+    <string name="hands_category_straight">順子</string>
+    <string name="hands_category_flush">同花</string>
+    <string name="hands_category_full_house">葫蘆</string>
+    <string name="hands_category_four_of_a_kind">四條</string>
+    <string name="hands_category_straight_flush">同花順</string>
+    <string name="hands_category_royal_flush">皇家同花順</string>
+
+    <string name="message_status_passed">已同意</string>
+    <string name="message_status_declined">已拒絕</string>
+    <string name="message_status_ignored">已忽略</string>
+    <string name="message_status_expired">已處理</string>
+    <string name="message_status_untreated">未處理</string>
+
+    <string name="message_add_friend_direct">已添加你為好友</string>
+    <string name="message_add_friend_agree">通過了你的好友請求</string>
+    <string name="message_add_friend_reject">拒絕了你的好友請求</string>
+    <string name="message_add_friend_verify_request">請求添加好友%s</string>
+
+    <string name="message_team_invite">邀請你加入俱樂部</string>
+    <string name="message_team_invite_decline">拒絕了俱樂部 %s 邀請</string>
+    <string name="message_team_apply_join">申請加入俱樂部</string>
+    <string name="message_team_apply_reject">拒絕了你加入俱樂部 %s的申請</string>
+
+    <string name="club">俱樂部</string>
+    <string name="club_match">俱樂部賽</string>
+
+    <string name="record_details_noexist">牌局已解散</string>
+
+    <string name="network_exception_please_try">網路異常，請重試</string>
+
+    <string name="member_limit">成員已滿</string>
+
+    <string name="game_create_name_default">%1$s的牌局%2$d</string>
+    <string name="game_create_name_sng_default">%1$s的SNG%2$d</string>
+    <string name="game_create_name_mtt_default">%1$s的MTT%2$d</string>
+
+    <string name="app_version_is_latest">已是最新</string>
+    <string name="app_version_have_new">有新版本</string>
+
+    <string name="recent_game_ignore_failure">忽略失敗</string>
+
+    <string name="chatroom_game_finished">已結束\n點擊查看戰績</string>
+
+    <string name="club_limit_upgrade_ing">購買中\u2026</string>
+    <string name="club_limit_upgrade_success">購買成功</string>
+    <string name="club_limit_upgrade_failure">購買失敗</string>
+    <string name="club_limit_remaining">剩餘%d天</string>
+    <string name="game_create_control_into">控制玩家帶入</string>
+    <string name="game_create_match_rest">中場休息</string>
+    <string name="upgrade_club_member_limit_config">確定購買俱樂部成員上限？</string>
+    <string name="diamond_topup_dialog_tip">您的鑽石不足，請先充值</string>
+    <string name="game_match_create_control_into">授權參賽</string>
+
+    <string name="about_app_version">印象撲克&#160;&#160;&#160;&#160; %s</string>
+    <string name="about_game_version">遊戲版本 %s</string>
+
+    <string name="app_message">系統消息</string>
+
+    <string name="app_message_agress">同意</string>
+    <string name="app_message_reject">拒絕(%ds)</string>
+
+    <string name="dismiss_club_club_upgrade_prompt">解散俱樂部後，所購買的人數上限升級將會失效，所有成員將不再接收此俱樂部的消息</string>
+    <string name="control_buy_into_agree_failure">操作失敗，請重試!</string>
+    <string name="app_message_buychips_content_enter">%s中帶入請求，點擊進入牌局</string>
+    <string name="app_message_buychips_content">%s中帶入請求</string>
+    <string name="app_message_buychips_recent_content">“%s”請求帶入</string>
+    <string name="app_message_buychips_checkin_recent_content">“%s”請求參賽</string>
+    <string name="app_message_buychips_rebuy_recent_content">“%s”請求重購</string>
+    <string name="app_message_buychips_addon_recent_content">“%s”請求增購</string>
+    <string name="app_message_buychips_into">帶入</string>
+    <string name="app_message_buychips_weekout">淘汰</string>
+    <string name="app_message_buychips_winchips">總盈利：%1$s&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;已買入：%2$d</string>
+    <string name="get_hand_failure">獲取牌譜失敗，請重試</string>
+
+    <string name="look_detail">查看詳情</string>
+    <string name="app_notice">系統公告</string>
+
+    <string name="recommend_club">推薦俱樂部</string>
+
+    <string name="invite_member">邀請俱樂部成員</string>
+    <string name="reach_group_member_capacity">該圈子成員已滿</string>
+    <string name="club_member_count_limit">非常抱歉，該俱樂部人數已經達到上限。</string>
+    <string name="club_invite_member_count_limit">您的俱樂部人數已達到上限，請先提升俱樂部上限人數。</string>
+    <string name="club_invite_limit_dialog_message">您的俱樂部人數已達到上限，是否升級人數上限？</string>
+    <string name="contact_select_max">最多選擇%d人</string>
+    <string name="contact_select_min">至少選擇%d人</string>
+
+    <string name="group_not_exist">該圈子不存在</string>
+
+    <string name="repair_game">遊戲修復</string>
+    <string name="repair_game_confim">修復遊戲將使遊戲版本恢復到最初狀態，確定修復？</string>
+    <string name="repair_game_success">修復成功!</string>
+
+    <string name="vip_no_upper_limit">無上限</string>
+    <string name="hand_collect_count_is_limit">您的牌譜收藏數量已達上限，是否升級會員提升上限？</string>
+
+    <string name="authcode_voice_1">未收到驗證碼？</string>
+    <string name="authcode_voice_2">免費語音獲取</string>
+    <string name="authcode_voice_confim">確定獲取語音驗證碼？</string>
+    <string name="authcode_voice_tip">請注意接聽語音來電</string>
+    <string name="authcode_voice_hour_limit">驗證碼已達到最大發送次數\n請一小時後再試</string>
+    <string name="authcode_voice_day_limit">驗證碼已達到當日最大發送次數</string>
+
+    <string name="get_data_error">獲取資料失敗，點擊重試</string>
+
+    <string name="game_mode_normal">普通玩法</string>
+    <string name="game_mode_sng">SNG</string>
+    <string name="ios_register_pormpt">親愛的用戶，歡迎回到印象撲克!Android版本登錄將會使用全新資料，謝謝支援!</string>
+
+    <string name="game_create_sng_chip">初始記分牌</string>
+    <string name="game_create_sng_blinds">起始盲注</string>
+    <string name="game_create_sng_blinds_time">漲盲時間</string>
+    <string name="game_create_sng_checkin_fee">報名費</string>
+
+    <string name="perfect_userinfo">完善資料</string>
+    <string name="clear">清除</string>
+
+    <string name="sng_rule_instructions">說明</string>
+    <string name="sng_rule_instructions_content">SNG是英文Sit and go的簡寫，是德州撲克的一種比賽形式，即單桌即時錦標賽。</string>
+    <string name="sng_rule_rules">規則</string>
+    <string name="sng_rule_rules_content">每場比賽，參與者帶入固定的記分牌，輸光記分牌則淘汰。\n比賽開始後，不可中途加入和補充記分牌，中途退出視為棄權並失去所有記分牌。\n比賽直到只剩1名玩家為止，根據淘汰順序決出第一名、第二名、第三名。</string>
+    <string name="sng_rule_blinds_rise">漲盲</string>
+    <string name="sng_rule_blinds_rise_content">為提高比賽激烈程度，比賽過程中會逐步提升盲注。</string>
+    <string name="sng_rule_bonus">獎金</string>
+    <string name="sng_rule_bonus_content">每位玩家帶入記分牌所消耗的金幣將會累積到一起，作為本次比賽的獎金。</string>
+    <string name="sng_rule_rank_distribution">名次與獎金分配關係：</string>
+
+    <string name="chips_buy">買入</string>
+    <string name="chips_gain">盈利</string>
+    <string name="chips_insurance">投保</string>
+    <string name="chips_gain_insurance_gain">保險盈利</string>
+    <string name="chips_gain_all">總盈利</string>
+    <string name="all">總計</string>
+    <string name="country_code_invalid">國家代碼無效</string>
+    <string name="password">密碼</string>
+    <string name="country_select_head">選擇國家和地區代碼</string>
+    <string name="country_select_show_prefix">國家/地區&#160;&#160;&#160;&#160;</string>
+
+    <string name="game_share_code_normal_chip">帶入記分牌：%s</string>
+    <string name="game_share_code_normal_blind">盲注：%s</string>
+    <string name="game_share_code_normal_time">牌局時間：%s</string>
+    <string name="game_share_code_normal_ante">前注Ante：%s</string>
+    <string name="game_share_code_normal_seat_count">座位數：%s</string>
+
+    <string name="game_share_code_match_checkin_fee">報名費：%s</string>
+    <string name="game_share_code_match_chip">起始記分牌：%s</string>
+    <string name="game_share_code_match_blinds_time">漲盲時間：%s</string>
+    <string name="game_share_code_match_player">單桌人數：%s人</string>
+    <string name="game_share_code_total_player">開賽人數：%s</string>
+
+    <string name="game_record_match_chips">記分牌：%d</string>
+    <string name="game_record_match_reward_all">總獎池：%d</string>
+    <string name="game_record_match_table_player">%d人桌</string>
+    <string name="game_record_match_player">%d人賽</string>
+    <string name="game_record_match_duration">漲盲時間：%s</string>
+    <string name="game_record_match_checkin_fee">參賽費用：%d</string>
+    <string name="game_record_duration_all">比賽時長：%s</string>
+    <string name="game_record_duration">牌局時間：%s</string>
+    <string name="game_record_blind">小盲/大盲：%s</string>
+    <string name="game_record_all_buy">本局總買入：%d</string>
+    <string name="record_details_all_hand">本局總手數：%d</string>
+    <string name="game_record_total_player">總參賽人數：%1$d人</string>
+
+    <string name="app_message_gameover_record_read">查看戰績</string>
+    <string name="app_message_gameover_join_game">點擊進入牌局</string>
+    <string name="app_message_gameover_gain">盈利：</string>
+    <string name="app_message_gameover_bonus">獎金：</string>
+
+    <string name="share_success">分享成功</string>
+    <string name="share_failure">分享失敗</string>
+
+    <string name="region_current_location">定位到的位置</string>
+    <string name="region_current_location_ing">正在獲取位置資訊</string>
+    <string name="region_current_location_failuer">無法獲取您的位置資訊，點擊重試</string>
+    <string name="region_current_location_dialog_title">定位服務未開啟</string>
+    <string name="region_current_location_dialog_message">請在系統設置中開啟定位服務</string>
+    <string name="go_setting">去設置</string>
+
+    <string name="app_message_delete_all">全部消息</string>
+    <string name="app_message_delete_applybuy">帶入請求</string>
+    <string name="app_message_delete_gameover">牌局通知</string>
+    <string name="app_message_clear_all_promot">確定清除%s?</string>
+    <string name="app_message_clear_type_promot">確定清除全部%s消息?</string>
+
+    <string name="app_message_gamestatus_content">您參加的“%s”已結束</string>
+    <string name="app_message_gamestatus_start_content">您參加的“%s”已開始，請儘快參加比賽。</string>
+    <string name="app_message_gamestatus_match_content">您參加的比賽“%s”已結束</string>
+    <string name="app_message_gamestatus_match_end_by_timeout_content">您報名的比賽“%1$s”長時間未開賽，自動解散，返還全部報名費</string>
+    <string name="app_message_gamestatus_match_end_by_creator_content">您報名的比賽“%1$s”已被房主解散，返還全部報名費</string>
+    <string name="app_message_gamestatus_match_end_by_player_not_enough_content">您報名的比賽“%1$s”由於人數不足，無法開賽，自動解散，返還全部報名費</string>
+    <string name="app_message_gamestatus_match_start_content">您參加的“%s”已經開始，請儘快參加比賽。</string>
+    <string name="app_message_gamestatus_match_rest_finish_content">休息時間結束，“%s”繼續比賽</string>
+    <string name="app_message_gamestatus_match_will_start_content">您參加的比賽“%s”即將開賽</string>
+    <string name="app_message_gamestatus_match_pause_content">您參加的比賽“%s”暫停比賽</string>
+
+    <string name="permission_denied_phone_contacts">您已經關閉獲取手機通訊錄的許可權</string>
+
+    <string name="china_beijin">北京</string>
+    <string name="china_tianjin">天津</string>
+    <string name="china_shanghai">上海</string>
+    <string name="china_chongqing">重慶</string>
+    <string name="china_hongkong">香港</string>
+    <string name="china_macao">澳門</string>
+    <string name="china_taiwan">台北</string>
+    <string name="china_city">市</string>
+
+    <string name="webview_provide_hint">網頁由 印象撲克 提供</string>
+
+    <string name="settlement">統計</string>
+    <string name="confim_num">確定(%d)</string>
+    <string name="total_game_record_num">統計 %d個牌局</string>
+
+    <string name="calculate">計算</string>
+    <string name="record_details_info_game_count">牌局&#160;&#160;%d</string>
+    <string name="record_list_select_mode_prompt">請選擇需要統計資料的牌局</string>
+
+    <string name="game_match_tab_status">狀態</string>
+    <string name="game_match_tab_member">玩家</string>
+    <string name="game_match_tab_table">牌桌</string>
+    <string name="game_match_tab_reward">獎勵</string>
+    <string name="game_match_tab_chat">聊天</string>
+
+    <!--<string nameId="game_mtt_tart">開始比賽</string>-->
+    <string name="game_mtt_checkin">報名</string>
+    <string name="game_mtt_checkin_cancel">取消報名</string>
+    <string name="game_mtt_back_game">回到比賽</string>
+    <string name="game_mtt_creator">房主：%s</string>
+    <string name="game_mtt_add_manager_creator">房主</string>
+    <string name="game_mtt_club_creator">%1$s-%2$s</string>
+    <string name="game_mtt_checkfee">報名費</string>
+    <string name="game_mtt_chips">初始記分牌：</string>
+    <string name="game_mtt_checkin_count">已報名：%d</string>
+    <string name="game_mtt_player_join_count">參賽人次：%1$d/%2$d</string>
+    <string name="game_mtt_all_reward">總獎池：%s</string>
+    <!--<string nameId="game_mtt_blinds">起始盲注：</string>-->
+    <string name="game_mtt_blinds_duration">漲盲時間：</string>
+    <string name="game_mtt_match_player">單桌人數：</string>
+    <!--<string nameId="game_mtt_ante">起始前注：</string>-->
+    <string name="game_mtt_rebuy">重購：</string>
+    <string name="game_mtt_addon">增購：</string>
+    <string name="game_mtt_game_table_count">牌桌數：%d</string>
+    <string name="game_mtt_reward_person_count">獎勵圈：%d人</string>
+    <string name="game_mtt_table_gamer_count">玩家人數：%d</string>
+    <string name="game_mtt_termination_join">終止參賽：</string>
+    <string name="game_mtt_midfield_rest">中場休息：</string>
+
+    <string name="game_mtt_cehckin_cancel_10min">比賽前1分鐘無法取消報名</string>
+    <string name="game_mtt_cehckin_cancel_dialog_message">取消報名，只會返還參賽費用\n是否取消報名？</string>
+    <string name="game_mtt_checkin_dealing">等待房主同意參賽...</string>
+    <string name="game_mtt_checkin_waiting">等待房主同意報名申請(%ds)</string> <!-- 上面一行删掉 -->
+    <string name="game_mtt_checkin_again">重新報名</string>
+    <string name="game_mtt_rebuy_dealing">等待房主同意重購申請...</string>
+    <string name="game_mtt_addon_dealing">等待房主同意增購申請...</string>
+    <string name="game_mtt_control_checkin_no_responce_tip">房主長時間未處理，可再次請求報名</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+
+    <!--<string nameId="game_mtt_blinds_instructions">漲盲說明</string>-->
+
+    <string name="game_match_rank">名次</string>
+    <string name="game_match_proportion">比例</string>
+    <string name="game_match_reward">獎勵</string>
+
+    <string name="game_match_table_no">牌桌</string>
+    <string name="game_match_table_player_count">玩家人數</string>
+    <string name="game_match_table_chips">記分牌</string>
+
+    <string name="agree">同意</string>
+    <string name="reject">拒絕</string>
+
+    <string name="game_create_rebuy">重購 5次</string>
+    <string name="game_create_addon">增購 1次</string>
+    <string name="game_create_blind_level">終止報名：第%d盲注級別</string>
+    <!--<string nameId="game_create_termination_join">終止參賽</string>-->
+    <string name="game_mode_mtt">MTT</string>
+
+    <string name="game_create_mtt_ante">起始前注：%d</string>
+    <string name="game_create_mtt_ante_appear_level">出現級別 %d</string>
+
+    <string name="game_create_sng_member_count">參賽人數：</string>
+    <string name="game_create_sng_blinds_relation">MTT盲注結構表</string>
+    <string name="mtt_match_reward_table">MTT獎勵表</string>
+    <string name="sng_blinds_title">SNG盲注結構表</string>
+    <string name="mtt_blinds_title">盲注結構表</string>
+
+    <string name="blinds_structure_column_blinds">盲注</string>
+    <string name="blinds_structure_column_level">級別</string>
+    <string name="blinds_structure_column_ante">前注</string>
+
+    <string name="member_count">%d人</string>
+    <string name="game_record_detail_ante">A(前注)：%d</string>
+    <string name="share_code_ante">ANTE(前注)：%d</string>
+
+    <string name="game_chips_bbs">%dBBs</string>
+    <string name="create_club_region_hint">請選擇地區</string>
+
+    <string name="game_record_dealing">處理中\u2026</string>
+    <string name="game_record_share_is_big">不好意思，建議選擇10個之內牌局進行統計分享!</string>
+
+    <string name="game_create_table_player_count">人數</string>
+    <string name="game_create_match_table_player_count">單桌人數</string>
+    <string name="game_create_match_start_date">比賽時間</string>
+    <string name="game_create_match_start_date_select">請設置開賽時間</string>
+    <string name="game_create_match_player_select">請輸入參賽人數</string>
+
+    <!--<string nameId="game_create_match_start_date_is_early">請設置時間為10分鐘之後</string>-->
+    <!--<string nameId="game_create_match_start_date_is_late">設置時間過晚</string>-->
+    <!--<string nameId="game_create_match_start_date_ten_after">請設置時間為10分鐘之後</string>-->
+
+    <string name="game_create_match_select_head">設置開賽時間</string>
+    <string name="game_create_match_select_player_head">選擇參賽人數</string>
+    <string name="game_create_match_control_into">授權參賽</string>
+    <string name="game_match_room_control_into">授權參賽</string>
+
+    <string name="game_match_current_blinds_title">當前等級%d：</string>
+    <string name="game_match_next_blinds_title">下一等級%d：</string>
+    <string name="game_match_blinds_content">盲注 %1$s  前注 %2$s</string>
+    <string name="game_match_chips_content">最大 %1$d  平均 %2$d 最小 %3$d</string>
+    <string name="game_match_chips_title">記分牌：</string>
+
+    <string name="game_match_timestart">定時開賽</string>
+    <string name="nothing">無</string>
+
+    <string name="game_mtt_prompt">比賽中途不可退出\n進入決賽桌後不能再加入</string>
+    <string name="game_mt_sng_prompt">比賽中途不可退出\n比賽開始後不能再加入</string>
+
+    <string name="game_table_no">牌桌%s</string>
+
+    <string name="game_mt_sng_status_ing">坐滿開賽：%1$d/%2$d人</string>
+    <string name="game_mtt_status_waiting">開賽時間%s</string>
+    <string name="game_mtt_status_ing">比賽進行中  %s</string>
+    <string name="game_mtt_status_remain">距離比賽開始剩餘：%s</string>
+
+    <string name="game_match_rebuy_desc">1-%d盲注級別（購買1倍記分牌 5次）</string>
+    <string name="game_match_addon_desc">第%1$d盲注級別（購買1.5倍記分牌 1次）</string>
+    <string name="game_match_termination_join_desc">第%d盲注級別</string>
+    <string name="game_match_rebuy_introduce">購買1倍記分牌</string>
+    <string name="game_match_addon_introduce">購買1.5倍記分牌</string>
+    <string name="game_match_midfield_rest_desc">比賽每55分鐘休息5分鐘</string>
+
+    <string name="game_match_checkin_fee_rule_desc">報名費使用德州幣，\n報名時會另外收取10%的服務費，\n取消報名時，將不退還服務費</string>
+    <string name="game_match_checkin_termination_rule_desc">盲注漲至此級別後終止報名\n盲注漲至此級別時可增購1次，此級別前可重購5次</string>
+    <string name="game_match_room_checkin_fee_rule_desc">報名時使用德州幣\n報名費包含（參賽費+服務費）\n取消報名時將僅退還參賽費</string>
+
+    <string name="sunday">周日</string>
+    <string name="monday">週一</string>
+    <string name="tuesday">週二</string>
+    <string name="wendesday">週三</string>
+    <string name="thursady">週四</string>
+    <string name="friday">週五</string>
+    <string name="saturday">週六</string>
+
+    <string name="game_match_checkin_success">報名成功</string>
+    <string name="game_match_checkin_failure">報名失敗</string>
+    <string name="game_match_checkin_failure_exist">報名失敗，遊戲不存在</string>
+    <string name="game_match_checkin_failure_blindlevel_reach">報名失敗，盲注等級達到</string>
+    <string name="game_match_checkin_failure_final">報名失敗，已近處於決賽桌</string>
+    <string name="game_match_checkin_failure_dealing">您的報名在處理中。。</string>
+    <string name="game_match_checkin_failure_cutoff">報名已截止</string>
+    <string name="game_match_checkin_failure_cant">報名已截止</string>
+    <string name="game_match_checkin_failure_player_full">報名人數已滿</string>
+    <string name="game_match_agree_checkin_aready">該用戶已經報名成功</string>
+    <string name="game_match_checkin_aready">你已報名參賽</string>
+    <string name="game_match_not_exist">比賽不存在</string>
+
+    <string name="game_match_checkin_cancel_success">取消報名成功</string>
+    <string name="game_match_checkin_cancel_failure">取消報名失敗</string>
+    <string name="game_match_checkin_cancel_failure_cutoff">開賽前10分鐘不能取消報名</string>
+    <string name="game_match_checkin_cancel_failure_areadystart">開賽已經開始</string>
+
+    <string name="game_match_update_control_failure">狀態更新失敗</string>
+
+    <string name="game_match_dismiss_success">比賽解散成功</string>
+    <string name="game_match_dismiss_failure_isstart">比賽中不能解散比賽</string>
+    <string name="game_match_dismiss_failure">比賽解散失敗</string>
+
+    <string name="game_create_mtt_blinds_relation">MTT盲注結構</string>
+
+    <string name="payment_success">購買成功!</string>
+    <string name="payment_failure">交易失敗，請聯繫客服!</string>
+    <string name="contact_service">聯繫客服</string>
+
+    <string name="billing_unavailable">穀歌服務無法使用，交易失敗</string>
+
+    <string name="get_club_info_failure">獲取俱樂部資訊失敗!</string>
+
+    <string name="login_by_fb">通過FaceBook登錄</string>
+    <string name="game_create_mtsng_blinds_relation">MT-SNG盲注結構</string>
+
+    <string name="app_message_notice">通知消息</string>
+    <string name="app_message_control_center">控制中心</string>
+
+    <string name="game_match_blinds_rebuy_desc">重購：1-%d盲注級別（5次）</string>
+    <string name="game_match_blinds_addon_desc">增購：第%d盲注級別（1次）</string>
+    <string name="game_match_blinds_termination_join_desc">終止報名：第%d盲注級別</string>
+    <string name="app_message_buychips_checkin">報名</string>
+
+    <string name="app_message_match_buychips_result_content_agree">房主已同意您的%1$s申請“%2$s”</string>
+    <string name="app_message_match_buychips_result_content_rejcet">房主拒絕了您的%1$s申請“%2$s”</string>
+
+    <string name="rebuy">重購</string>
+    <string name="addon">增購</string>
+    <string name="match">比賽</string>
+
+    <string name="app_message_match_status_dismissed">您報名的比賽“%s”已被房主解散，返回全部報名費用。</string>
+
+    <string name="chatroom_member_in">歡迎%s進入比賽大廳</string>
+    <string name="chatroom_member_exit">%s離開了比賽大廳</string>
+    <string name="chatroom_member_black_add">%s被管理員拉入黑名單</string>
+    <string name="chatroom_member_black_remove">%s被管理員解除拉黑</string>
+    <string name="chatroom_member_mute_add">%s被管理員禁言</string>
+    <string name="chatroom_member_mute_remove">%s被管理員解除禁言</string>
+    <string name="chatroom_member_manager_add">%s被任命管理員身份</string>
+    <string name="chatroom_member_manager_remove">%s被解除管理員身份</string>
+    <string name="chatroom_member_common_add">%s被設為普通成員</string>
+    <string name="chatroom_member_common_remove">%s被取消普通成員</string>
+    <string name="chatroom_close">直播間被關閉</string>
+    <string name="chatroom_info_update">直播間資訊已更新</string>
+    <string name="chatroom_member_kicked">%s被踢出直播間</string>
+
+    <string name="chatroom_send_message_failure_mute">你已被禁言</string>
+    <string name="chatroom_send_message_failure">消息發送失敗</string>
+
+    <string name="control_center_tip_count">%d條請求</string>
+    <string name="game_create_mtt_begintime_null">請設置開賽時間</string>
+    <string name="game_create_mtt_begintime_early">請設置為當前時間之後</string>
+    <string name="game_create_mt_sng_player_prompt">請設置參賽人數為2-1000人</string>
+
+    <string name="checkin_ing">報名中</string>
+    <string name="game_ing">比賽中</string>
+
+    <string name="match_game_dismiss_dialog_message">該比賽已解散，將會返還全部報名費</string>
+    <string name="match_game_dismiss_confim_dialog_message">解散比賽，將會返還報名玩家的全部報名費，\n確定解散比賽？</string>
+    <string name="match_game_dismiss_insufficient_dialog_message">報名人數不足，無法正常開賽，系統自動解散並返還全部報名費</string>
+
+    <string name="match_game_pause_confim_dialog_message">確定暫停比賽？</string>
+    <string name="match_game_continue_confim_dialog_message">確定繼續比賽？</string>
+
+    <string name="match_game_gameover_dialog_message">該比賽已結束</string>
+    <string name="match_game_not_start">比賽未開始</string>
+    <string name="match_game_begin_after1">比賽將在</string>
+    <string name="match_game_begin_after2">秒後開始</string>
+
+    <string name="chatroom_game_begintime">開賽時間  %s</string>
+
+    <string name="match_game_mystatus_ingame">您已在比賽中</string>
+    <string name="match_game_mystatus_weedout">您已經被淘汰</string>
+    <string name="match_game_checkin_full">該比賽報名人數已滿</string>
+    <string name="match_game_checkin_cutoff">報名截止</string>
+    <string name="match_game_final">決賽中</string>
+    <string name="match_game_ing">進行中</string>
+    <string name="match_game_current_level">盲注等級已達到%d級</string>
+
+    <string name="match_search_player_hint">搜索玩家</string>
+    <string name="diamond_balance">鑽石餘額：%d</string>
+    <string name="setting">設置</string>
+    <string name="resetting">重新設置</string>
+
+    <string name="match_search_checkin">報名玩家</string>
+    <string name="match_search_player">玩家排名</string>
+    <string name="match_player_status_checkin">已報名</string>
+    <string name="match_player_status_out">已淘汰</string>
+
+    <string name="game_create_table_single">單桌</string>
+    <string name="game_create_table_multi">多桌</string>
+    <string name="record_detail_player_blind_index">淘汰盲注級別%1$d/%2$d</string>
+
+    <string name="match_checkin_confirm">確定花費%1$d德州幣參加比賽?</string>
+    <string name="match_is_in_game">您已在比賽中，請回到比賽</string>
+    <string name="match_back_game">回到比賽</string>
+
+    <string name="buychips_result_morechips">記分牌過多</string>
+    <string name="buychips_result_finally">決賽中</string>
+    <string name="buychips_result_not_in_rebuy">不在重購期</string>
+    <string name="buychips_result_not_in_addon">不在增購期</string>
+    <string name="buychips_result_reject">房主拒絕</string>
+    <string name="buychips_result_timeout">超時</string>
+    <string name="buychips_result_network_error">網路錯誤</string>
+
+    <string name="buychips_rebuy_failure_dialog_message">重購失敗\n%s</string>
+    <string name="buychips_addon_failure_dialog_message">增購失敗\n%s</string>
+
+    <string name="match_advance_function_tip">發送語音公告：\n可以向正在比賽中的所有玩家發送語音\n\n暫停比賽：\n暫停時間五分鐘，可隨時繼續比賽</string>
+    <string name="match_advance_function_voice">發送語音公告</string>
+    <string name="match_advance_function_pause">暫停比賽</string>
+    <string name="match_advance_voice_control">按住說話</string>
+    <string name="match_advance_voice_timer_tip">手指上滑，取消發送</string>
+    <string name="match_manage">管理</string>
+
+    <string name="match_manage_pause_game_finish">該比賽已經結束</string>
+    <string name="match_pause_by_creator_ing">比賽暫停中</string>
+    <string name="match_pause_failure">操作失敗，請重試!</string>
+    <!-- 雲信SDK所需文案 -->
+    <string name="nim_status_bar_multi_messages_incoming">%1$d位元連絡人有新消息</string>
+    <string name="nim_status_bar_ticker_text">%1$s有新消息</string>
+    <string name="nim_status_bar_image_message">%1$s發來一條圖片消息</string>
+    <string name="nim_status_bar_audio_message">%1$s發來一條語音訊息</string>
+    <string name="nim_status_bar_video_message">%1$s發來一條視頻消息</string>
+    <string name="nim_status_bar_file_message">%1$s發來一條檔消息</string>
+    <string name="nim_status_bar_location_message">%1$s分享了一個地理位置</string>
+    <string name="nim_status_bar_notification_message">%1$s: 通知消息</string>
+    <!--<string nameId="nim_status_bar_custom_message">%1$s: 自訂消息</string>-->
+    <string name="nim_status_bar_custom_message">%1$s: 消息</string>
+    <string name="nim_status_bar_unsupported_message">%1$s: 無法顯示該內容</string>
+    <string name="nim_status_bar_hidden_msg_content">您收到一條新消息</string>
+
+    <string name="text_detial">詳細</string>
+    <string name="reject_apply">拒絕申請</string>
+    <string name="reject_reason">拒絕理由</string>
+    <string name="reject_request">拒絕請求</string>
+    <string name="can_null">可選</string>
+    <string name="change_password">密碼修改</string>
+    <string name="change_pwd">修改密碼</string>
+    <string name="confirm_account">驗證登錄賬號</string>
+    <string name="confirm_account_tip">修改密碼將先驗證登錄賬號</string>
+    <string name="club_apply">俱樂部申請</string>
+    <string name="apply_again">再次申請</string>
+    <string name="manager_club">管理俱樂部</string>
+
+    <string name="manager_club_integral">管理積分</string>
+    <string name="my_club_integral">我的積分</string>
+
+    <string name="club_integral">俱樂部積分</string>
+    <string name="club_integral_particulars">積分明細</string>
+    <string name="club_integral_member">成員積分</string>
+    <string name="club_integral_distribution">分配積分</string>
+    <string name="club_integral_balance">積分余額</string>
+    <string name="club_integral_all">總積分</string>
+    <string name="club_integral_current">當前積分</string>
+
+    <string name="club_integral_record_all">全部記錄</string>
+    <string name="club_integral_record_distribution">分配記錄</string>
+    <string name="club_integral_record_donation">捐贈記錄</string>
+    <string name="club_integral_record_distribution_creator">會長分配</string>
+    <string name="club_integral_record_donation_my">我的捐贈</string>
+    <string name="club_integral_record_profit">比賽盈利</string>
+
+    <!-- 俱乐部管理面板 -->
+    <string name="clubmanager_set">設置管理員</string>
+    <string name="clubmanager_open_right">開局限制</string>
+    <string name="clubmanager_search_forbidden">搜索限制</string>
+    <string name="clubmanager_people_limit_u">升級俱樂部人數上限</string>
+
+    <string name="add_clubmgr">添加管理員</string>
+    <string name="add_mttgamemgr">添加賽事管理員</string>
+    <string name="remove_clubmgr">移除管理員</string>
+    <string name="text_mgr">管理</string>
+    <string name="text_club_owner">會長</string>
+    <string name="text_mgrman">管理員</string>
+    <string name="text_set_mgr_format">確定設置“%1$s”為俱樂部管理員？</string>
+    <string name="text_del_mgr_format">確定移除俱樂部管理員“%1$s”？</string>
+    <string name="add_clubmgr_success">添加成功</string>
+    <string name="add_clubmgr_fail">添加失敗</string>
+    <string name="del_clubmgr_success">移除成功</string>
+    <string name="del_clubmgr_fail">移除失敗</string>
+
+    <string name="clubmanager_set_tip">管理員具有和會長一樣的開局權限</string>
+    <string name="clubmanager_open_game_tip">開啟后，僅部長和管理員可以開具</string>
+    <string name="clubmanager_club_search_tip">開啟后，他人不能搜索到該俱樂部</string>
+    <string name="clubmanager_people_limit_tip">%1$d人 剩餘%2$d天</string>
+    <string name="clubmanager_dissolution">解散該俱樂部</string>
+
+    <string name="clubmgr_limit_mgr">管理總數不能超過%1$d人</string>
+    <string name="virtual_id">戰魚號</string>
+    <string name="please_relogin">數據更新，請重新登錄</string>
+    <string name="item_head_mgr_format">會長、管理員（%1$d）</string>
+    <string name="item_head_member_format">會員（%1$d）</string>
+    <string name="tv_begin_time">開賽時間</string>
+    <string name="tv_time_format">MM月dd日 HH:mm</string>
+
+    <string name="normal_record">普通戰績</string>
+    <string name="match_record">賽事戰績</string>
+    <string name="insurance_open_times">觸發保險次數:</string>
+    <string name="bug_money">購買金額:</string>
+    <string name="out_money">賠付金額:</string>
+    <string name="bug_money_times">購買次數:</string>
+    <string name="lucky_card_times">中牌次數:</string>
+    <string name="game_my_create">組局數:</string>
+    <string name="total_buy">總買入:</string>
+    <string name="total_pay">總賠付:</string>
+
+    <string name="game_join_fee">參賽費</string>
+    <string name="game_sng_in_reward_circle">獲獎: %d場</string>
+    <string name="game_in_reward_circle">獎勵圈: %d場</string>
+    <string name="game_in_final_circle">決賽桌: %d場</string>
+    <string name="game_no_data">無數據</string>
+    <string name="game_match_times_format">%d場</string>
+    <string name="insuranse_data">保險數據</string>
+    <string name="my_join_game">我參與的保險局</string>
+    <string name="my_create_game">我創建的保險局</string>
+
+    <string name="game_had_paused">比賽已經暫停</string>
+
+    <string name="game_mtsng_startrule">坐滿開賽</string>
+    <string name="tv_start_game">開始比賽</string>
+    <string name="pause_match_ok_tip_1">所有牌桌結束此局后</string>
+    <string name="pause_match_ok_tip_2">比賽暫停5分鐘</string>
+
+    <string name="text_all">全部</string>
+    <string name="text_last_week">近七日</string>
+    <string name="text_last_month">近一月</string>
+    <string name="join_match">参赛</string>
+    <string name="empty"></string>
+
+    <string name="join_games_foramt">參與%d個牌局</string>
+    <string name="collect_hand_format">收錄最近%d天手牌</string>
+    <string name="hundred_million">億</string>
+
+    <string name="app_tip">提示</string>
+    <!-- WXPayEntryActivity -->
+    <string name="pay_result_callback_msg">微信支付結果：%s</string>
+
+    <string name="please_install_weixin">請先按照微信</string>
+    <string name="sure_pay">確認訂單</string>
+    <string name="pay_money_format">支付: %d元</string>
+    <string name="pay_weixin">微信支付</string>
+    <string name="pay_ali">支付宝支付</string>
+
+    <string name="param_error">參數錯誤</string>
+    <string name="request_illegal">非法請求</string>
+    <string name="name_is_toolong">用戶暱稱太長</string>
+    <string name="phone_number_11">手機長度必須是11位</string>
+    <string name="register_failed">註冊失敗!</string>
+    <string name="phone_not_register">該手機還未註冊</string>
+    <string name="pwd_too_short">密碼太短</string>
+    <string name="pwd_too_long">密碼太長</string>
+    <string name="pwd_format_error">密碼格式不正確</string>
+    <string name="phone_is_registered">該手機已經註冊</string>
+    <string name="pwd_invalied">密碼無效</string>
+    <string name="no_friend">該用戶沒有好友</string>
+    <string name="verification_invalied">驗證碼無效</string>
+    <string name="name_format_error">暱稱設置格式不對</string>
+    <string name="game_has_created">已經創建過的牌局</string>
+    <string name="money_not_enough">用戶餘額不足</string>
+    <string name="gamename_too_long">牌局創建名稱太長</string>
+    <string name="gamename_format_error">牌局名稱格式不對</string>
+    <string name="game_create_failed">牌局創建失敗</string>
+    <string name="game_not_ing">沒有進行中的牌局</string>
+    <string name="game_not_exist">牌局不存在</string>
+    <string name="game_join_failed">加入牌局失敗</string>
+    <string name="game_playing">已經在該牌局中</string>
+    <string name="game_started">牌局已經開始</string>
+    <string name="game_overd">牌局已經結束</string>
+    <string name="user_join_success">用戶加入牌局成功</string>
+    <string name="user_status_update_failed">用戶狀態更新失敗</string>
+    <string name="user_not_owner">用戶不是擁有者</string>
+    <string name="game_dissolution_failed">牌局解散失敗</string>
+    <string name="user_notin_game">用戶不在游戲裡</string>
+    <string name="game_not_started">遊戲沒有開始</string>
+    <string name="clubgame_in_limit">用戶的俱樂部牌局創建已經達到上限</string>
+    <string name="usergame_in_limit">用戶的私人牌局創建已經達到上限</string>
+    <string name="user_club_in_limit">用戶創建的俱樂部已經達到上限</string>
+    <string name="creater_only_startgame">只能會長開局</string>
+    <string name="game_is_over">遊戲不存在(已經結束)</string>
+    <string name="user_is_checkin">已經報名</string>
+    <string name="blinds_in_level">盲注等級到達等級</string>
+    <string name="final_table">到達決賽桌</string>
+    <string name="checkin_in_deal">報名處理中</string>
+    <string name="checkin_end">報名時間截止</string>
+    <string name="game_notallow_checkin">遊戲已經開始不能報名,MT-SNG</string>
+    <string name="user_count_inlimit">用戶已經報滿</string>
+    <string name="status_modify_falied_foropen">狀態修改失敗,因為已經打開</string>
+    <string name="status_modify_failed">狀態修改失敗</string>
+    <string name="user_not_club_manager">您對該俱樂部沒有權限</string>
+    <string name="clubadmin_delete_failed">俱樂部管理員刪除失敗</string>
+    <string name="clubadmin_in_limit">俱樂部管理員達上限</string>
+    <string name="clubadmin_add_failed">俱樂部管理員添加失敗</string>
+    <string name="user_is_clubowner">該用戶是俱樂部會長,不能添加自己為管理員</string>
+    <string name="buy_goods_failed">購買商品失敗</string>
+    <string name="goods_is_empty">購買商品已經被消耗</string>
+    <string name="user_not_exist">玩家不存在</string>
+    <string name="user_not_roomowner">不是房主</string>
+    <string name="game_is_paused">牌局已暫停</string>
+    <string name="game_not_paused">牌局沒有暫停 不能開始</string>
+    <string name="comment_failed">評論失敗</string>
+    <string name="clickgood_failed">點讚失敗</string>
+    <string name="comment_not_exist">評論不存在</string>
+    <string name="delete_only_owner">只允許發佈者刪除</string>
+    <string name="in_collection">已經收藏過</string>
+    <string name="collection_limit">收藏達到上限</string>
+    <string name="third_error">(第三方服務)服務器錯誤</string>
+    <string name="system_parse_error">系統解析異常</string>
+    <string name="network_error">網絡異常</string>
+
+    <string name="text_sure">確定</string>
+    <string name="dispatch_integral">分配積分給該會員</string>
+    <string name="contribution_club_integral">捐贈積分給該俱樂部</string>
+    <string name="text_dispatch">分配</string>
+
+    <string name="integral_my">我的積分</string>
+    <string name="integral_now">当前積分</string>
+    <string name="integral_detail">積分明細</string>
+    <string name="integral_contribution">捐贈積分</string>
+    <string name="integral_gameinfo">牌局信息</string>
+    <string name="integral_not_enough">積分餘額不足</string>
+
+    <string name="text_dispatch_mao">分配:</string>
+    <string name="text_contribution_mao">捐贈:</string>
+    <string name="text_gain_mao">盈利:</string>
+
+    <string name="type_dispatch">會長分配</string>
+    <string name="type_gain">牌局盈利</string>
+    <string name="type_contribution">捐贈給俱樂部</string>
+
+    <string name="member_detail">會員詳情</string>
+
+    <!-- chat room -->
+    <string name="chat_room">直播間</string>
+    <string name="chat_room_message">直播互動</string>
+    <string name="chat_room_master">主播</string>
+    <string name="chat_room_online_people">在線成員</string>
+    <string name="chat_room_announcement">直播公告</string>
+    <string name="no_announcement">暫無公告</string>
+    <string name="online">正在直播</string>
+    <string name="chatroom_kick_member">踢人</string>
+    <string name="chatroom_muted">禁言</string>
+    <string name="chatroom_blacklist">拉黑該用戶</string>
+    <string name="move_out_blacklist">移出黑名單</string>
+    <string name="chatroom_set_admin">任命管理員</string>
+    <string name="cancel_admin">取消管理員</string>
+    <string name="set_normal_member">設為普通成員</string>
+    <string name="cancel_normal_member">移出普通成員</string>
+    <string name="chatroom_fetch_member_failed">獲取用戶資料失敗</string>
+    <string name="cancel_muted">取消禁言</string>
+    <string name="set_success">設置成功</string>
+    <string name="mark_member_level">設置成員等級</string>
+    <string name="set_level">設置等級</string>
+    <string name="cancel_level">取消等級</string>
+    <!--<string nameId="no_data">暫無數據</string>-->
+    <string name="internet_broken">網絡斷開</string>
+
+    <string name="pay_request_failed">支付請求失敗</string>
+    <string name="pay_failed">支付失敗</string>
+    <string name="pay_success">支付成功</string>
+    <string name="pay_wait_result">支付結果確認中</string>
+    <string name="request_nonet_nocache">請求失敗,請檢查網絡</string>
+    <!-- common -->
+    <string name="ok">確定</string>
+    <string name="clear_empty">清空</string>
+    <string name="iknow">知道了</string>
+    <string name="without_content">暫無</string>
+    <string name="open">開啟</string>
+    <string name="menu">菜單</string>
+    <string name="now_allow_space">不能含有空格</string>
+    <string name="readed">已讀</string>
+
+    <!-- session -->
+    <string name="input_panel_photo">圖 片</string>
+    <string name="input_panel_video">視 頻</string>
+    <string name="input_panel_location">位 置</string>
+    <string name="input_panel_take">拍 照</string>
+    <string name="im_choose_pic">請選擇JPG PNG BMP GIF格式的圖片文件</string>
+    <string name="repeat_download_message">重新下載?</string>
+    <string name="repeat_send_has_blank">重 發</string>
+    <string name="repeat_send_message">重發消息?</string>
+    <string name="copy_has_blank">復 制</string>
+    <string name="delete_has_blank">刪 除</string>
+    <string name="voice_to_text">轉文字</string>
+    <string name="main_msg_list_delete_chatting">刪除該聊天</string>
+    <string name="main_msg_list_sticky_on_top">置頂該聊天</string>
+    <string name="main_msg_list_clear_sticky_on_top">取消置頂</string>
+    <string name="save_to_device">保存到手機</string>
+    <string name="picture_save_fail">圖片保存失敗</string>
+    <string name="picture_save_to">圖片已保存到手機</string>
+    <string name="search_join_team">搜索加入群組</string>
+    <string name="file_transfer_state_downloaded">已下載</string>
+    <string name="file_transfer_state_undownload">未下載</string>
+    <string name="trans_voice_failed">語音轉化失敗</string>
+    <string name="team_invalid_tip">您已退出該群</string>
+    <string name="team_send_message_not_allow">您已不在該群，不能發送消息</string>
+    <string name="unsupport_title">無法顯示該內容</string>
+    <string name="unsupport_desc">客戶端版本不支持該內容</string>
+
+    <!-- 語音 -->
+    <string name="record_audio">按住 說話</string>
+    <string name="record_audio_end">松開  結束</string>
+    <string name="sdcard_not_exist_error">請插入SD卡</string>
+    <string name="recording_error">錄音失敗，請重試</string>
+    <string name="recording_init_failed">初始化錄音失敗</string>
+    <string name="recording_cancel">手指上滑，取消發送</string>
+    <string name="timer_default">00:00</string>
+    <string name="recording_cancel_tip">松開手指，取消發送</string>
+    <string name="recording_max_time">錄音達到最大時間，是否發送？</string>
+
+    <!-- 拍照視頻 -->
+    <string name="gallery_invalid">妳的手機沒有圖庫程序</string>
+    <string name="sdcard_not_enough_head_error">SD卡被拔出或存儲空間不足，無法保存頭像</string>
+    <string name="sdcard_not_enough_error">存儲空間不足，無法保存此次多媒體消息</string>
+    <string name="download_video">正在下載視頻</string>
+    <string name="download_video_fail">視頻下載失敗,請重試</string>
+    <string name="look_video_fail">無法播放該視頻</string>
+    <string name="look_video_fail_try_again">暫時無法播放視頻，請重試</string>
+    <string name="video_play">視頻播放</string>
+    <string name="video_record">視頻錄制</string>
+    <string name="video_record_symbol">REC</string>
+    <string name="video_record_begin">開始錄制</string>
+    <string name="connect_vedio_device_fail">無法連接視頻設備 ，請稍候再試</string>
+    <string name="capture_video_size_in_kb">視頻文件大小為: %1$dKB,</string>
+    <string name="capture_video_size_in_mb">視頻文件大小為: %1$.2fMB,</string>
+    <string name="is_send_video">是否發送該視頻？</string>
+    <string name="start_camera_to_record_failed">啟動攝像頭錄制視頻失敗</string>
+    <string name="stop_fail_maybe_stopped">停止失敗，可能已經停止</string>
+    <string name="video_exception">視頻文件異常</string>
+    <string name="im_choose_video_file_size_too_large">視頻文件過大，系統限制為20MB</string>
+    <string name="im_choose_video">請選擇3GP MP4格式的視頻文件</string>
+    <string name="video_record_short">錄制視頻太短</string>
+    <string name="download_progress_description">%1$s（%2$s/%3$s）</string>
+
+    <!-- 聯系人選擇器 -->
+    <string name="contact_selector">聯系人選擇器</string>
+
+    <!-- team -->
+    <string name="team_nickname">群昵稱</string>
+    <string name="team_nickname_none">未填寫</string>
+    <string name="team_identity">身份</string>
+    <string name="remove_member">移出本群</string>
+    <string name="team_member_info">成員信息</string>
+    <string name="team_admin">管理員</string>
+    <string name="team_creator">群主</string>
+    <string name="team_member">群成員</string>
+    <string name="update_success">保存成功</string>
+    <string name="update_failed">保存失敗</string>
+    <string name="no_permission">沒有權限</string>
+    <string name="set_team_admin">設為管理員</string>
+    <string name="cancel_team_admin">取消管理員</string>
+    <string name="team_member_remove_confirm">確定要將其移出群組麽?</string>
+    <string name="team_annourcement">群公告</string>
+    <string name="team_name">群名稱</string>
+    <string name="team_introduce">群介紹</string>
+    <string name="team_extension">擴展示例</string>
+    <string name="click_set">點擊設置</string>
+    <string name="create_advanced_team">創建高級群</string>
+    <string name="reach_team_member_capacity">成員數量不能超過%1$d</string>
+    <string name="team_authentication">身份驗證</string>
+    <string name="create_team">創建群</string>
+    <string name="over_team_member_capacity">邀請失敗，成員人數上限為%1$d人</string>
+    <string name="over_team_capacity">創建失敗，創建群數量達到限制</string>
+    <string name="team_announce_title">標題</string>
+    <string name="team_announce_content">公告內容</string>
+    <string name="team_announce_notice">請輸入群公告標題</string>
+    <string name="my_team_card">我的群名片</string>
+    <string name="team_introduce_hint">點擊填寫群介紹</string>
+    <string name="team_extension_hint">點擊修改擴展內容</string>
+    <string name="team_announce_hint">點擊填寫群公告</string>
+    <string name="team_notification_config">消息提醒</string>
+    <string name="team_transfer_without_member">沒有可轉移的群成員</string>
+    <string name="team_invite_members_success">群成員邀請已發出</string>
+    <string name="team_invite_members_failed">群成員邀請失敗</string>
+    <string name="team_transfer_success">群轉移成功</string>
+    <string name="team_transfer_failed">群轉移失敗</string>
+    <string name="quit_team_success">您已退群</string>
+    <string name="quit_team_failed">退群失敗</string>
+    <string name="quit_normal_team_success">您已經退出討論組</string>
+    <string name="quit_normal_team_failed">退出討論組失敗</string>
+    <string name="dismiss_team_success">群已解散</string>
+    <string name="dismiss_team_failed">解散群失敗</string>
+    <string name="dismiss_team">解散本群</string>
+    <string name="transfer_team">轉讓群</string>
+    <string name="quit_team">退出群</string>
+    <string name="quit_normal_team">退出討論組</string>
+    <string name="team_apply_to_join">申請加入</string>
+    <string name="advanced_team">高級群</string>
+    <string name="normal_team">討論組</string>
+    <string name="team_name_toast">群名稱不能為空</string>
+    <string name="chat_setting">聊天信息</string>
+    <string name="team_settings_name">設置名稱</string>
+    <string name="normal_team_name">討論組名稱</string>
+    <string name="team_create_notice">請添加群成員</string>
+    <string name="team_settings_set_name">取個名字吧</string>
+    <string name="normal_team_not_exist">該討論組不存在</string>
+
+    <!-- 消息搜索 -->
+    <string name="message_search_no_result">無結果</string>
+    <string name="message_search_title">查看聊天內容</string>
+
+    <!-- image picker -->
+    <string name="picker_image_preview">預覽</string>
+    <string name="picker_image_send">發送</string>
+    <string name="picker_image_folder">相冊</string>
+    <string name="picker_image_album_loading">相冊加載中…</string>
+    <string name="picker_image_album_empty">相冊中沒有圖片！</string>
+    <string name="picker_image_folder_info">共%d張</string>
+    <string name="picker_image_exceed_max_image_select">最多選擇%d張圖片！</string>
+    <string name="picker_image_send_select">完成（%d）</string>
+    <string name="picker_image_preview_original">發送原圖</string>
+    <string name="picker_image_preview_original_select">發送原圖（%s）</string>
+    <string name="picker_image_error">獲取圖片出錯</string>
+    <string name="image_compressed_size">該原始圖片大小為: %1$s,</string>
+    <string name="unknow_size">未知大小</string>
+    <string name="is_send_image">是否發送該原始圖片？</string>
+    <string name="multi_image_compressed_size">原始圖片總大小為: %1$s,</string>
+    <string name="is_send_multi_image">是否發送這些原始圖片？</string>
+    <string name="waitfor_image_local">正在打開相冊，請稍候\u2026</string>
+    <string name="recapture">重拍</string>
+    <string name="image_show_error">圖片顯示異常</string>
+    <string name="memory_out">內存不足</string>
+    <string name="choose_from_photo_album">從手機相冊選擇</string>
+    <string name="choose">選取</string>
+
+    <!-- 消息類型 -->
+    <string name="msg_type_image">圖片</string>
+    <string name="msg_type_audio">語音</string>
+
+    <!-- 查看大圖 -->
+    <string name="download_picture_fail">圖片下載失敗</string>
+    <string name="look_up_original_photo_format">查看原圖（%s）</string>
+
+    <!--印象撲克-->
+    <string name="game">牌局</string>
+    <string name="game_ing_count">進行中%d</string>
+    <string name="new_message_count_max">…</string>
+    <!--<string name="back_unread">返回(%s)</string>-->
+    <string name="session_input_panel_photo">圖片</string>
+    <string name="session_tip_friend_not">妳還不是對方好友</string>
+    <string name="session_tip_group_not">妳已不在該圈子中</string>
+    <string name="session_tip_club_not">妳已不在該俱樂部中</string>
+
+    <string name="club_invite_member_join">%1$s邀請 %2$s 加入%3$s</string>
+    <string name="club_accept_invite">%1$s 接受了 %2$s 的俱樂部邀請</string>
+    <string name="club_kick_member_join">%1$s 已被移出%2$s</string>
+    <string name="club_manager_pass_team_apply">管理員通過用戶 %1$s 的俱樂部申請</string>
+    <string name="club_manager_join_game">%1$s 加入牌局</string>
+    <string name="club_transfer_owner">%1$s 將俱樂部轉移給 %2$s</string>
+    <string name="club_add_team_manager">%1$s 被任命為管理員</string>
+    <string name="club_remove_team_manager">%1$s 被撤銷管理員身份</string>
+    <string name="club_dismis_team">%1$s 解散了%2$s</string>
+    <string name="club_leave_team">%1$s 離開了%2$s</string>
+
+    <string name="club_update_team_name">%1$s名稱被更新為 %2$s</string>
+    <string name="club_update_team_introduce">%1$s介紹被更新為 %2$s</string>
+    <string name="club_update_team_extension">%1$s擴展字段被更新為 %2$s</string>
+    <string name="club_update_team_head">%1$s 更改了%2$s頭像</string>
+    <string name="club_update_team_area">%1$s 更改了%2$s所在地</string>
+    <string name="club_update_team_member_limit">%1$s 提升了%2$s成員上限</string>
+    <string name="club_update_team_ext_changed">%1$s信息發生變更</string>
+    <string name="club_update_team_changed">%1$s%2$s被更新為 %3$s</string>
+    <string name="club_update_team_announcement">%1$s 修改了%2$s公告</string>
+    <string name="club_update_team_verifyType">%1$s身份驗證權限更新為</string>
+
+    <string name="dealer">客服</string>
+    <string name="message_new_prompt">%s條新消息</string>
+    <string name="is_not_friend">妳還不是TA的好友！</string>
+    <!--<string name="session_tip_club_is_dismiss">該俱樂部已解散</string>-->
+    <string name="app_smg_control_null_data_text">信息為空</string>
+    <string name="game_create_normal">標準局</string>
+    <string name="game_create_sng">SNG</string>
+    <string name="game_create_mtt">MTT</string>
+</resources>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_member_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.htgames.nutspoker.ui.activity.Club.Integral.MemberDetailActivity">
+
+    <include layout="@layout/view_common_head" />
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1px"
+        style="@style/rl_common_column_style"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_integral"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            >
+
+            <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+                android:id="@+id/iv_userhead"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/default_male_head" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    style="@style/tv_insurance_name"
+                    android:layout_gravity="center_vertical"
+                    android:text="Joe Rose"
+                    android:textSize="20sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_zyh"
+                    style="@style/tv_ligth_white"
+                    android:layout_gravity="center_vertical"
+                    android:text="战鱼号"
+                    android:textSize="14sp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@id/tv_integral"
+            style="@style/tv_insurance_name"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="10000"
+            android:textSize="20sp"
+            android:textColor="@color/light_blue"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:background="@color/app_message_notice_divider_color"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+            <TextView
+                style="@style/tv_big_ins_name"
+                android:text="@string/text_dispatch_mao"
+                />
+
+            <TextView
+                android:id="@+id/tv_dispatch"
+                style="@style/tv_big_ins_name"
+                android:layout_marginLeft="5dp"
+                android:text="@string/text_dispatch"
+                android:textColor="@color/record_item_earnings_gain_color"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+            <TextView
+                style="@style/tv_big_ins_name"
+                android:text="@string/text_contribution_mao"
+                />
+
+            <TextView
+                android:id="@+id/tv_contirbution"
+                style="@style/tv_big_ins_name"
+                android:layout_marginLeft="5dp"
+                android:text="@string/text_dispatch"
+                android:textColor="@color/record_item_earnings_lose_color"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+            <TextView
+                style="@style/tv_big_ins_name"
+                android:text="@string/text_gain_mao"
+                android:id="@+id/textView4"/>
+
+            <TextView
+                android:id="@+id/tv_gain"
+                style="@style/tv_big_ins_name"
+                android:layout_marginLeft="5dp"
+                android:text="@string/text_dispatch"
+                android:textColor="@color/record_orange_color"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

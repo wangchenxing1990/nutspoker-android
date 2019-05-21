@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_common_head" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/add_friend_verify_prompt"
+        android:textColor="@color/shop_text_no_select_color" />
+
+    <com.htgames.nutspoker.view.widget.ClearableEditTextWithIcon
+        android:id="@+id/edt_verify_message"
+        style="@style/edt_common_style"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="left|top"
+        android:imeOptions="actionDone"
+        android:padding="10dp"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/btn_send"
+        style="@style/btn_common_style"
+        android:background="@drawable/bg_login_btn"
+        android:visibility="gone"
+        android:layout_marginTop="30dp"
+        android:text="@string/send" />
+</LinearLayout>

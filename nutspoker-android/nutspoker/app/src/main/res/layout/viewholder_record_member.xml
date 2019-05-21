@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_record_details_member_column" />
+
+    <RelativeLayout
+        android:id="@+id/rl_record_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/record_detail_player_info_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_column_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="0dp"
+            android:paddingRight="0dp"
+            android:paddingTop="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_weight="1">
+                <RelativeLayout
+                    android:id="@+id/rl_game_userhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:layout_centerVertical="true">
+                    <com.htgames.nutspoker.view.record.RankViewV
+                        android:id="@+id/mRankView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:minWidth="24dp"
+                        app:rankWidth="24dp" />
+
+                    <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+                        android:id="@+id/iv_game_userhead"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/mRankView"
+                        android:src="@mipmap/default_male_head" />
+
+                    <ImageView
+                        android:id="@+id/iv_insurance_tag"
+                        android:layout_width="13dp"
+                        android:layout_height="14dp"
+                        android:layout_alignBottom="@id/iv_game_userhead"
+                        android:layout_alignRight="@id/iv_game_userhead"
+                        android:src="@mipmap/icon_club_chat_game_item_insurance"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_game_name_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/rl_game_userhead"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tv_game_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:padding="5dp"
+                        tools:text="暴走的苹果"
+                        android:textColor="@color/text_select_color"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:id="@+id/tv_uuid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        tools:visibility="visible"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        tools:text="ID: 5858542"
+                        android:textColor="@color/shop_text_no_select_color"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_rebuy_cnt"
+                    style="@style/tv_record_rebuy_tag_style"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="2dp"
+                    android:layout_toRightOf="@id/ll_game_name_container"
+                    android:background="@drawable/app_message_buychips_rebuy_tag_bg" />
+
+                <TextView
+                    android:id="@+id/tv_addon_cnt"
+                    style="@style/tv_record_rebuy_tag_style"
+                    android:layout_toRightOf="@id/tv_rebuy_cnt"
+                    android:background="@drawable/app_message_buychips_addon_tag_bg" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_game_buys"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.3"
+                android:gravity="center"
+                tools:text="买入100"
+                android:textColor="@color/shop_text_no_select_color"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:paddingRight="10dp"
+                android:orientation="vertical"
+                android:layout_weight="1.3">
+                <TextView
+                    android:id="@+id/tv_game_earnings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    tools:text="333"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/tv_opt_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/shop_text_no_select_color"
+                    android:textSize="12dp"
+                    tools:visibility="visible"
+                    android:visibility="gone"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@mipmap/approve_icon"
+                    tools:text="通过人"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/record_member_hunter_info_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.3"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/ko_head_cnt_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|left"
+                    android:paddingBottom="1dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:visibility="gone"
+                        tools:visibility="visible"
+                        android:src="@mipmap/icon_hunter_grey"/>
+                    <TextView
+                        android:id="@+id/record_member_hunter_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_vertical|left"
+                        android:textColor="@color/shop_text_no_select_color"
+                        android:textSize="12sp"
+                        android:drawablePadding="5dp"
+                        android:paddingLeft="5dp"
+                        android:text="5"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ko_reward_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|left"
+                    android:paddingTop="1dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:visibility="gone"
+                        tools:visibility="visible"
+                        android:src="@mipmap/kopoker_icon_reward"/>
+                    <TextView
+                        android:id="@+id/record_member_hunter_reward"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_vertical|left"
+                        android:textColor="@color/shop_text_no_select_color"
+                        android:textSize="12sp"
+                        android:drawablePadding="5dp"
+                        android:paddingLeft="5dp"
+                        android:text="10000"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.3"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/record_detail_player_info_container"
+            android:background="@color/register_page_bg_color" />
+    </RelativeLayout>
+</LinearLayout>

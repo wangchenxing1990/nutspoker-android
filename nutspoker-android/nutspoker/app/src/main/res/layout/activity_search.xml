@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/register_page_bg_color"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/cancel"
+            android:textColor="@color/login_solid_color"
+            android:textSize="18sp" />
+
+        <com.htgames.nutspoker.view.widget.ClearableEditTextWithIcon
+            android:id="@+id/edit_search"
+            style="@style/edt_common_style"
+            android:drawableLeft="@mipmap/icon_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="0dp"
+            android:layout_toLeftOf="@id/tv_cancel"
+            android:hint="@string/search_hint_user"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/ll_phonecontact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:visibility="visible"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/tv_search_column_title_style"
+                    android:textColor="@color/text_select_color"
+                    android:text="@string/phone_contact" />
+
+                <com.htgames.nutspoker.view.widget.CustomListView
+                    android:id="@+id/lv_phonecontact"
+                    style="@style/listview_common_style" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <com.htgames.nutspoker.view.ResultDataView
+            android:id="@+id/mResultDataView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</LinearLayout>

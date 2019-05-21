@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_toLeftOf="@+id/tv_integral"
+        android:layout_marginRight="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="19日"
+                android:textColor="@color/record_item_divider_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12月"
+                android:textColor="@color/record_item_divider_color"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/message_system" />
+
+            <View
+                android:id="@+id/view_time_line"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/record_item_divider_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="18:02"
+                android:textColor="@color/recentgame_list_text_color" />
+
+            <TextView
+                android:id="@+id/tv_optip"
+                style="@style/tv_big_ins_name"
+                android:text="分配给会员xxxxxx xxxxxxx"
+                android:layout_gravity="center_vertical"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@id/tv_integral"
+        android:layout_alignParentRight="true"
+        style="@style/tv_big_ins_name"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:text="-200"
+        />
+
+</RelativeLayout>

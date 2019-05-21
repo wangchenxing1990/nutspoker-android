@@ -1,0 +1,244 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+//apply plugin: 'com.google.protobuf'
+def releaseTime() {
+    return new Date().format("MM月dd号HH:mm:ss")
+}
+ext {
+    isTestVersion = false
+    isTaiwanVersion = false
+}
+
+//App版本code
+def getTheAppCode() {
+    if (isTaiwanVersion)
+        return 9
+    else
+        return 6
+}
+
+//App版本
+def getTheAppVersion() {
+    if (isTaiwanVersion)
+        return "1.2.2"
+    else
+        return "1.2.2"
+}
+
+//德州扑克游戏版本号
+def getTheGameVersion() {
+    return "1.2.8"
+}
+
+def getTheAppId() {
+    if (isTaiwanVersion)
+        return "com.luckygo.nutspoker"
+    else
+        return "com.htgames.nutspoker"
+}
+
+def getGTAppID() {
+    if (isTaiwanVersion)
+        return "DjqCvjHOec6YpWdRyeiFI7"
+    else
+        return "Iz5GTdQMK06AZPtAsd5Oz7"
+}
+
+def getGTAppKey() {
+    if (isTaiwanVersion)
+        return "Nb4jCNAUK798yJiYca43R3"
+    else
+        return "m97n6iSeH49UdCDe1wo1j2"
+}
+
+def getGTAppSecret() {
+    if (isTaiwanVersion)
+        return "wyVogdItCT9TFJDkrAQYZ9"
+    else
+        return "X4wgxwqEOD8qF4mZkAue76"
+}
+
+def getUMengKey() {
+    if (isTaiwanVersion)
+        return "584f9e81c89576363f000239"
+    else
+        return "584f9e81c89576363f000239"
+}
+
+android {
+    compileSdkVersion compileSdk
+    buildToolsVersion buildTools
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId getTheAppId()
+        minSdkVersion minSdk
+        targetSdkVersion targetSdk // <!-- 解决Android L上通知显示异常问题，targetSdkVersion需要设置成22 -->
+        versionCode getTheAppCode()
+        versionName getTheAppVersion()
+        multiDexEnabled true //65
+        vectorDrawables.useSupportLibrary = true //支持svg
+        ndk {
+//            abiFilters "armeabi","armeabi-v7a" ,"x86"
+            abiFilters "armeabi"//, "x86"
+        }
+    }
+
+    dexOptions {
+        incremental true
+        javaMaxHeapSize "4g"
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file("../../keystore/everpoker.jks")
+            storePassword "123456"
+//            //命令行密码
+//            //storePassword System.console().readLine("\ninput Keystore password: ")
+            keyAlias "everpoker"
+            keyPassword "everpoker"
+        }
+    }
+
+    buildTypes {
+        debug {
+            //这里使用Key打包
+            signingConfig signingConfigs.debug
+            debuggable true
+            zipAlignEnabled true
+            manifestPlaceholders = [
+//                    GETUI_APP_ID      : "BKxotLC05m6lYZl8bLJx63",//自己的 @周智慧
+//                    GETUI_APP_KEY     : "w0W5TqvuTJ8I2n2g1bkpl5",
+//                    GETUI_APP_SECRET  : "PzOn1E4rZiAmDLnQI9de94",
+                    GETUI_APP_ID      : "DBQNwvMBG598R7tNtGTB24",
+                    GETUI_APP_KEY     : "WgB9IwPeCf6ZG9GPTpidTA",
+                    GETUI_APP_SECRET  : "1jWk8DY5KE9sWUqzbI7h89",
+                    UMENG_APPKEY_VALUE: "58acfa1982b6352eaf001111",
+                    YXIN_KEY_VALUE    : "8a41dc0ab26faea360a47c7d446d0739",
+                    PACKAGE_NAME      : getTheAppId(),
+                    THE_GAME_VERSION  : getTheGameVersion()
+            ]
+        }
+
+        release {
+            signingConfig signingConfigs.debug
+//            minifyEnabled false
+            debuggable false
+            minifyEnabled true
+            // 不显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            //zipAlign优化
+            zipAlignEnabled true
+//            shrinkResources true
+//            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            manifestPlaceholders = [
+                    GETUI_APP_ID      : "Iz5GTdQMK06AZPtAsd5Oz7",
+                    GETUI_APP_KEY     : "m97n6iSeH49UdCDe1wo1j2",
+                    GETUI_APP_SECRET  : "X4wgxwqEOD8qF4mZkAue76",
+                    UMENG_APPKEY_VALUE: "584f9e81c89576363f000239",
+                    YXIN_KEY_VALUE    : "8a41dc0ab26faea360a47c7d446d0739",
+                    PACKAGE_NAME      : getTheAppId(),
+                    THE_GAME_VERSION  : getTheGameVersion()
+            ]
+        }
+        // 批量打包
+        applicationVariants.all { variant ->
+            variant.outputs.each { output ->
+                def outputFile = output.outputFile
+                if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                    //输出apk名称为：渠道名_版本名_时间.apk
+                    def fileName = "${variant.productFlavors[0].name}-v${defaultConfig.versionName}-${variant.buildType.getName()}.apk"
+                    output.outputFile = new File(outputFile.parent, fileName)
+                }
+            }
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/LICENSE.txt'
+    }
+
+    sourceSets {
+        main() {
+            jniLibs.srcDirs = ['libs']
+            java {
+                srcDir 'src/main/java'
+            }
+//            proto {
+//                srcDir 'src/main/proto'
+//            }
+        }
+    }
+
+    productFlavors {
+//        CN {
+//            applicationId = "com.htgames.chesscircle"
+//        }
+//        GooglePlay {
+//            applicationId = "com.luckygo.poker"
+//            manifestPlaceholders = [UMENG_APPKEY: "我的友盟KEY"]
+//        }
+//        Official {}
+        GooglePlay {}
+    }
+
+    productFlavors.all {
+        flavor -> flavor.manifestPlaceholders = [CHANNEL_VALUE: name]
+    }
+
+//    lintOptions {
+//        checkReleaseBuilds false
+//        abortOnError false
+//    }
+//    protobuf {
+//        protoc {
+//            path = '/usr/local/bin/protoc'
+//        }
+//
+//        generateProtoTasks {
+//            all().each { task ->
+//                task.builtins {
+//                    remove java
+//                }
+//                task.builtins {
+//                    java { }
+//                    // Add cpp output without any option.
+//                    // DO NOT omit the braces if you want this builtin to be added.
+//                    java { }
+//                    cpp { }
+//                }
+//            }
+//        }
+//    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(path: ':uikit')
+//    compile project(':uikit-release')
+    //    compile 'com.facebook.fresco:fresco:0.6.1+'
+//    compile project(path: ':common_libs')
+    compile project(path: ':umeng_social_sdk')
+    compile project(path: ':libcocos2dx')
+    debugCompile project(path: ':debug')
+    compile project(path: ':flexible-adapter')
+    //    compile 'com.facebook.stetho:stetho:1.3.1'
+    // Audience Network SDK. Only versions 4.6.0 and above are available
+    // Account Kit
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.umeng.analytics:analytics:6.0.9'
+    compile 'com.jakewharton:butterknife:8.6.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
+    compile 'com.getui:sdk:2.9.5.0'
+    //    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.4-beta2'
+    //    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
+    //    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
+    //compile 'com.squareup.leakcanary:leakcanary-android:1.4-beta2'
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.3'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.3'
+    compile 'com.google.protobuf:protobuf-java:3.0.0' //谷歌的protolbuf依赖
+}

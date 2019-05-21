@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/user_photo_defualt">
+    <com.htgames.nutspoker.view.AlbumView
+        android:id="@+id/mAlbumView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    <RelativeLayout
+        android:id="@+id/ll_userinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dp_size_20"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+            android:id="@+id/iv_userhead"
+            android:layout_width="@dimen/user_avatar_size_in_info"
+            android:layout_height="@dimen/user_avatar_size_in_info"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/default_male_head"/>
+
+        <ImageView
+            android:id="@+id/iv_sex"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@id/iv_userhead"
+            android:layout_alignRight="@id/iv_userhead"
+            android:src="@mipmap/icon_me_male" />
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_sex"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="5dp"
+            android:lines="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:shadowColor="#ff000000"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="1"
+            android:text="@string/user"
+            android:textColor="@android:color/white"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/tv_extension"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_nickname"
+            android:layout_centerHorizontal="true"
+            android:lines="1"
+            android:ellipsize="end"
+            android:text="城市、昵称"
+            android:paddingTop="5dp"
+            android:gravity="center"
+            android:shadowColor="#ff000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="1"
+            android:textColor="@android:color/white"
+            android:alpha="0.6"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/me_userinfo_id_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/tv_extension"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:textSize="12dp"
+            android:alpha="0.6"
+            android:text="ID: "/>
+
+        <TextView
+            android:id="@+id/tv_signature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:layout_below="@+id/me_userinfo_id_tv"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="5dp"
+            android:gravity="center"
+            android:shadowColor="#ff000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="1"
+            android:paddingBottom="4dp"
+            android:text="@string/userinfo_signature_null"
+            android:alpha="0.6"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_size_45"
+        android:gravity="center_vertical"
+        android:id="@+id/me_wealth_container"
+        android:background="@mipmap/me_icon_diamond_bg"
+        android:layout_below="@id/ll_userinfo">
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_size_5"
+            android:id="@+id/me_coin_diamond_divider"
+            android:layout_marginBottom="@dimen/dp_size_5"
+            android:background="@android:color/black"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/me_userinfo_coin_tv"
+            android:gravity="right|center_vertical"
+            android:layout_toLeftOf="@id/me_coin_diamond_divider"
+            android:lines="1"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/icon_me_coin"
+            android:layout_marginRight="@dimen/dp_size_30"
+            android:layout_marginTop="@dimen/dp_size_10"
+            android:layout_marginBottom="@dimen/dp_size_10"
+            android:textColor="@color/white"
+            android:text=" 222223"
+            android:textSize="@dimen/dp_size_20"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/me_coin_diamond_divider"
+            android:id="@+id/me_userinfo_coin_tv_useless"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/me_userinfo_diamond_tv"
+            android:gravity="left|center_vertical"
+            android:layout_toRightOf="@id/me_coin_diamond_divider"
+            android:lines="1"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/icon_me_diamond"
+            android:layout_marginLeft="@dimen/dp_size_30"
+            android:layout_marginTop="@dimen/dp_size_10"
+            android:layout_marginBottom="@dimen/dp_size_10"
+            android:textColor="@color/white"
+            android:text=" 4444433443"
+            android:textSize="@dimen/dp_size_20"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/me_coin_diamond_divider"
+            android:id="@+id/me_userinfo_diamond_tv_useless"/>
+    </RelativeLayout>
+
+</merge>

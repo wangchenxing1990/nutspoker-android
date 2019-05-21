@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/view_common_head" />
+
+    <FrameLayout
+        android:id="@+id/ll_club_list_null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/action_bar_height">
+
+        <TextView
+            android:id="@+id/horde_big_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="部落"
+            android:textSize="23dp"
+            android:textColor="@color/shop_text_no_select_color"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="top|center_horizontal"
+            android:drawableTop="@mipmap/icon_noclub" />
+
+        <Button
+            android:id="@+id/btn_club_create"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_common_height"
+            android:background="@drawable/bg_login_btn"
+            android:textColor="@color/white"
+            android:textSize="@dimen/btn_common_text_size"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_gravity="center"
+            android:text="@string/club_create" />
+
+        <Button
+            android:id="@+id/btn_club_join"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_common_height"
+            android:background="@drawable/bg_login_btn"
+            android:textColor="@color/white"
+            android:textSize="@dimen/btn_common_text_size"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_size_65"
+            android:text="@string/club_join" />
+    </FrameLayout>
+
+    <com.htgames.nutspoker.ui.recycler.MeRecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/action_bar_height"
+        android:visibility="gone"
+        android:id="@+id/mRecyclerView" />
+    <TextView
+        android:id="@+id/tv_your_club_none_horde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/action_bar_height"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:textColor="@color/shop_text_no_select_color"
+        android:textSize="18dp"
+        android:text="@string/your_club_none_horde"/>
+</FrameLayout>

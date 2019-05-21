@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_club_integral_operation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.htgames.nutspoker.ui.activity.Club.Integral.ClubIntegralOperation">
+
+    <include layout="@layout/view_common_head" />
+
+    <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+        android:id="@+id/hiv_head"
+        android:layout_marginTop="10dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/default_male_head"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/tv_insurance_name"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:text="Joe Rose"
+        />
+
+    <TextView
+        android:id="@+id/tv_zyh"
+        style="@style/tv_ligth_white"
+        android:layout_gravity="center_horizontal"
+        android:text="战鱼号:1111"
+        android:layout_marginBottom="15dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_current_integral"
+        style="@style/tv_ligth_white"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/light_blue"
+        android:text="当前积分:%d"
+        android:textSize="20sp"
+        android:visibility="gone"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        >
+
+        <com.htgames.nutspoker.view.widget.ClearableEditTextWithIcon
+            android:id="@+id/edit_integral"
+            style="@style/edt_box_common_style"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:cursorVisible="false"
+            android:hint="0"
+            android:textSize="40sp"
+            android:lines="1"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/tv_tip"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            style="@style/tv_ligth_white"
+            android:text="@string/dispatch_integral"
+            />
+    </FrameLayout>
+
+
+    <Button
+        android:id="@+id/btn_sure"
+        style="@style/btn_common_style"
+        android:layout_marginTop="20dp"
+        android:text="@string/text_sure" />
+
+</LinearLayout>

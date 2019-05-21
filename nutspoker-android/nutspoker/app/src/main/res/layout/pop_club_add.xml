@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:background="@drawable/bg_club_popup_more_new"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:id="@+id/ll_pop_club_create"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@drawable/contact_coulmn_bg"
+        android:layout_gravity="top|center_horizontal">
+
+        <TextView
+            android:id="@+id/tv_pop_club_create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@mipmap/icon_creat_club"
+            android:drawablePadding="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/club_create"
+            tools:text="你好"
+            android:textColor="@android:color/black" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/ll_pop_club_join"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_weight="1"
+        android:background="@drawable/contact_coulmn_bg"
+        android:layout_gravity="center_horizontal">
+        <View
+            android:id="@+id/ll_pop_club_divider2"
+            android:layout_width="90dp"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center|top"
+            android:background="@color/color_gray_d9d9d9" />
+        <TextView
+            android:id="@+id/tv_pop_club_join"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_jion_club"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/club_join"
+            android:textColor="@android:color/black" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/ll_pop_club_row3"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_height="0dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_weight="1"
+        android:background="@drawable/contact_coulmn_bg"
+        android:layout_gravity="center_horizontal">
+        <View
+            android:id="@+id/ll_pop_club_divider3"
+            android:layout_width="90dp"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center|top"
+            android:background="@color/color_gray_d9d9d9" />
+        <TextView
+            android:id="@+id/tv_pop_club_row3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_jion_club"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/club_join"
+            android:textColor="@android:color/black" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/ll_pop_club_row4"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_height="0dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_weight="1"
+        android:background="@drawable/contact_coulmn_bg"
+        android:layout_gravity="center_horizontal">
+        <View
+            android:id="@+id/ll_pop_club_divider4"
+            android:layout_width="90dp"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center|top"
+            android:background="@color/color_gray_d9d9d9" />
+        <TextView
+            android:id="@+id/tv_pop_club_row4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_jion_club"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/club_join"
+            android:textColor="@android:color/black" />
+    </FrameLayout>
+</LinearLayout>

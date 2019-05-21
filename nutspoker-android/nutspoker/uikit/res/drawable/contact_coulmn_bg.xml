@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <!-- 设置几何图形四个角的弧度 -->
+            <corners android:radius="3dp" />
+            <!-- 设置填充颜色 -->
+            <solid android:color="@color/login_grey_color" />
+        </shape>
+    </item>
+    <item android:state_pressed="false">
+        <shape>
+            <!-- 设置几何图形四个角的弧度 -->
+            <corners android:radius="3dp" />
+            <!-- 设置填充颜色 -->
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+</selector>

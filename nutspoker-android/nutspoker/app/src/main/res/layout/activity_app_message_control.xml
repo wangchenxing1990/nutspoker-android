@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_common_head"/>
+
+    <com.htgames.nutspoker.game.match.view.PagerSlidingTabStrip
+            android:id="@+id/control_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/action_bar_height"
+            app:pstsDividerColor="@color/transparent"
+            app:pstsIndicatorColor="@color/login_solid_color"
+            app:pstsIndicatorHeight="0dp"
+            app:pstsScaleZoomMax="0.1"
+            app:pstsShouldExpand="true"
+            app:pstsSmoothScrollWhenClickTab="true"
+            app:pstsTabPaddingLeftRight="12dp"
+            app:pstsTextColor="@color/login_grey_color"
+            app:pstsTextSelectedColor="@color/login_solid_color"
+            app:pstsTextSize="17dp"
+            app:pstsUnderlineColor="@color/register_page_bg_color"
+            app:pstsUnderlineHeight="1dp"
+            app:pstsDividerPaddingTopBottom="8dp"/>
+    <TextView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="53dp"
+            android:id="@+id/tv_control_msg_reddot"
+            android:background="@drawable/unread_badge_bg"
+            android:gravity="center"
+            tools:visibility="visible"
+            android:textColor="@color/white"
+            tools:text="88"
+            android:includeFontPadding="false"
+            android:textSize="13dp"
+            android:visibility="invisible"/>
+    <android.support.v4.view.ViewPager
+            android:id="@+id/control_viewpager"
+            android:layout_marginTop="85dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btn_free_game_start">
+    </android.support.v4.view.ViewPager>
+</merge>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include
+            android:id="@+id/include_head"
+            layout="@layout/view_common_head" />
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+        <TextView
+                android:id="@+id/search_mtt_mgr_tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/cancel"
+                android:textColor="@color/login_solid_color"
+                android:textSize="18sp" />
+
+        <com.htgames.nutspoker.view.widget.ClearableEditTextWithIcon
+                android:id="@+id/search_mtt_mgr_edit_search"
+                style="@style/edt_common_style"
+                android:drawableLeft="@mipmap/icon_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/search_mtt_mgr_tv_cancel"
+                android:hint="@string/search_hint_user"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+            <com.htgames.nutspoker.view.ChannelTypeView
+                    android:id="@+id/iv_select_channel_personal"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:ChannelTypeViewWidth="60dp"
+                    app:ChannelTypeViewHeight="60dp"
+                    app:ChannelTypeViewSelected="true"
+                    app:ChannelTypeViewNormalImage="@mipmap/channel_personal_normal"
+                    app:ChannelTypeViewSelectImage="@mipmap/channel_personal_select"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/shop_text_no_select_color"
+                    android:text="管理员"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+            <com.htgames.nutspoker.view.ChannelTypeView
+                    android:id="@+id/iv_select_channel_club"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:ChannelTypeViewWidth="60dp"
+                    app:ChannelTypeViewHeight="60dp"
+                    app:ChannelTypeViewNormalImage="@mipmap/channel_club_normal"
+                    app:ChannelTypeViewSelectImage="@mipmap/channel_club_select"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/shop_text_no_select_color"
+                    android:text="俱乐部"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager android:layout_width="match_parent"
+                                       android:layout_height="match_parent"
+                                       android:id="@+id/viewpager_add_channel"/>
+
+</LinearLayout>

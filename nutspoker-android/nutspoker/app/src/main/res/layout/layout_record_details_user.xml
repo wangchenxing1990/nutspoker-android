@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="@dimen/game_record_details_content_height"
+    tools:background="@color/red_normal"
+    android:padding="20dp">
+    <android.support.v4.widget.Space
+        android:id="@+id/record_detail_user_info_view_center"
+        android:layout_centerInParent="true"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+    <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+        android:id="@+id/iv_game_current_userhead"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/default_male_head" />
+    <TextView
+        android:id="@+id/tv_game_current_nickname"
+        style="@style/record_details_text_style"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/iv_game_current_userhead"
+        tools:text="暴走的苹果" />
+    <TextView
+        android:id="@+id/tv_game_join_hands_des"
+        style="@style/record_details_text_style_new"
+        android:layout_toLeftOf="@id/iv_game_current_userhead"
+        android:paddingTop="15dp"
+        android:alpha="0.6"
+        android:text="总手数" />
+    <TextView
+        android:id="@+id/tv_game_join_hands_num"
+        style="@style/record_details_text_style_new"
+        android:layout_toLeftOf="@id/iv_game_current_userhead"
+        android:layout_below="@id/tv_game_join_hands_des"
+        tools:text="25" />
+    <TextView
+        android:id="@+id/tv_game_win_des"
+        style="@style/record_details_text_style_new"
+        android:layout_toRightOf="@id/iv_game_current_userhead"
+        android:paddingTop="15dp"
+        android:alpha="0.6"
+        android:text="盈利局" />
+    <TextView
+        android:id="@+id/tv_game_win_num"
+        style="@style/record_details_text_style_new"
+        android:layout_toRightOf="@id/iv_game_current_userhead"
+        android:layout_below="@id/tv_game_win_des"
+        android:text="3" />
+    <!-- 废弃 -->
+    <TextView
+        android:id="@+id/tv_game_ruchi_hands"
+        style="@style/record_details_text_style"
+        android:layout_below="@id/tv_game_join_hands_num"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:text="入池0手" />
+    <TextView
+        android:id="@+id/tv_game_lose"
+        style="@style/record_details_text_style_new"
+        android:layout_toRightOf="@id/iv_game_current_userhead"
+        android:layout_below="@id/tv_game_win_num"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:text="@string/record_details_lose" />
+
+    <LinearLayout
+        android:id="@+id/normal_info_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:layout_below="@id/tv_game_current_nickname"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_record_details_user_gain_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="牌局盈利"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_game_win_chips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                tools:text="aaaa"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_game_insurance_chips"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_game_insurance_chips_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="保险盈利:"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_game_insurance_chips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                tools:text="aaaa"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/match_info_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center_vertical"
+        android:paddingTop="10dp"
+        android:layout_below="@id/tv_game_current_nickname"
+        tools:layout_marginTop="15dp"
+        android:orientation="horizontal">
+        <android.support.v4.widget.Space
+            android:id="@+id/match_info_center_view"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"/>
+        <LinearLayout
+            android:id="@+id/mtt_normal_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/match_info_center_view"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:drawableLeft="@mipmap/paiju_list_item_trophy_icon"
+                tools:text="4"
+                android:drawablePadding="5dp"/>
+            <TextView
+                android:id="@+id/match_user_gain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                tools:text="奖金：10000"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/mtt_hunter_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/match_info_center_view"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_hunter_rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:drawableLeft="@mipmap/icon_hunter_white"
+                tools:text="4"
+                android:drawablePadding="5dp"/>
+            <TextView
+                android:id="@+id/match_user_gain_hunter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                tools:text="奖金：10000"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_pineapple_wins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        tools:text="盈利：+0"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_below="@id/tv_game_current_nickname"/>
+
+    <TextView
+        android:id="@+id/tv_diamond_match_rank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="排名：2"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:layout_below="@id/tv_pineapple_wins"/>
+
+</RelativeLayout>

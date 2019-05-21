@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/view_common_head" />
+
+        <RelativeLayout
+            android:id="@+id/rl_manager_club"
+            tools:visibility="visible"
+            android:background="@drawable/common_column_bg"
+            style="@style/rl_other_column_style">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/tv_common_column_title_style"
+                    android:text="@string/clubmanager_set" />
+                <TextView
+                    style="@style/tv_common_column_tip"
+                    android:visibility="gone"
+                    android:text="@string/clubmanager_set_tip"/>
+            </LinearLayout>
+            <ImageView style="@style/iv_common_column_arrow_style" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_creator_function"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/clubmanager_cell_space"
+            android:orientation="vertical">
+
+            <RelativeLayout style="@style/rl_other_column_style">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/common_column_bg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/tv_common_column_title_style"
+                        android:text="@string/clubmanager_open_right" />
+                    <TextView
+                        style="@style/tv_common_column_tip"
+                        android:text="@string/clubmanager_open_game_tip"/>
+                </LinearLayout>
+
+                <com.htgames.nutspoker.view.switchbutton.SwitchButton
+                    android:id="@+id/switch_just_creator_create"
+                    style="@style/SwitchButtonStyle"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="false" />
+            </RelativeLayout>
+
+            <View style="@style/common_column_divider_style" />
+
+            <RelativeLayout style="@style/rl_other_column_style">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/tv_common_column_title_style"
+                        android:text="@string/clubmanager_search_forbidden" />
+                    <TextView
+                        style="@style/tv_common_column_tip"
+                        android:text="@string/clubmanager_club_search_tip"/>
+                </LinearLayout>
+
+                <com.htgames.nutspoker.view.switchbutton.SwitchButton
+                    android:id="@+id/switch_is_private"
+                    style="@style/SwitchButtonStyle"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_manager_upgrade"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_marginTop="@dimen/clubmanager_cell_space"
+            style="@style/rl_other_column_style">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/tv_common_column_title_style"
+                    android:text="@string/clubmanager_people_limit_u" />
+                <TextView
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    android:id="@+id/tv_clubmgr_limit_status"
+                    style="@style/tv_common_column_tip"
+                    android:text="@string/clubmanager_people_limit_tip"/>
+            </LinearLayout>
+
+
+            <ImageView style="@style/iv_common_column_arrow_style" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/rl_club_remove"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_common_height"
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_login_btn_warning"
+        android:text="@string/clubmanager_dissolution"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:visibility="visible"/>
+</RelativeLayout>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_data_analysis"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/data_analysis_item_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_data_analysis_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_data_analysis_name"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/data_analysis_wsd"
+            android:textColor="@color/data_analysis_column_name_color"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/rl_analysis_progress"
+                style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/data_analysis_progress_bg_height"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:background="@drawable/data_analysis_progress_bg">
+
+                <!--<ProgressBar-->
+                <!--style="@android:style/Widget.ProgressBar.Horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/data_analysis_progress_height"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:background="@android:color/transparent"-->
+                <!--android:indeterminate="false"-->
+                <!--android:indeterminateOnly="false"-->
+                <!--android:max="100"-->
+                <!--android:progress="20"-->
+                <!--android:progressDrawable="@drawable/data_analysis_progress"-->
+                <!--android:secondaryProgress="20" />-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/view_analysis_improve"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/data_analysis_progress_height"
+                        android:background="@color/data_analysis_improve_color" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/view_analysis_good"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/data_analysis_progress_height"
+                        android:background="@color/data_analysis_good_color" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_analysis_line"
+                android:layout_width="14dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="7dp"
+                    android:layout_height="4dp"
+                    android:src="@mipmap/arrow_advance_down" />
+
+                <ImageView
+                    android:layout_width="2dp"
+                    android:layout_height="@dimen/data_analysis_progress_height"
+                    android:src="@mipmap/message_system" />
+
+                <ImageView
+                    android:layout_width="7dp"
+                    android:layout_height="4dp"
+                    android:src="@mipmap/message_system" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_data_analysis_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="0%"
+                android:textColor="@color/data_analysis_column_name_color"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_data_analysis_arrow"
+                android:layout_width="14dp"
+                android:layout_height="8dp"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/message_system" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_data_analysis_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/data_analysis_column_divider_color" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:id="@+id/rl_analysis_circular"
+                android:layout_width="@dimen/data_analysis_circular_width"
+                android:layout_height="75dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/data_analysis_circular_width"
+                    android:layout_height="@dimen/data_analysis_circular_width">
+
+                    <com.htgames.nutspoker.view.CircularProgressBar
+                        android:id="@+id/circularProgressbar"
+                        android:layout_width="@dimen/data_analysis_circular_width"
+                        android:layout_height="@dimen/data_analysis_circular_width"
+                        android:layout_centerHorizontal="true"
+                        app:background_progressbar_color="@color/data_analysis_circular_bg_color"
+                        app:background_progressbar_width="4dp"
+                        app:progressbar_color="@color/data_analysis_circular_progress_color"
+                        app:progressbar_width="4dp" />
+
+                    <TextView
+                        android:id="@+id/tv_data_analysis_circular_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="0%"
+                        android:textColor="@color/data_analysis_circular_progress_color"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_data_analysis_circular_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="WTSD"
+                    android:textColor="@color/data_analysis_circular_bg_color"
+                    android:textSize="10sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_analysis_content_desc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignTop="@id/rl_analysis_circular"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/rl_analysis_circular">
+
+                <TextView
+                    android:id="@+id/tv_analysis_content_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textColor="@color/data_analysis_column_content_head_color"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_analysis_content_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_analysis_content_head"
+                    android:textColor="@color/data_analysis_column_content_body_color"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_analysis_content_desc"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@id/rl_analysis_circular">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/data_analysis_evaluation"
+                        android:textColor="@android:color/white"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_analysis_evaluation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/data_analysis_circular_progress_color"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/btn_analysis_share"
+                    style="@style/btn_share_style"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/share"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

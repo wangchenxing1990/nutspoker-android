@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_bg"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/tv_common_column_title_style" />
+
+    <ImageView
+        android:id="@+id/iv_region_arrow"
+        style="@style/iv_common_column_arrow_style" />
+
+</RelativeLayout>
+

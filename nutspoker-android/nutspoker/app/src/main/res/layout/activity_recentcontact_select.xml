@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_friends_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_head"
+        layout="@layout/view_search_head" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_recentcontact"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_constact_new"
+                    style="@style/rl_common_column_style">
+
+                    <TextView
+                        style="@style/tv_common_column_title_style"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/iv_addfriends_by_phone_constact"
+                        android:text="@string/select_recent_contact_createchat" />
+
+                    <ImageView style="@style/iv_common_column_arrow_style" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_recentlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/tv_search_column_title_style"
+                        android:text="@string/recent_chat" />
+
+                    <com.htgames.nutspoker.view.widget.CustomListView
+                        android:id="@+id/lv_recent_contact"
+                        style="@style/listview_common_style" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/ll_friendlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/tv_search_column_title_style"
+                        android:text="@string/contact" />
+
+                    <com.htgames.nutspoker.view.widget.CustomListView
+                        android:id="@+id/lv_friend"
+                        style="@style/listview_common_style" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_grouplist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/tv_search_column_title_style"
+                        android:text="@string/group" />
+
+                    <com.htgames.nutspoker.view.widget.CustomListView
+                        android:id="@+id/lv_group"
+                        style="@style/listview_common_style" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_clublist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/tv_search_column_title_style"
+                        android:text="@string/club" />
+
+                    <com.htgames.nutspoker.view.widget.CustomListView
+                        android:id="@+id/lv_club"
+                        style="@style/listview_common_style" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

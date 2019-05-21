@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.netease.nim.uikit.customview.SwipeItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                  xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                  xmlns:tools="http://schemas.android.com/tools"
+                                                  android:id="@+id/item_contact_swipe_root"
+                                                  android:background="@drawable/common_column_bg"
+                                                  android:layout_width="match_parent"
+                                                  android:layout_height="55dp"
+                                                  app:bga_sil_bottomMode="pullOut"
+                                                  app:bga_sil_springDistance="20dp"
+                                                  app:bga_sil_swipeDirection="left">
+    <TextView
+            android:id="@+id/scrollable_view_remove_item"
+            android:layout_width="@dimen/mtt_mgr_delete_width"
+            android:layout_height="match_parent"
+            android:background="@drawable/red_column_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/enable_checkin"
+            android:textColor="#ffffff"
+            android:textSize="15dp" />
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/swipe_content"
+                    android:layout_width="match_parent"
+                    android:foreground="@drawable/fg_horde"
+                    android:layout_height="55dp"
+                    android:clickable="true"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp">
+
+        <TextView
+                android:id="@+id/tv_club_myself"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:text="@string/me"
+                android:drawableRight="@mipmap/icon_common_arrow_normal"
+                android:drawablePadding="5dp"
+                android:textColor="@color/text_select_color"
+                android:textSize="16sp"/>
+
+        <TextView
+                android:id="@+id/contacts_item_name"
+                android:layout_width="wrap_content"
+                android:paddingLeft="60dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:paddingTop="8dp"
+                android:gravity="center_vertical"
+                android:ellipsize="end"
+                android:singleLine="true"
+                tools:text="dfd"
+                android:textColor="@color/text_select_color"
+                android:textSize="15dp" />
+        <TextView
+                android:id="@+id/contacts_item_desc"
+                android:layout_width="wrap_content"
+                android:paddingLeft="60dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:paddingBottom="8dp"
+                android:gravity="center_vertical"
+                android:ellipsize="end"
+                android:singleLine="true"
+                tools:text="ID: 443455"
+                android:textColor="@color/shop_text_no_select_color"
+                android:textSize="12dp" />
+
+        <!-- 头像层级最高  -->
+        <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+                android:id="@+id/contacts_item_head"
+                android:layout_width="@dimen/avatar_size_in_contact_list"
+                android:layout_height="@dimen/avatar_size_in_contact_list"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="7dp"
+                android:src="@mipmap/default_male_head" />
+        <ImageView
+                android:id="@+id/club_head_image_mask"
+                android:layout_width="55dp"
+                android:layout_height="16dp"
+                android:layout_marginBottom="5dp"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:layout_gravity="bottom"
+                android:src="@mipmap/icon_club_mark" />
+        <ImageView
+                android:id="@+id/btn_member_delete"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="33dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="7dp"
+                tools:visibility="visible"
+                android:src="@mipmap/icon_team_member_item_delete"
+                android:visibility="gone" />
+    </FrameLayout>
+</com.netease.nim.uikit.customview.SwipeItemLayout>

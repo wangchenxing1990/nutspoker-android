@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_record_item_all_gain"
+    style="@style/tv_record_details_all_info_member_style"
+    android:background="@color/record_detail_column_bg"
+    android:maxHeight="@dimen/record_details_info_column_height"
+    android:minHeight="@dimen/record_details_info_column_height" />

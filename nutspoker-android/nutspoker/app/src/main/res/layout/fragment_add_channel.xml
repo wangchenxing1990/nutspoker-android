@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                 android:paddingBottom="5dp"
+                 android:paddingLeft="15dp"
+                 android:paddingRight="15dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  tools:text="历史记录"
+                  android:paddingTop="5dp"
+                  android:paddingBottom="5dp"
+                  android:layout_gravity="left"
+                  android:id="@+id/tv_add_channel_head_left"/>
+        <TextView android:layout_width="70dp" android:layout_height="wrap_content"
+                  android:text="@string/add_all"
+                  android:gravity="right|center_vertical"
+                  android:paddingTop="5dp"
+                  android:paddingBottom="5dp"
+                  android:layout_gravity="right"
+                  android:id="@+id/tv_add_channel_head_right"/>
+    </FrameLayout>
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <com.htgames.nutspoker.view.TouchableRecyclerView
+                android:id="@+id/recycler_view_add_channel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        <com.htgames.nutspoker.view.ResultDataView
+                android:id="@+id/mResultDataView"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+    </FrameLayout>
+
+</LinearLayout>

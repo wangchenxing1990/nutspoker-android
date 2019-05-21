@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_common_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="20dp">
+
+        <include
+            android:id="@+id/user_layout"
+            layout="@layout/nim_team_member_item" />
+
+        <include
+            android:id="@+id/create_team_layout"
+            layout="@layout/nim_team_member_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout style="@style/rl_common_column_style">
+
+        <TextView
+            style="@style/tv_common_column_title_style"
+            android:text="@string/chat_info_newmessage_notify" />
+
+        <com.htgames.nutspoker.view.switchbutton.SwitchButton
+            android:id="@+id/switch_newmessage_notify"
+            style="@style/SwitchButtonStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+    <View style="@style/common_column_divider_style" />
+
+    <RelativeLayout
+        android:id="@+id/rl_chat_clear_history"
+        style="@style/rl_common_column_style">
+
+        <TextView
+            style="@style/tv_common_column_title_style"
+            android:text="@string/chat_info_clear_record" />
+    </RelativeLayout>
+
+    <View style="@style/common_column_divider_style" />
+</LinearLayout>

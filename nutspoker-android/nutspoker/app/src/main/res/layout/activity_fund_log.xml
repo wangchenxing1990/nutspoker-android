@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/view_common_head"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/mSwipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.htgames.nutspoker.view.TouchableRecyclerView
+                    android:id="@+id/lv_members"
+                    style="@style/listview_common_style"/>
+            </FrameLayout>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <com.htgames.nutspoker.view.ResultDataView
+            android:id="@+id/mResultDataView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/register_page_bg_color"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/fast_scroller"
+                layout="@layout/fast_scroller"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

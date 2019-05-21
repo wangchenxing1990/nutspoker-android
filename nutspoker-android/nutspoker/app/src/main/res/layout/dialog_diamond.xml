@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_dialog_diamond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/dialog_diamond_top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/shop_diamond_head"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/btn_close"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:padding="5dp"
+                android:src="@drawable/btn_diamond_close" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/dialog_diamond_bg">
+
+            <ListView
+                android:id="@+id/lv_list"
+                style="@style/listview_common_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dividerHeight="2dp"
+                android:padding="10dp" />
+
+            <com.htgames.nutspoker.view.ResultDataView
+                android:id="@+id/mResultDataView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/screen_wait"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@id/ll_dialog_diamond"
+        android:layout_alignLeft="@id/ll_dialog_diamond"
+        android:layout_alignRight="@id/ll_dialog_diamond"
+        android:layout_alignTop="@id/ll_dialog_diamond"
+        android:clickable="true"
+        android:visibility="gone" />
+</RelativeLayout>

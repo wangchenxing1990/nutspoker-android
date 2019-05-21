@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_common_head" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_region_current"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/tv_common_column_title_style"
+                    android:padding="10dp"
+                    android:text="@string/region_current_location" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_item_bg"
+                    android:padding="15dp">
+
+                    <ProgressBar
+                        android:id="@+id/probar_region_ing"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:indeterminateBehavior="repeat"
+                        android:indeterminateDrawable="@drawable/nim_progress_small_white"
+                        android:indeterminateDuration="500"
+                        android:indeterminateOnly="true"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/tv_region_current"
+                        style="@style/tv_common_column_title_style"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/probar_region_ing"
+                        android:drawablePadding="5dp"
+                        android:text="@string/region_current_location_ing"
+                        android:textColor="@color/gray_auxiliary_text_color"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_region_tip"
+                style="@style/tv_common_column_title_style"
+                android:text="@string/region_county_tip"
+                android:padding="10dp" />
+
+            <com.htgames.nutspoker.view.widget.CustomListView
+                android:id="@+id/lv_region"
+                style="@style/listview_common_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dividerHeight="1dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

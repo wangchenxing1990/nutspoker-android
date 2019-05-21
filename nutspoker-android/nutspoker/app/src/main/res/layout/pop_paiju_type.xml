@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/container_all"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/match_sort_column_height"
+        android:foreground="@drawable/fg_horde"
+        android:layout_gravity="top|center_horizontal">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center|top"
+            android:background="@color/probar_voice_timer_normal_color" />
+        <TextView
+            android:id="@+id/tv_all"
+            style="@style/pop_team_paiju_type_text"
+            android:textColor="@color/login_solid_color"
+            android:text="@string/paiju_filter_all"/>
+        <ImageView
+            android:id="@+id/iv_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/list_check"
+            android:layout_marginRight="15dp"
+            android:tint="@color/login_solid_color"
+            android:layout_gravity="center_vertical|right"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/container_texas"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/match_sort_column_height"
+        android:foreground="@drawable/fg_horde"
+        android:layout_gravity="top|center_horizontal">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center|top"
+            android:background="@color/login_grey_color" />
+        <TextView
+            android:id="@+id/tv_texas"
+            style="@style/pop_team_paiju_type_text"
+            android:text="@string/texas_holdem"/>
+        <ImageView
+            android:id="@+id/iv_texas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/list_check"
+            android:layout_marginRight="15dp"
+            android:tint="@color/login_solid_color"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical|right"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/container_omaha"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/match_sort_column_height"
+        android:foreground="@drawable/fg_horde"
+        android:layout_gravity="top|center_horizontal">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center|top"
+            android:background="@color/login_grey_color" />
+        <TextView
+            android:id="@+id/tv_omaha"
+            style="@style/pop_team_paiju_type_text"
+            android:text="@string/omaha"/>
+        <ImageView
+            android:id="@+id/iv_omaha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/list_check"
+            android:layout_marginRight="15dp"
+            android:tint="@color/login_solid_color"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical|right"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/container_pineapple"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/match_sort_column_height"
+        android:foreground="@drawable/fg_horde"
+        android:layout_gravity="top|center_horizontal">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center|top"
+            android:background="@color/login_grey_color" />
+        <TextView
+            android:id="@+id/tv_pineapple"
+            style="@style/pop_team_paiju_type_text"
+            android:text="@string/pine_apple"/>
+        <ImageView
+            android:id="@+id/iv_pineapple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/list_check"
+            android:layout_marginRight="15dp"
+            android:tint="@color/login_solid_color"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical|right"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/container_mtt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/match_sort_column_height"
+        android:foreground="@drawable/fg_horde"
+        android:layout_gravity="top|center_horizontal">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center|top"
+            android:background="@color/login_grey_color" />
+        <TextView
+            android:id="@+id/tv_mtt"
+            style="@style/pop_team_paiju_type_text"
+            android:text="@string/game_mtt_tournament"/>
+        <ImageView
+            android:id="@+id/iv_mtt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/list_check"
+            android:layout_marginRight="15dp"
+            android:tint="@color/login_solid_color"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical|right"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/container_sng"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/match_sort_column_height"
+        android:foreground="@drawable/fg_horde"
+        android:layout_gravity="top|center_horizontal">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center|top"
+            android:background="@color/login_grey_color" />
+        <TextView
+            android:id="@+id/tv_sng"
+            style="@style/pop_team_paiju_type_text"
+            android:text="@string/game_sng_single_desk"/>
+        <ImageView
+            android:id="@+id/iv_sng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/list_check"
+            android:layout_marginRight="15dp"
+            android:tint="@color/login_solid_color"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical|right"/>
+    </FrameLayout>
+
+</LinearLayout>

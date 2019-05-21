@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="110dp"
+    android:layout_height="match_parent"
+    android:background="@color/register_page_bg_color"
+    android:gravity="right"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingTop="20dp">
+
+    <LinearLayout style="@style/ll_share_right_style">
+
+        <TextView
+            android:id="@+id/btn_share_wechat"
+            style="@style/share_right_social_style"
+            android:drawableTop="@drawable/btn_share_wechat"
+            android:text="@string/share_wechat" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/ll_share_right_style">
+
+        <TextView
+            android:id="@+id/btn_share_moments"
+            style="@style/share_right_social_style"
+            android:drawableTop="@drawable/btn_share_moments"
+            android:text="@string/share_moments" />
+    </LinearLayout>
+</LinearLayout>

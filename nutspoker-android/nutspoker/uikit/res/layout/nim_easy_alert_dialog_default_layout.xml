@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/easy_alert_dialog_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/dialog_custom_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/easy_dialog_title_view"
+            layout="@layout/nim_easy_alert_dialog_title" />
+
+        <TextView
+            android:id="@+id/easy_dialog_message_text_view"
+            android:textSize="@dimen/normal_text_size"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            tools:text="message1"
+            android:gravity="center"
+            android:textColor="@color/shop_text_no_select_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/easy_dialog_message_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="message2\ndfwg"
+            android:gravity="center|top"
+            android:textSize="14dp"
+            tools:visibility="visible"
+            android:textColor="@color/shop_text_no_select_color"
+            android:visibility="gone" />
+
+        <include layout="@layout/nim_easy_alert_dialog_bottom_button" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.netease.nim.uikit.customview.SwipeItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_club_member_root"
+    android:background="@drawable/common_column_bg"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/club_mmeber_item_height"
+    app:bga_sil_bottomMode="pullOut"
+    app:bga_sil_springDistance="20dp"
+    app:bga_sil_swipeDirection="left">
+    <TextView
+        android:id="@+id/scrollable_view_remove_item"
+        android:layout_width="@dimen/mtt_mgr_delete_width"
+        android:layout_height="match_parent"
+        android:background="@drawable/red_column_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="移除"
+        android:textColor="#ffffff"
+        android:textSize="15dp" />
+
+    <include layout="@layout/item_club_member_content"/>
+</com.netease.nim.uikit.customview.SwipeItemLayout>

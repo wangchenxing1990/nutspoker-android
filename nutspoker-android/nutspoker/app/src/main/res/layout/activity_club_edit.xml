@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_common_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_club_head"
+            style="@style/rl_common_column_style"
+            android:layout_height="@dimen/app_msg_info_common_column_height"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                style="@style/tv_common_column_title_style"
+                android:text="@string/edit_userinfo_userhead" />
+
+            <ImageView
+                android:id="@+id/iv_userhead_arrow"
+                style="@style/iv_userinfo_column_arrow_style" />
+
+            <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+                android:id="@+id/iv_club_head"
+                android:layout_width="@dimen/club_avatar_size_default"
+                android:layout_height="@dimen/club_avatar_size_default"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/iv_userhead_arrow"
+                android:src="@mipmap/default_club_head" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_club_name"
+            style="@style/rl_common_column_style"
+            android:layout_height="@dimen/app_msg_info_common_column_height"
+            android:layout_marginTop="1dp">
+
+            <TextView
+                style="@style/tv_common_column_title_style"
+                android:text="@string/club_create_name" />
+
+            <ImageView
+                android:id="@+id/iv_nickname_arrow"
+                style="@style/iv_userinfo_column_arrow_style" />
+
+            <TextView
+                android:id="@+id/tv_club_name"
+                style="@style/tv_common_column_title_style"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/iv_nickname_arrow"
+                android:text="@string/edit_userinfo_nickname" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_club_area"
+            style="@style/rl_common_column_style"
+            android:layout_marginTop="1dp"
+            android:visibility="gone"
+            >
+
+            <TextView
+                style="@style/tv_common_column_title_style"
+                android:text="@string/edit_userinfo_area" />
+
+            <ImageView
+                android:id="@+id/iv_area_arrow"
+                style="@style/iv_userinfo_column_arrow_style" />
+
+            <TextView
+                android:id="@+id/tv_club_area"
+                style="@style/tv_common_column_title_style"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/iv_area_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_club_introduce"
+            style="@style/rl_common_column_style"
+            android:visibility="gone"
+            android:layout_height="@dimen/app_msg_info_common_column_height"
+            android:layout_marginTop="1dp">
+
+            <TextView
+                android:id="@+id/tv_club_introduce_title"
+                style="@style/tv_common_column_title_style"
+                android:layout_centerVertical="false"
+                android:text="@string/club_create_introduce" />
+
+            <ImageView
+                android:id="@+id/iv_club_introduce_arrow"
+                style="@style/iv_userinfo_column_arrow_style" />
+
+            <TextView
+                android:id="@+id/tv_club_introduce"
+                style="@style/tv_common_column_title_style"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/tv_club_introduce_title"
+                android:layout_centerVertical="false"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/iv_club_introduce_arrow"
+                android:paddingTop="5dp"
+                android:textColor="@color/userinfo_signature_text_color"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

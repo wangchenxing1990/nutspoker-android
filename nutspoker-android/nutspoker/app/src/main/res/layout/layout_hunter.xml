@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/hunter_root"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/game_create_start_module_margin"
+              android:background="@drawable/edt_create_game_bg"
+              android:orientation="vertical"
+              android:paddingLeft="20dp"
+              android:paddingRight="20dp">
+
+    <FrameLayout
+        android:id="@+id/hunter_switch_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/create_game_single_outer_column_height">
+
+        <TextView
+            android:id="@+id/tv_hunter_des"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/game_match_hunter"
+            android:textColor="@color/shop_text_no_select_color"/>
+
+        <com.htgames.nutspoker.view.switchbutton.SwitchButton
+            android:id="@+id/hunter_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:paddingRight="10dp"
+            app:kswAnimationDuration="300"
+            app:kswBackDrawable="@drawable/ios_back_drawable"
+            app:kswBackMeasureRatio="1.8"
+            app:kswThumbDrawable="@mipmap/slide_toggle"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_hunter_config_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/register_page_bg_color"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/create_game_single_outer_column_height">
+
+            <com.netease.nim.uikit.common.ui.widget.EasySwitchBtn
+                android:id="@+id/iv_hunter_normal"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                app:EasySwitchBtn_isChecked="true"/>
+
+            <TextView
+                android:id="@+id/tv_hunter_normal_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_hunter_normal"
+                android:paddingLeft="5dp"
+                android:text="全员赏金"
+                android:textColor="@color/shop_text_no_select_color"/>
+
+            <TextView
+                android:id="@+id/tv_hunter_super_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:text="累增赏金"
+                android:textColor="@color/shop_text_no_select_color"/>
+
+            <com.netease.nim.uikit.common.ui.widget.EasySwitchBtn
+                android:id="@+id/iv_hunter_super"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/tv_hunter_super_des"
+                android:src="@mipmap/icon_hunter_normal"
+                app:EasySwitchBtn_isChecked="false"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/register_page_bg_color"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <TextView
+                style="@style/tv_game_create_common_column_style"
+                android:layout_height="wrap_content"
+                android:text="赏金池比例"/>
+
+            <TextView
+                android:id="@+id/tv_normal_hunter_ratio"
+                style="@style/tv_game_create_common_column_style"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:textColor="@color/login_solid_color"
+                tools:text="30%"/>
+
+            <ImageView
+                android:id="@+id/tv_normal_hunter_ratio_click"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center_vertical"
+                android:layout_toRightOf="@id/tv_normal_hunter_ratio"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_waring"/>
+        </LinearLayout>
+
+        <com.htgames.nutspoker.view.NodeSeekBar
+            android:id="@+id/seekbar_normal_hunter_ratio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="10dp"
+            app:shouldDrawDot="false"
+            app:showTip="false"/>
+
+        <View
+            android:id="@+id/super_hunter_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/register_page_bg_color"/>
+
+        <LinearLayout
+            android:id="@+id/super_hunter_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <TextView
+                style="@style/tv_game_create_common_column_style"
+                android:layout_height="wrap_content"
+                android:text="累增赏金比例"/>
+
+            <TextView
+                android:id="@+id/tv_super_hunter_ratio"
+                style="@style/tv_game_create_common_column_style"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:textColor="@color/login_solid_color"
+                tools:text="30%"/>
+            <ImageView
+                android:id="@+id/tv_super_hunter_ratio_click"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center_vertical"
+                android:layout_toRightOf="@id/tv_super_hunter_ratio"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_waring"/>
+        </LinearLayout>
+
+        <com.htgames.nutspoker.view.NodeSeekBar
+            android:id="@+id/seekbar_super_hunter_ratio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="10dp"
+            app:shouldDrawDot="false"
+            app:showTip="false"/>
+    </LinearLayout>
+</LinearLayout>

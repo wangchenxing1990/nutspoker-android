@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/blinds_structure_bg_new"
+                android:paddingBottom="5dp"
+                android:orientation="vertical">
+
+    <LinearLayout
+            android:id="@+id/ll_mtt_blinds_stucture_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+        <TextView
+                android:id="@+id/tv_game_match_blinds_rebuy_desc"
+                style="@style/tv_mtt_blinds_stucture_desc"
+                android:drawableLeft="@mipmap/icon_mtt_rebuy_tag"
+                android:text="@string/game_match_blinds_rebuy_desc" />
+
+        <TextView
+                android:id="@+id/tv_game_match_blinds_addon_desc"
+                style="@style/tv_mtt_blinds_stucture_desc"
+                android:drawableLeft="@mipmap/icon_mtt_addbuy_tag"
+                android:text="@string/game_match_blinds_addon_desc" />
+
+        <TextView
+                android:id="@+id/tv_game_match_blinds_termination_join_desc"
+                style="@style/tv_mtt_blinds_stucture_desc"
+                android:drawableLeft="@mipmap/icon_mtt_termination_join_tag"
+                android:text="@string/game_match_blinds_termination_join_desc" />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/ll_mtt_blinds_stucture_desc"
+            android:orientation="vertical">
+
+        <RelativeLayout
+                android:id="@+id/title_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="8dp">
+            <TextView
+                    android:id="@+id/tv_create_mtt_blinds_relation_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/game_create_mtt_blinds_relation"
+                    android:textColor="@color/login_solid_color"
+                    android:textSize="16sp" />
+            <ImageView
+                    android:id="@+id/btn_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/btn_blinds_dialog_close" />
+        </RelativeLayout>
+        <RelativeLayout
+                android:id="@+id/match_reward_top_info"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/register_page_bg_color"/>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+                <TextView
+                        android:id="@+id/tv_mtt_all_reward"
+                        tools:text="总奖池：10000323"
+                        android:layout_width="wrap_content"
+                        android:gravity="center_vertical|left"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/login_solid_color"
+                        android:textSize="12sp" />
+                <TextView
+                        android:id="@+id/tv_mtt_all_reward_hunter"
+                        tools:text="总赏金：100"
+                        android:layout_width="wrap_content"
+                        android:gravity="center_vertical|left"
+                        android:visibility="gone"
+                        tools:visibility="visible"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/login_solid_color"
+                        android:textSize="12sp" />
+            </LinearLayout>
+            <TextView
+                    android:id="@+id/tv_mtt_reward_person_count"
+                    tools:text="奖励圈：6人"
+                    android:layout_width="match_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_vertical|right"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/login_solid_color"
+                    android:textSize="12sp" />
+        </RelativeLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/register_page_bg_color"
+                android:layout_marginBottom="5dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+            <TextView
+                    android:id="@+id/tv_blinds_stucture_level"
+                    style="@style/tv_blinds_stucture_column"
+                    android:layout_weight="1"
+                    android:text="@string/blinds_structure_column_level" />
+
+            <TextView
+                    android:id="@+id/tv_blinds_stucture_blinds"
+                    style="@style/tv_blinds_stucture_column"
+                    android:layout_weight="1"
+                    android:text="@string/blinds_structure_column_blinds" />
+
+
+            <TextView
+                    android:id="@+id/tv_blinds_stucture_ante"
+                    style="@style/tv_blinds_stucture_column"
+                    android:layout_weight="1"
+                    android:text="@string/blinds_structure_column_ante" />
+        </LinearLayout>
+
+        <GridView
+                android:id="@+id/gv_blinds_stucture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="1" />
+    </LinearLayout>
+</RelativeLayout>

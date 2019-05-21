@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/view_common_head" />
+
+    <TextView
+        style="@style/tv_chang_pwd_style"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="@string/confirm_account" />
+
+    <TextView
+        style="@style/tv_register_column_title_style"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/confirm_account_tip" />
+
+    <TextView
+        android:id="@+id/tv_phone_number"
+        style="@style/tv_chang_pwd_style"
+        android:background="@drawable/tv_bg_phone"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="手机号: 13788888888" />
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/btn_common_style"
+        android:layout_marginTop="40dp"
+        android:text="@string/getauthcode" />
+</LinearLayout>

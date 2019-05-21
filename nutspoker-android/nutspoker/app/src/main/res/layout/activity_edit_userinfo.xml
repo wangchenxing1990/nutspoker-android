@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/register_page_bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_common_head" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_userhead"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_size_55"
+            android:background="@drawable/common_column_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            <TextView
+                style="@style/tv_common_column_title_style"
+                android:text="@string/edit_userinfo_userhead" />
+            <ImageView
+                android:id="@+id/iv_userhead_arrow"
+                style="@style/iv_userinfo_column_arrow_style" />
+            <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+                android:id="@+id/iv_userhead"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/iv_userhead_arrow"
+                android:src="@mipmap/default_male_head" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_size_55"
+            android:background="@drawable/common_column_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="1dp">
+            <TextView
+                style="@style/tv_common_column_title_style"
+                android:text="@string/edit_userinfo_nickname" />
+            <ImageView
+                android:id="@+id/iv_nickname_arrow"
+                style="@style/iv_userinfo_column_arrow_style" />
+            <TextView
+                android:id="@+id/tv_nickname"
+                style="@style/tv_common_column_title_style"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/iv_nickname_arrow"
+                android:textColor="@color/login_grey_color"
+                android:text="@string/edit_userinfo_nickname" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_size_55"
+            android:background="@drawable/common_column_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/rl_edit_user_set_sex_container"
+            android:layout_marginTop="1dp">
+            <TextView
+                style="@style/tv_common_column_title_style"
+                android:text="@string/edit_userinfo_sex" />
+            <CheckBox
+                android:id="@+id/switch_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                android:button="@null"
+                android:drawableRight="@drawable/switch_me_sex"
+                android:gravity="center_vertical" />
+            <ImageView
+                android:id="@+id/iv_sex_arrow"
+                style="@style/iv_userinfo_column_arrow_style" />
+            <TextView
+                android:id="@+id/tv_sex"
+                style="@style/tv_common_column_title_style"
+                android:textColor="@color/login_grey_color"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/iv_sex_arrow"
+                android:text="@string/edit_userinfo_nickname" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_size_55"
+            android:background="@drawable/common_column_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                style="@style/tv_common_column_title_style"
+                android:text="@string/phone" />
+            <TextView
+                android:id="@+id/tv_account"
+                style="@style/tv_common_column_title_style"
+                android:textColor="@color/login_grey_color"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_size_55"
+            android:background="@drawable/common_column_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="1dp">
+            <TextView
+                style="@style/tv_common_column_title_style"
+                android:text="ID" />
+            <TextView
+                android:id="@+id/tv_virtual_id"
+                style="@style/tv_common_column_title_style"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/login_grey_color"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_changepwd"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="@dimen/dp_size_55"
+            android:background="@drawable/common_column_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="1dp">
+            <TextView
+                style="@style/tv_common_column_title_style"
+                android:text="@string/change_pwd" />
+            <ImageView
+                style="@style/iv_userinfo_column_arrow_style" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_area"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_size_55"
+            android:visibility="gone"
+            android:background="@drawable/common_column_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="1dp">
+            <TextView
+                style="@style/tv_common_column_title_style"
+                android:text="@string/edit_userinfo_area" />
+            <ImageView
+                android:id="@+id/iv_area_arrow"
+                style="@style/iv_userinfo_column_arrow_style" />
+            <TextView
+                android:id="@+id/tv_area"
+                style="@style/tv_common_column_title_style"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/login_grey_color"
+                android:layout_toLeftOf="@id/iv_area_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_signature"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_size_55"
+            android:background="@drawable/common_column_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/tv_signature_title"
+                style="@style/tv_common_column_title_style"
+                android:text="@string/edit_userinfo_signature" />
+            <ImageView
+                android:id="@+id/iv_signature_arrow"
+                style="@style/iv_userinfo_column_arrow_style" />
+            <TextView
+                android:id="@+id/tv_signature"
+                style="@style/tv_common_column_title_style"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/iv_signature_arrow"
+                android:layout_toRightOf="@id/tv_signature_title"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_centerVertical="true"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/login_grey_color"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_level"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_size_55"
+            android:visibility="gone"
+            android:background="@drawable/common_column_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                style="@style/tv_common_column_title_style"
+                android:text="@string/edit_userinfo_level" />
+            <TextView
+                android:id="@+id/tv_level"
+                style="@style/tv_common_column_title_style"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_size_55"
+            android:background="@drawable/common_column_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="1dp"
+            android:visibility="gone">
+            <TextView
+                style="@style/tv_common_column_title_style"
+                android:text="@string/edit_userinfo_register_time" />
+            <TextView
+                android:id="@+id/tv_register_time"
+                style="@style/tv_common_column_title_style"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none">
+    </ScrollView>
+</LinearLayout>

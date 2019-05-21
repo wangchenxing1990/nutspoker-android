@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="@dimen/game_record_details_content_height"
+                tools:background="@color/red_normal"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ImageView
+        android:id="@+id/iv_horde_record"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/tags_clan_record"/>
+    <android.support.v4.widget.Space
+        android:id="@+id/record_details_info_view_center"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"/>
+    <RelativeLayout
+        android:id="@+id/not_vip_container"
+        android:layout_width="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+            android:id="@+id/iv_userhead_creator"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@mipmap/default_male_head" />
+        <TextView
+            android:id="@+id/tv_game_creator_nickname"
+            style="@style/record_details_text_style"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@id/iv_userhead_creator"
+            android:paddingLeft="5dp"
+            tools:text="周智慧" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_game_date"
+        style="@style/record_details_text_style"
+        android:layout_alignParentRight="true"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/white"
+        tools:text="2016/12/15 12:43" />
+
+    <!--普通局-->
+    <RelativeLayout
+        android:id="@+id/record_normal_container"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v4.widget.Space
+            android:id="@+id/record_details_info_view_center_normal"
+            android:layout_width="80dp"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true"/>
+        <TextView
+            style="@style/record_details_text_style_new"
+            android:layout_toLeftOf="@id/record_details_info_view_center_normal"
+            android:layout_above="@id/record_details_info_view_center_normal"
+            android:alpha="0.6"
+            android:text="牌局时间" />
+        <TextView
+            android:id="@+id/tv_game_duration_num"
+            style="@style/record_details_text_style_new"
+            android:layout_toLeftOf="@id/record_details_info_view_center_normal"
+            android:layout_below="@id/record_details_info_view_center_normal"
+            tools:text="2小时" />
+        <TextView
+            style="@style/record_details_text_style_new"
+            android:layout_toRightOf="@id/record_details_info_view_center_normal"
+            android:alpha="0.6"
+            android:layout_above="@id/record_details_info_view_center_normal"
+            android:text="总手数" />
+        <TextView
+            android:id="@+id/tv_game_hands_and_reward_num"
+            style="@style/record_details_text_style_new"
+            android:layout_toRightOf="@id/record_details_info_view_center_normal"
+            android:layout_below="@id/record_details_info_view_center_normal"
+            tools:text="300000" />
+        <TextView
+            style="@style/record_details_text_style_new"
+            android:layout_above="@id/record_details_info_view_center_normal"
+            android:alpha="0.6"
+            android:text="总买入" />
+        <TextView
+            android:id="@+id/tv_game_all_buy_num"
+            style="@style/record_details_text_style_new"
+            android:layout_below="@id/record_details_info_view_center_normal"
+            tools:text="3400000" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:layout_below="@id/tv_game_all_buy_num">
+            <TextView
+                android:id="@+id/ll_game_insurance"
+                style="@style/record_details_text_style_new"
+                android:layout_width="wrap_content"
+                android:gravity="right"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:alpha="0.6"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:drawableLeft="@mipmap/icon_club_chat_game_item_insurance"
+                android:text="@string/game_create_config_insurance" />
+            <TextView
+                android:id="@+id/tv_game_ante"
+                style="@style/record_details_text_style_new"
+                android:layout_width="wrap_content"
+                android:gravity="left"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:alpha="0.6"
+                android:visibility="gone"
+                tools:visibility="visible"
+                tools:text="Ante: 2" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--sng-->
+    <RelativeLayout
+        android:id="@+id/record_sng_container"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v4.widget.Space
+            android:id="@+id/record_details_info_view_center_sng"
+            android:layout_width="80dp"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_paiju_item_sng"
+            android:layout_centerInParent="true"/>
+        <TextView
+            style="@style/record_details_text_style_new"
+            android:layout_toLeftOf="@id/record_details_info_view_center_sng"
+            android:layout_above="@id/record_details_info_view_center_sng"
+            android:alpha="0.6"
+            android:text="比赛时间" />
+        <TextView
+            android:id="@+id/tv_sng_durations"
+            style="@style/record_details_text_style_new"
+            android:layout_toLeftOf="@id/record_details_info_view_center_sng"
+            android:layout_below="@id/record_details_info_view_center_sng"
+            tools:text="2小时" />
+        <TextView
+            style="@style/record_details_text_style_new"
+            android:layout_toRightOf="@id/record_details_info_view_center_sng"
+            android:alpha="0.6"
+            android:layout_above="@id/record_details_info_view_center_sng"
+            android:text="总奖池" />
+        <TextView
+            android:id="@+id/tv_sng_total_reward"
+            style="@style/record_details_text_style_new"
+            android:layout_toRightOf="@id/record_details_info_view_center_sng"
+            android:layout_below="@id/record_details_info_view_center_sng"
+            tools:text="300000" />
+    </RelativeLayout>
+
+    <!--mtt-->
+    <RelativeLayout
+        android:id="@+id/record_mtt_container"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <android.support.v4.widget.Space
+            android:id="@+id/record_details_info_view_center_mtt"
+            android:layout_width="80dp"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true"/>
+        <LinearLayout
+            android:id="@+id/mtt_special_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true">
+            <ImageView
+                android:id="@+id/iv_game_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="top"
+                android:src="@mipmap/icon_paiju_item_mtt"/>
+            <TextView
+                android:id="@+id/record_detail_mtt_hunter_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:textSize="16dp"
+                android:alpha="0.6"
+                android:text="@string/game_match_hunter"/>
+        </LinearLayout>
+        <TextView
+            style="@style/record_details_text_style_new"
+            android:layout_toLeftOf="@id/record_details_info_view_center_mtt"
+            android:layout_above="@id/record_details_info_view_center_mtt"
+            android:alpha="0.6"
+            android:text="比赛时间" />
+        <TextView
+            android:id="@+id/tv_mtt_durations"
+            style="@style/record_details_text_style_new"
+            android:layout_toLeftOf="@id/record_details_info_view_center_mtt"
+            android:layout_below="@id/record_details_info_view_center_mtt"
+            tools:text="2小时" />
+        <TextView
+            style="@style/record_details_text_style_new"
+            android:layout_toRightOf="@id/record_details_info_view_center_mtt"
+            android:alpha="0.6"
+            android:layout_above="@id/record_details_info_view_center_mtt"
+            android:text="总奖池" />
+        <TextView
+            android:id="@+id/tv_mtt_total_reward"
+            style="@style/record_details_text_style_new"
+            android:layout_toRightOf="@id/record_details_info_view_center_mtt"
+            android:layout_below="@id/record_details_info_view_center_mtt"
+            tools:text="300000" />
+        <TextView
+            android:id="@+id/mtt_checkin_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/record_details_info_view_center_mtt"
+            android:layout_below="@+id/record_details_info_view_center_mtt"
+            android:gravity="center"
+            android:paddingTop="30dp"
+            android:textSize="13dp"
+            android:text="参赛人数：0"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/mtt_buy_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/record_details_info_view_center_mtt"
+            android:layout_below="@+id/record_details_info_view_center_mtt"
+            android:gravity="center"
+            android:paddingTop="30dp"
+            android:textSize="13dp"
+            android:text="参赛人次：0"
+            android:textColor="@color/white"/>
+        <LinearLayout
+            android:id="@+id/pineapple_mark_mtt_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="91dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/p_tags_record_detail"/>
+            <TextView
+                android:id="@+id/pineapple_mtt_play_type"
+                style="@style/record_details_text_style_new"
+                android:alpha="0.6"
+                android:text="@string/pineapple_mode_normal" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--大菠萝-->
+    <RelativeLayout
+        android:id="@+id/record_pineapple_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v4.widget.Space
+            android:id="@+id/record_details_info_view_center_pineapple"
+            android:layout_width="80dp"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true"/>
+        <TextView
+            style="@style/record_details_text_style_new"
+            android:layout_toLeftOf="@id/record_details_info_view_center_pineapple"
+            android:layout_above="@id/record_details_info_view_center_pineapple"
+            android:alpha="0.6"
+            android:text="牌局时间" />
+        <TextView
+            android:id="@+id/pineapple_duration_num"
+            style="@style/record_details_text_style_new"
+            android:layout_toLeftOf="@id/record_details_info_view_center_pineapple"
+            android:layout_below="@id/record_details_info_view_center_pineapple"
+            tools:text="2小时" />
+        <TextView
+            style="@style/record_details_text_style_new"
+            android:layout_toRightOf="@id/record_details_info_view_center_pineapple"
+            android:alpha="0.6"
+            android:layout_above="@id/record_details_info_view_center_pineapple"
+            android:text="总手数" />
+        <TextView
+            android:id="@+id/pineapple_hands_num"
+            style="@style/record_details_text_style_new"
+            android:layout_toRightOf="@id/record_details_info_view_center_pineapple"
+            android:layout_below="@id/record_details_info_view_center_pineapple"
+            tools:text="300000" />
+        <TextView
+            style="@style/record_details_text_style_new"
+            android:layout_above="@id/record_details_info_view_center_pineapple"
+            android:alpha="0.6"
+            android:text="总买入" />
+        <TextView
+            android:id="@+id/pineapple_all_buy_num"
+            style="@style/record_details_text_style_new"
+            android:layout_below="@id/record_details_info_view_center_pineapple"
+            tools:text="3400000" />
+        <LinearLayout
+            android:id="@+id/pineapple_mark_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="91dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/p_tags_record_detail"/>
+            <TextView
+                android:id="@+id/pineapple_play_type"
+                style="@style/record_details_text_style_new"
+                android:alpha="0.6"
+                android:text="@string/pineapple_mode_normal" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_omaha_icon"
+        android:layout_gravity="center_vertical"
+        android:layout_width="56dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:src="@mipmap/tag_omaha_1"/>
+</RelativeLayout>

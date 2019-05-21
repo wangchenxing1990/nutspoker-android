@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/game_fragment_column_height"
+             android:background="@color/white"
+             android:foreground="@drawable/fg_horde"
+             android:paddingBottom="10dp"
+             android:paddingRight="10dp">
+    <!-- *********************************************用户画像*********************************************       -->
+    <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+        android:id="@+id/iv_game_creator_userhead"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/default_male_head" />
+
+    <TextView
+        android:id="@+id/tv_recentgame_checkin"
+        android:layout_width="34dp"
+        android:layout_height="@dimen/recentgame_checkin_bg_height"
+        android:layout_gravity="bottom"
+        android:background="@drawable/recentgame_checkin_tag_bg"
+        android:gravity="center"
+        android:text="@string/match_player_status_checkin"
+        android:textColor="@color/white"
+        android:textSize="8dp"
+        android:layout_marginLeft="13dp"
+        tools:visibility="visible"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_game_name"
+        style="@style/tv_recentgame_text_style"
+        android:paddingLeft="58dp"
+        android:paddingTop="10dp"
+        android:text="暴走的苹果的MTT2"
+        android:drawableRight="@mipmap/icon_clan"
+        android:drawablePadding="5dp"
+        android:textColor="@color/text_select_color" />
+
+    <!-- ********************************普通局的游戏状态 "剩余 30分钟"  "已结束"    ********************************* -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:layout_gravity="right"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_game_remaining_title"
+            style="@style/tv_recentgame_text_style"
+            android:textColor="@color/login_solid_color"
+            android:text="@string/remaining"
+            android:textSize="10sp" />
+        <TextView
+            android:id="@+id/tv_game_remaining_time"
+            style="@style/tv_recentgame_text_style"
+            android:paddingLeft="5dp"
+            android:text="30分钟"
+            android:textColor="@color/login_solid_color"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- ********************************游戏参数配置，比较复杂   ********************************* -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="58dp"
+        android:layout_gravity="bottom">
+
+        <TextView
+            android:id="@+id/tv_game_member"
+            style="@style/tv_recentgame_text_small_style"
+            android:drawableLeft="@mipmap/icon_club_chat_member"
+            android:text="1/9" />
+
+        <TextView
+            android:id="@+id/tv_pineapple_ante"
+            style="@style/tv_recentgame_text_small_style"
+            android:drawableLeft="@mipmap/di_icon_2"
+            android:paddingLeft="10dp"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:text="2" />
+
+        <TextView
+            android:id="@+id/tv_game_blind"
+            style="@style/tv_recentgame_text_small_style"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@mipmap/icon_club_chat_chip"
+            android:text="1/2" />
+
+        <TextView
+            android:id="@+id/tv_game_chickin_fee"
+            style="@style/tv_recentgame_text_small_style"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@mipmap/icon_club_chat_checkin_fee"
+            android:text=""
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_game_time"
+            style="@style/tv_recentgame_text_small_style"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@mipmap/icon_club_chat_time"
+            android:text="1h30m" />
+
+        <TextView
+            android:id="@+id/iv_game_insurance"
+            style="@style/tv_recentgame_text_small_style"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@mipmap/icon_club_chat_game_item_insurance"
+            android:text="@string/game_create_config_insurance"
+            android:textColor="@color/shop_text_no_select_color" />
+
+        <TextView
+            android:id="@+id/tv_game_ante"
+            style="@style/tv_recentgame_text_small_style"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dp"
+            android:text=""
+            tools:text="ante: 2"
+            android:textColor="@color/shop_text_no_select_color" />
+    </LinearLayout>
+
+    <!-- ********************************比赛局的游戏状态 "报名中"  "准备中" "比赛中"   ********************************* -->
+    <ImageView
+        android:id="@+id/iv_game_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:src="@mipmap/icon_control_mtt" />
+    <ImageView
+        android:id="@+id/game_history_hunter_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_marginRight="40dp"
+        android:src="@mipmap/icon_hunter"/>
+    <TextView
+        android:id="@+id/tv_game_mode_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:text="@string/checkin_ing"
+        android:textColor="@color/login_solid_color"
+        android:textSize="10sp" />
+
+    <!--*********************************奥马哈*****************************-->
+    <ImageView
+        android:id="@+id/iv_omaha_icon"
+        android:layout_width="40dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="0.5dp"
+        android:src="@mipmap/tag_omaha_3"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+    <!--*********************************大菠萝*****************************-->
+    <ImageView
+        android:id="@+id/iv_pineapple_icon"
+        android:layout_width="49dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="0.5dp"
+        android:src="@mipmap/p_tags_normal"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+    <!--*********************************同步发牌*****************************-->
+    <TextView
+        android:id="@+id/tv_pineapple_deal_order"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:padding="3dp"
+        tools:text="同步发牌"
+        tools:visibility="visible"
+        android:textColor="@color/login_solid_color"
+        android:textSize="9dp"/>
+
+</FrameLayout>
